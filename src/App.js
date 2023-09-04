@@ -1,0 +1,1 @@
+//use for main funtionaluty of javascript for react
