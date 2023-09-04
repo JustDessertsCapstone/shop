@@ -1,1 +1,1 @@
-//use for main funtionaluty of javascript for react
+//use for main funtionaluty of javascript for react and anything else that may be needed
