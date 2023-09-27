@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
+  background-image: url("./assets/girl_sunset.jpg");
+  background-size: cover; /* This will make the image cover the entire body element */
+  background-repeat: no-repeat; /* This will prevent the image from repeating */
 }
 
 .logo {

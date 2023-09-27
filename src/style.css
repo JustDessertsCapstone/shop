@@ -1,5 +1,0 @@
-body {
-    background-image: Url('../src/Img/girl_sunset.jpg');
-    background-size: cover; /* This will make the image cover the entire body element */
-    background-repeat: no-repeat; /* This will prevent the image from repeating */
-  }
