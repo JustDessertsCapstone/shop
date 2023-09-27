@@ -1,11 +1,12 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: block;
 
   background-image: url("./assets/girl_sunset.jpg");
   background-size: cover; /* This will make the image cover the entire body element */
+  background-position: center;
   background-repeat: no-repeat; /* This will prevent the image from repeating */
 }
 
