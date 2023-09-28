@@ -1,13 +1,42 @@
 #root {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  display: block;
+  background-color: white;
 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#root > * {
+  align-self: stretch;
+}
+
+.banner {
+  background-image: url("./assets/StockSnap_AWJD4WV6W1.jpg");
+  background-size: cover;
+  background-position: center;
+
+  margin: 0;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 4rem;
+  color: #fff;
+  font-family: "Dancing Script", fantasy;
+  text-shadow: 0 0 1em #000;
+}
+
+main {
   background-image: url("./assets/girl_sunset.jpg");
   background-size: cover; /* This will make the image cover the entire body element */
   background-position: center;
   background-repeat: no-repeat; /* This will prevent the image from repeating */
+
+  min-height: 40em;
+
+  font-size: medium;
 }
 
 .logo {
