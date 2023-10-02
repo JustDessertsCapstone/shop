@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import data from './assets/products.json'
+import ProductContainer from './ProductContainer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +13,7 @@ function App() {
       <header>
         <h1 class="banner">Healthify</h1>
       </header>
+
       <main>
         <h1> Hello, welcome to Healthify</h1>
         <div>
@@ -22,12 +25,16 @@ function App() {
         </a>
         </div>
         <h1>Vite + React</h1>
+        <div>
+          <ProductContainer data={data} />
+        </div>
         <div className="card">
           <button onClick={() => setCount((count) => count + 1)}>
             count is {count}
           </button>
         </div>
       </main>
+
       <footer>
         <p>
           Within Healthify, you will find that being rewarded for making better choices is so rewarding!
