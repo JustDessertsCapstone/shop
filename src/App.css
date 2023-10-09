@@ -51,10 +51,15 @@ main {
 .product-card {
   background-color: white;
   width: 198px;
+  transition: background-color 0.3s ease;
 }
 
 .product-card > * {
   margin: 0px;
+}
+
+.product-card:hover {
+  background-color: #e0e0e0; /* Change this color to your desired hover effect */
 }
 
 .logo {
