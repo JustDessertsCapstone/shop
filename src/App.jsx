@@ -6,7 +6,7 @@ import data from './assets/products.json'
 import ProductContainer from './ProductContainer'
 //added for shoppingCart.js next two lines
 import React from 'react'
-import { cart, addToCart, removeFromCart, clearCart } from './cart';
+// import { cart, addToCart, removeFromCart, clearCart } from './cart';
 
 
 function App() {
