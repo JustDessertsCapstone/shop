@@ -5,7 +5,8 @@
     "class_name": "Apple",
     "class_id": 0,
     "img_path": "dataset/Fruit/Apple/Golden-Delicious/Golden-Delicious_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Apple/Golden-Delicious/Golden-Delicious_Description.txt"
+    "desc_path": "dataset/Fruit/Apple/Golden-Delicious/Golden-Delicious_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Granny-Smith",
@@ -13,7 +14,8 @@
     "class_name": "Apple",
     "class_id": 0,
     "img_path": "dataset/Fruit/Apple/Granny-Smith/Granny-Smith_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Apple/Granny-Smith/Granny-Smith_Description.txt"
+    "desc_path": "dataset/Fruit/Apple/Granny-Smith/Granny-Smith_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Pink-Lady",
@@ -21,7 +23,8 @@
     "class_name": "Apple",
     "class_id": 0,
     "img_path": "dataset/Fruit/Apple/Pink-Lady/Pink-Lady_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Apple/Pink-Lady/Pink-Lady_Description.txt"
+    "desc_path": "dataset/Fruit/Apple/Pink-Lady/Pink-Lady_Description.txt",
+    "nutrition_grade": "d"
   },
   {
     "name": "Red-Delicious",
@@ -29,7 +32,8 @@
     "class_name": "Apple",
     "class_id": 0,
     "img_path": "dataset/Fruit/Apple/Red-Delicious/Red-Delicious_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Apple/Red-Delicious/Red-Delicious_Description.txt"
+    "desc_path": "dataset/Fruit/Apple/Red-Delicious/Red-Delicious_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Royal-Gala",
@@ -37,7 +41,8 @@
     "class_name": "Apple",
     "class_id": 0,
     "img_path": "dataset/Fruit/Apple/Royal-Gala/Royal-Gala_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Apple/Royal-Gala/Royal-Gala_Description.txt"
+    "desc_path": "dataset/Fruit/Apple/Royal-Gala/Royal-Gala_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Avocado",
@@ -45,7 +50,8 @@
     "class_name": "Avocado",
     "class_id": 1,
     "img_path": "dataset/Fruit/Avocado/Avocado_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Avocado/Avocado_Description.txt"
+    "desc_path": "dataset/Fruit/Avocado/Avocado_Description.txt",
+    "nutrition_grade": "d"
   },
   {
     "name": "Banana",
@@ -53,7 +59,8 @@
     "class_name": "Banana",
     "class_id": 2,
     "img_path": "dataset/Fruit/Banana/Banana_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Banana/Banana_Description.txt"
+    "desc_path": "dataset/Fruit/Banana/Banana_Description.txt",
+    "nutrition_grade": "d"
   },
   {
     "name": "Kiwi",
@@ -61,7 +68,8 @@
     "class_name": "Kiwi",
     "class_id": 3,
     "img_path": "dataset/Fruit/Kiwi/Kiwi_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Kiwi/Kiwi_Description.txt"
+    "desc_path": "dataset/Fruit/Kiwi/Kiwi_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Lemon",
@@ -69,7 +77,8 @@
     "class_name": "Lemon",
     "class_id": 4,
     "img_path": "dataset/Fruit/Lemon/Lemon_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Lemon/Lemon_Description.txt"
+    "desc_path": "dataset/Fruit/Lemon/Lemon_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Lime",
@@ -77,7 +86,8 @@
     "class_name": "Lime",
     "class_id": 5,
     "img_path": "dataset/Fruit/Lime/Lime_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Lime/Lime_Description.txt"
+    "desc_path": "dataset/Fruit/Lime/Lime_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Mango",
@@ -85,7 +95,8 @@
     "class_name": "Mango",
     "class_id": 6,
     "img_path": "dataset/Fruit/Mango/Mango_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Mango/Mango_Description.txt"
+    "desc_path": "dataset/Fruit/Mango/Mango_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "Cantaloupe",
@@ -93,7 +104,8 @@
     "class_name": "Melon",
     "class_id": 7,
     "img_path": "dataset/Fruit/Melon/Cantaloupe/Cantaloupe_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Melon/Cantaloupe/Cantaloupe_Description.txt"
+    "desc_path": "dataset/Fruit/Melon/Cantaloupe/Cantaloupe_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Galia-Melon",
@@ -101,7 +113,8 @@
     "class_name": "Melon",
     "class_id": 7,
     "img_path": "dataset/Fruit/Melon/Galia-Melon/Galia-Melon_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Melon/Galia-Melon/Galia-Melon_Description.txt"
+    "desc_path": "dataset/Fruit/Melon/Galia-Melon/Galia-Melon_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Honeydew-Melon",
@@ -109,7 +122,8 @@
     "class_name": "Melon",
     "class_id": 7,
     "img_path": "dataset/Fruit/Melon/Honeydew-Melon/Honeydew-Melon_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Melon/Honeydew-Melon/Honeydew-Melon_Description.txt"
+    "desc_path": "dataset/Fruit/Melon/Honeydew-Melon/Honeydew-Melon_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Watermelon",
@@ -117,7 +131,8 @@
     "class_name": "Melon",
     "class_id": 7,
     "img_path": "dataset/Fruit/Melon/Watermelon/Watermelon_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Melon/Watermelon/Watermelon_Description.txt"
+    "desc_path": "dataset/Fruit/Melon/Watermelon/Watermelon_Description.txt",
+    "nutrition_grade": "d"
   },
   {
     "name": "Nectarine",
@@ -125,7 +140,8 @@
     "class_name": "Nectarine",
     "class_id": 8,
     "img_path": "dataset/Fruit/Nectarine/Nectarine_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Nectarine/Nectarine_Description.txt"
+    "desc_path": "dataset/Fruit/Nectarine/Nectarine_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Orange",
@@ -133,7 +149,8 @@
     "class_name": "Orange",
     "class_id": 9,
     "img_path": "dataset/Fruit/Orange/Orange_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Orange/Orange_Description.txt"
+    "desc_path": "dataset/Fruit/Orange/Orange_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "Papaya",
@@ -141,7 +158,8 @@
     "class_name": "Papaya",
     "class_id": 10,
     "img_path": "dataset/Fruit/Papaya/Papaya_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Papaya/Papaya_Description.txt"
+    "desc_path": "dataset/Fruit/Papaya/Papaya_Description.txt",
+    "nutrition_grade": "d"
   },
   {
     "name": "Passion-Fruit",
@@ -149,7 +167,8 @@
     "class_name": "Passion-Fruit",
     "class_id": 11,
     "img_path": "dataset/Fruit/Passion-Fruit/Passion-Fruit_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Passion-Fruit/Passion-Fruit_Description.txt"
+    "desc_path": "dataset/Fruit/Passion-Fruit/Passion-Fruit_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "Peach",
@@ -157,7 +176,8 @@
     "class_name": "Peach",
     "class_id": 12,
     "img_path": "dataset/Fruit/Peach/Peach_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Peach/Peach_Description.txt"
+    "desc_path": "dataset/Fruit/Peach/Peach_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Anjou",
@@ -165,7 +185,8 @@
     "class_name": "Pear",
     "class_id": 13,
     "img_path": "dataset/Fruit/Pear/Anjou/Anjou_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Pear/Anjou/Anjou_Description.txt"
+    "desc_path": "dataset/Fruit/Pear/Anjou/Anjou_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Conference",
@@ -173,7 +194,8 @@
     "class_name": "Pear",
     "class_id": 13,
     "img_path": "dataset/Fruit/Pear/Conference/Conference_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Pear/Conference/Conference_Description.txt"
+    "desc_path": "dataset/Fruit/Pear/Conference/Conference_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Kaiser",
@@ -181,15 +203,17 @@
     "class_name": "Pear",
     "class_id": 13,
     "img_path": "dataset/Fruit/Pear/Kaiser/Kaiser_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Pear/Kaiser/Kaiser_Description.txt"
-  },
+    "desc_path": "dataset/Fruit/Pear/Kaiser/Kaiser_Description.txt",
+    "nutrition_grade": "a"
+},
   {
     "name": "Pineapple",
     "id": 23,
     "class_name": "Pineapple",
     "class_id": 14,
     "img_path": "dataset/Fruit/Pineapple/Pineapple_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Pineapple/Pineapple_Description.txt"
+    "desc_path": "dataset/Fruit/Pineapple/Pineapple_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Plum",
@@ -197,7 +221,8 @@
     "class_name": "Plum",
     "class_id": 15,
     "img_path": "dataset/Fruit/Plum/Plum_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Plum/Plum_Description.txt"
+    "desc_path": "dataset/Fruit/Plum/Plum_Description.txt",
+    "nutrition_grade": "d"
   },
   {
     "name": "Pomegranate",
@@ -205,7 +230,8 @@
     "class_name": "Pomegranate",
     "class_id": 16,
     "img_path": "dataset/Fruit/Pomegranate/Pomegranate_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Pomegranate/Pomegranate_Description.txt"
+    "desc_path": "dataset/Fruit/Pomegranate/Pomegranate_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "Red-Grapefruit",
@@ -213,7 +239,8 @@
     "class_name": "Red-Grapefruit",
     "class_id": 17,
     "img_path": "dataset/Fruit/Red-Grapefruit/Red-Grapefruit_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Red-Grapefruit/Red-Grapefruit_Description.txt"
+    "desc_path": "dataset/Fruit/Red-Grapefruit/Red-Grapefruit_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Satsumas",
@@ -221,7 +248,8 @@
     "class_name": "Satsumas",
     "class_id": 18,
     "img_path": "dataset/Fruit/Satsumas/Satsumas_Iconic.jpg",
-    "desc_path": "/dataset/Fruit/Satsumas/Satsumas_Description.txt"
+    "desc_path": "dataset/Fruit/Satsumas/Satsumas_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Bravo-Apple-Juice",
@@ -229,7 +257,8 @@
     "class_name": "Juice",
     "class_id": 19,
     "img_path": "dataset/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Description.txt"
+    "desc_path": "dataset/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "Bravo-Orange-Juice",
@@ -237,7 +266,8 @@
     "class_name": "Juice",
     "class_id": 19,
     "img_path": "dataset/Packages/Juice/Bravo-Orange-Juice/Bravo-Orange-Juice_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Juice/Bravo-Orange-Juice/Bravo-Orange-Juice_Description.txt"
+    "desc_path": "dataset/Packages/Juice/Bravo-Orange-Juice/Bravo-Orange-Juice_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "God-Morgon-Apple-Juice",
@@ -245,7 +275,8 @@
     "class_name": "Juice",
     "class_id": 19,
     "img_path": "dataset/Packages/Juice/God-Morgon-Apple-Juice/God-Morgon-Apple-Juice_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Juice/God-Morgon-Apple-Juice/God-Morgon-Apple-Juice_Description.txt"
+    "desc_path": "dataset/Packages/Juice/God-Morgon-Apple-Juice/God-Morgon-Apple-Juice_Description.txt",
+    "nutrition_grade": "e"
   },
   {
     "name": "God-Morgon-Orange-Juice",
@@ -253,7 +284,8 @@
     "class_name": "Juice",
     "class_id": 19,
     "img_path": "dataset/Packages/Juice/God-Morgon-Orange-Juice/God-Morgon-Orange-Juice_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Juice/God-Morgon-Orange-Juice/God-Morgon-Orange-Juice_Description.txt"
+    "desc_path": "dataset/Packages/Juice/God-Morgon-Orange-Juice/God-Morgon-Orange-Juice_Description.txt",
+    "nutrition_grade": "e"
   },
   {
     "name": "God-Morgon-Orange-Red-Grapefruit-Juice",
@@ -261,7 +293,8 @@
     "class_name": "Juice",
     "class_id": 19,
     "img_path": "dataset/Packages/Juice/God-Morgon-Orange-Red-Grapefruit-Juice/God-Morgon-Orange-Red-Grapefruit-Juice_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Juice/God-Morgon-Orange-Red-Grapefruit-Juice/God-Morgon-Orange-Red-Grapefruit-Juice_Description.txt"
+    "desc_path": "dataset/Packages/Juice/God-Morgon-Orange-Red-Grapefruit-Juice/God-Morgon-Orange-Red-Grapefruit-Juice_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "God-Morgon-Red-Grapefruit-Juice",
@@ -269,7 +302,8 @@
     "class_name": "Juice",
     "class_id": 19,
     "img_path": "dataset/Packages/Juice/God-Morgon-Red-Grapefruit-Juice/God-Morgon-Red-Grapefruit-Juice_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Juice/God-Morgon-Red-Grapefruit-Juice/God-Morgon-Red-Grapefruit-Juice_Description.txt"
+    "desc_path": "dataset/Packages/Juice/God-Morgon-Red-Grapefruit-Juice/God-Morgon-Red-Grapefruit-Juice_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "Tropicana-Apple-Juice",
@@ -277,7 +311,8 @@
     "class_name": "Juice",
     "class_id": 19,
     "img_path": "dataset/Packages/Juice/Tropicana-Apple-Juice/Tropicana-Apple-Juice_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Juice/Tropicana-Apple-Juice/Tropicana-Apple-Juice_Description.txt"
+    "desc_path": "dataset/Packages/Juice/Tropicana-Apple-Juice/Tropicana-Apple-Juice_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "Tropicana-Golden-Grapefruit",
@@ -285,7 +320,8 @@
     "class_name": "Juice",
     "class_id": 19,
     "img_path": "dataset/Packages/Juice/Tropicana-Golden-Grapefruit/Tropicana-Golden-Grapefruit_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Juice/Tropicana-Golden-Grapefruit/Tropicana-Golden-Grapefruit_Description.txt"
+    "desc_path": "dataset/Packages/Juice/Tropicana-Golden-Grapefruit/Tropicana-Golden-Grapefruit_Description.txt",
+    "nutrition_grade": "e"
   },
   {
     "name": "Tropicana-Juice-Smooth",
@@ -293,7 +329,8 @@
     "class_name": "Juice",
     "class_id": 19,
     "img_path": "dataset/Packages/Juice/Tropicana-Juice-Smooth/Tropicana-Juice-Smooth_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Juice/Tropicana-Juice-Smooth/Tropicana-Juice-Smooth_Description.txt"
+    "desc_path": "dataset/Packages/Juice/Tropicana-Juice-Smooth/Tropicana-Juice-Smooth_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "Tropicana-Mandarin-Morning",
@@ -301,7 +338,8 @@
     "class_name": "Juice",
     "class_id": 19,
     "img_path": "dataset/Packages/Juice/Tropicana-Mandarin-Morning/Tropicana-Mandarin-Morning_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Juice/Tropicana-Mandarin-Morning/Tropicana-Mandarin-Morning_Description.txt"
+    "desc_path": "dataset/Packages/Juice/Tropicana-Mandarin-Morning/Tropicana-Mandarin-Morning_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "Arla-Ecological-Medium-Fat-Milk",
@@ -309,7 +347,8 @@
     "class_name": "Milk",
     "class_id": 20,
     "img_path": "dataset/Packages/Milk/Arla-Ecological-Medium-Fat-Milk/Arla-Ecological-Medium-Fat-Milk_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Milk/Arla-Ecological-Medium-Fat-Milk/Arla-Ecological-Medium-Fat-Milk_Description.txt"
+    "desc_path": "dataset/Packages/Milk/Arla-Ecological-Medium-Fat-Milk/Arla-Ecological-Medium-Fat-Milk_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Arla-Lactose-Medium-Fat-Milk",
@@ -317,7 +356,8 @@
     "class_name": "Milk",
     "class_id": 20,
     "img_path": "dataset/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Description.txt"
+    "desc_path": "dataset/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Arla-Medium-Fat-Milk",
@@ -325,7 +365,8 @@
     "class_name": "Milk",
     "class_id": 20,
     "img_path": "dataset/Packages/Milk/Arla-Medium-Fat-Milk/Arla-Medium-Fat-Milk_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Milk/Arla-Medium-Fat-Milk/Arla-Medium-Fat-Milk_Description.txt"
+    "desc_path": "dataset/Packages/Milk/Arla-Medium-Fat-Milk/Arla-Medium-Fat-Milk_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Arla-Standard-Milk",
@@ -333,7 +374,8 @@
     "class_name": "Milk",
     "class_id": 20,
     "img_path": "dataset/Packages/Milk/Arla-Standard-Milk/Arla-Standard-Milk_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Milk/Arla-Standard-Milk/Arla-Standard-Milk_Description.txt"
+    "desc_path": "dataset/Packages/Milk/Arla-Standard-Milk/Arla-Standard-Milk_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Garant-Ecological-Medium-Fat-Milk",
@@ -341,7 +383,8 @@
     "class_name": "Milk",
     "class_id": 20,
     "img_path": "dataset/Packages/Milk/Garant-Ecological-Medium-Fat-Milk/Garant-Ecological-Medium-Fat-Milk_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Milk/Garant-Ecological-Medium-Fat-Milk/Garant-Ecological-Medium-Fat-Milk_Description.txt"
+    "desc_path": "dataset/Packages/Milk/Garant-Ecological-Medium-Fat-Milk/Garant-Ecological-Medium-Fat-Milk_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Garant-Ecological-Standard-Milk",
@@ -349,7 +392,8 @@
     "class_name": "Milk",
     "class_id": 20,
     "img_path": "dataset/Packages/Milk/Garant-Ecological-Standard-Milk/Garant-Ecological-Standard-Milk_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Milk/Garant-Ecological-Standard-Milk/Garant-Ecological-Standard-Milk_Description.txt"
+    "desc_path": "dataset/Packages/Milk/Garant-Ecological-Standard-Milk/Garant-Ecological-Standard-Milk_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Oatly-Natural-Oatghurt",
@@ -357,7 +401,8 @@
     "class_name": "Oatghurt",
     "class_id": 21,
     "img_path": "dataset/Packages/Oatghurt/Oatly-Natural-Oatghurt/Oatly-Natural-Oatghurt_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Oatghurt/Oatly-Natural-Oatghurt/Oatly-Natural-Oatghurt_Description.txt"
+    "desc_path": "dataset/Packages/Oatghurt/Oatly-Natural-Oatghurt/Oatly-Natural-Oatghurt_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Oatly-Oat-Milk",
@@ -365,7 +410,8 @@
     "class_name": "Oat-Milk",
     "class_id": 22,
     "img_path": "dataset/Packages/Oat-Milk/Oatly-Oat-Milk/Oatly-Oat-Milk_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Oat-Milk/Oatly-Oat-Milk/Oatly-Oat-Milk_Description.txt"
+    "desc_path": "dataset/Packages/Oat-Milk/Oatly-Oat-Milk/Oatly-Oat-Milk_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Arla-Ecological-Sour-Cream",
@@ -373,7 +419,8 @@
     "class_name": "Sour-Cream",
     "class_id": 23,
     "img_path": "dataset/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Description.txt"
+    "desc_path": "dataset/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "Arla-Sour-Cream",
@@ -381,7 +428,8 @@
     "class_name": "Sour-Cream",
     "class_id": 23,
     "img_path": "dataset/Packages/Sour-Cream/Arla-Sour-Cream/Arla-Sour-Cream_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Sour-Cream/Arla-Sour-Cream/Arla-Sour-Cream_Description.txt"
+    "desc_path": "dataset/Packages/Sour-Cream/Arla-Sour-Cream/Arla-Sour-Cream_Description.txt",
+    "nutrition_grade": "d"
   },
   {
     "name": "Arla-Sour-Milk",
@@ -389,7 +437,8 @@
     "class_name": "Sour-Milk",
     "class_id": 24,
     "img_path": "dataset/Packages/Sour-Milk/Arla-Sour-Milk/Arla-Sour-Milk_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Sour-Milk/Arla-Sour-Milk/Arla-Sour-Milk_Description.txt"
+    "desc_path": "dataset/Packages/Sour-Milk/Arla-Sour-Milk/Arla-Sour-Milk_Description.txt",
+    "nutrition_grade": "d"
   },
   {
     "name": "Alpro-Blueberry-Soyghurt",
@@ -397,7 +446,8 @@
     "class_name": "Soyghurt",
     "class_id": 25,
     "img_path": "dataset/Packages/Soyghurt/Alpro-Blueberry-Soyghurt/Alpro-Blueberry-Soyghurt_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Soyghurt/Alpro-Blueberry-Soyghurt/Alpro-Blueberry-Soyghurt_Description.txt"
+    "desc_path": "dataset/Packages/Soyghurt/Alpro-Blueberry-Soyghurt/Alpro-Blueberry-Soyghurt_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Alpro-Vanilla-Soyghurt",
@@ -405,7 +455,8 @@
     "class_name": "Soyghurt",
     "class_id": 25,
     "img_path": "dataset/Packages/Soyghurt/Alpro-Vanilla-Soyghurt/Alpro-Vanilla-Soyghurt_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Soyghurt/Alpro-Vanilla-Soyghurt/Alpro-Vanilla-Soyghurt_Description.txt"
+    "desc_path": "dataset/Packages/Soyghurt/Alpro-Vanilla-Soyghurt/Alpro-Vanilla-Soyghurt_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Alpro-Fresh-Soy-Milk",
@@ -413,7 +464,8 @@
     "class_name": "Soy-Milk",
     "class_id": 26,
     "img_path": "dataset/Packages/Soy-Milk/Alpro-Fresh-Soy-Milk/Alpro-Fresh-Soy-Milk_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Soy-Milk/Alpro-Fresh-Soy-Milk/Alpro-Fresh-Soy-Milk_Description.txt"
+    "desc_path": "dataset/Packages/Soy-Milk/Alpro-Fresh-Soy-Milk/Alpro-Fresh-Soy-Milk_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Alpro-Shelf-Soy-Milk",
@@ -421,7 +473,8 @@
     "class_name": "Soy-Milk",
     "class_id": 26,
     "img_path": "dataset/Packages/Soy-Milk/Alpro-Shelf-Soy-Milk/Alpro-Shelf-Soy-Milk_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Soy-Milk/Alpro-Shelf-Soy-Milk/Alpro-Shelf-Soy-Milk_Description.txt"
+    "desc_path": "dataset/Packages/Soy-Milk/Alpro-Shelf-Soy-Milk/Alpro-Shelf-Soy-Milk_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Arla-Mild-Vanilla-Yoghurt",
@@ -429,7 +482,8 @@
     "class_name": "Yoghurt",
     "class_id": 27,
     "img_path": "dataset/Packages/Yoghurt/Arla-Mild-Vanilla-Yoghurt/Arla-Mild-Vanilla-Yoghurt_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Yoghurt/Arla-Mild-Vanilla-Yoghurt/Arla-Mild-Vanilla-Yoghurt_Description.txt"
+    "desc_path": "dataset/Packages/Yoghurt/Arla-Mild-Vanilla-Yoghurt/Arla-Mild-Vanilla-Yoghurt_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Arla-Natural-Mild-Low-Fat-Yoghurt",
@@ -437,7 +491,8 @@
     "class_name": "Yoghurt",
     "class_id": 27,
     "img_path": "dataset/Packages/Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt_Description.txt"
+    "desc_path": "dataset/Packages/Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Arla-Natural-Yoghurt",
@@ -445,7 +500,8 @@
     "class_name": "Yoghurt",
     "class_id": 27,
     "img_path": "dataset/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Description.txt"
+    "desc_path": "dataset/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Valio-Vanilla-Yoghurt",
@@ -453,7 +509,8 @@
     "class_name": "Yoghurt",
     "class_id": 27,
     "img_path": "dataset/Packages/Yoghurt/Valio-Vanilla-Yoghurt/Valio-Vanilla-Yoghurt_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Yoghurt/Valio-Vanilla-Yoghurt/Valio-Vanilla-Yoghurt_Description.txt"
+    "desc_path": "dataset/Packages/Yoghurt/Valio-Vanilla-Yoghurt/Valio-Vanilla-Yoghurt_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Yoggi-Strawberry-Yoghurt",
@@ -461,7 +518,8 @@
     "class_name": "Yoghurt",
     "class_id": 27,
     "img_path": "dataset/Packages/Yoghurt/Yoggi-Strawberry-Yoghurt/Yoggi-Strawberry-Yoghurt_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Yoghurt/Yoggi-Strawberry-Yoghurt/Yoggi-Strawberry-Yoghurt_Description.txt"
+    "desc_path": "dataset/Packages/Yoghurt/Yoggi-Strawberry-Yoghurt/Yoggi-Strawberry-Yoghurt_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Yoggi-Vanilla-Yoghurt",
@@ -469,7 +527,8 @@
     "class_name": "Yoghurt",
     "class_id": 27,
     "img_path": "dataset/Packages/Yoghurt/Yoggi-Vanilla-Yoghurt/Yoggi-Vanilla-Yoghurt_Iconic.jpg",
-    "desc_path": "/dataset/Packages/Yoghurt/Yoggi-Vanilla-Yoghurt/Yoggi-Vanilla-Yoghurt_Description.txt"
+    "desc_path": "dataset/Packages/Yoghurt/Yoggi-Vanilla-Yoghurt/Yoggi-Vanilla-Yoghurt_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Asparagus",
@@ -477,7 +536,8 @@
     "class_name": "Asparagus",
     "class_id": 28,
     "img_path": "dataset/Vegetables/Asparagus/Asparagus_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Asparagus/Asparagus_Description.txt"
+    "desc_path": "dataset/Vegetables/Asparagus/Asparagus_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Aubergine",
@@ -485,7 +545,8 @@
     "class_name": "Aubergine",
     "class_id": 29,
     "img_path": "dataset/Vegetables/Aubergine/Aubergine_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Aubergine/Aubergine_Description.txt"
+    "desc_path": "dataset/Vegetables/Aubergine/Aubergine_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Cabbage",
@@ -493,7 +554,8 @@
     "class_name": "Cabbage",
     "class_id": 30,
     "img_path": "dataset/Vegetables/Cabbage/Cabbage_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Cabbage/Cabbage_Description.txt"
+    "desc_path": "dataset/Vegetables/Cabbage/Cabbage_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Carrots",
@@ -501,7 +563,8 @@
     "class_name": "Carrots",
     "class_id": 31,
     "img_path": "dataset/Vegetables/Carrots/Carrots_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Carrots/Carrots_Description.txt"
+    "desc_path": "dataset/Vegetables/Carrots/Carrots_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Cucumber",
@@ -509,7 +572,8 @@
     "class_name": "Cucumber",
     "class_id": 32,
     "img_path": "dataset/Vegetables/Cucumber/Cucumber_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Cucumber/Cucumber_Description.txt"
+    "desc_path": "dataset/Vegetables/Cucumber/Cucumber_Description.txt",
+    "nutrition_grade": "c"
   },
   {
     "name": "Garlic",
@@ -517,7 +581,8 @@
     "class_name": "Garlic",
     "class_id": 33,
     "img_path": "dataset/Vegetables/Garlic/Garlic_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Garlic/Garlic_Description.txt"
+    "desc_path": "dataset/Vegetables/Garlic/Garlic_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Ginger",
@@ -525,7 +590,8 @@
     "class_name": "Ginger",
     "class_id": 34,
     "img_path": "dataset/Vegetables/Ginger/Ginger_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Ginger/Ginger_Description.txt"
+    "desc_path": "dataset/Vegetables/Ginger/Ginger_Description.txt",
+    "nutrition_grade": "e"
   },
   {
     "name": "Leek",
@@ -533,7 +599,8 @@
     "class_name": "Leek",
     "class_id": 35,
     "img_path": "dataset/Vegetables/Leek/Leek_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Leek/Leek_Description.txt"
+    "desc_path": "dataset/Vegetables/Leek/Leek_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Brown-Cap-Mushroom",
@@ -541,7 +608,8 @@
     "class_name": "Mushroom",
     "class_id": 36,
     "img_path": "dataset/Vegetables/Mushroom/Brown-Cap-Mushroom/Brown-Cap-Mushroom_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Mushroom/Brown-Cap-Mushroom/Brown-Cap-Mushroom_Description.txt"
+    "desc_path": "dataset/Vegetables/Mushroom/Brown-Cap-Mushroom/Brown-Cap-Mushroom_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Yellow-Onion",
@@ -549,7 +617,8 @@
     "class_name": "Onion",
     "class_id": 37,
     "img_path": "dataset/Vegetables/Onion/Yellow-Onion/Yellow-Onion_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Onion/Yellow-Onion/Yellow-Onion_Description.txt"
+    "desc_path": "dataset/Vegetables/Onion/Yellow-Onion/Yellow-Onion_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Green-Bell-Pepper",
@@ -557,7 +626,8 @@
     "class_name": "Pepper",
     "class_id": 38,
     "img_path": "dataset/Vegetables/Pepper/Green-Bell-Pepper/Green-Bell-Pepper_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Pepper/Green-Bell-Pepper/Green-Bell-Pepper_Description.txt"
+    "desc_path": "dataset/Vegetables/Pepper/Green-Bell-Pepper/Green-Bell-Pepper_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Orange-Bell-Pepper",
@@ -565,7 +635,8 @@
     "class_name": "Pepper",
     "class_id": 38,
     "img_path": "dataset/Vegetables/Pepper/Orange-Bell-Pepper/Orange-Bell-Pepper_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Pepper/Orange-Bell-Pepper/Orange-Bell-Pepper_Description.txt"
+    "desc_path": "dataset/Vegetables/Pepper/Orange-Bell-Pepper/Orange-Bell-Pepper_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Red-Bell-Pepper",
@@ -573,7 +644,8 @@
     "class_name": "Pepper",
     "class_id": 38,
     "img_path": "dataset/Vegetables/Pepper/Red-Bell-Pepper/Red-Bell-Pepper_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Pepper/Red-Bell-Pepper/Red-Bell-Pepper_Description.txt"
+    "desc_path": "dataset/Vegetables/Pepper/Red-Bell-Pepper/Red-Bell-Pepper_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Yellow-Bell-Pepper",
@@ -581,7 +653,8 @@
     "class_name": "Pepper",
     "class_id": 38,
     "img_path": "dataset/Vegetables/Pepper/Yellow-Bell-Pepper/Yellow-Bell-Pepper_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Pepper/Yellow-Bell-Pepper/Yellow-Bell-Pepper_Description.txt"
+    "desc_path": "dataset/Vegetables/Pepper/Yellow-Bell-Pepper/Yellow-Bell-Pepper_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Floury-Potato",
@@ -589,7 +662,8 @@
     "class_name": "Potato",
     "class_id": 39,
     "img_path": "dataset/Vegetables/Potato/Floury-Potato/Floury-Potato_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Potato/Floury-Potato/Floury-Potato_Description.txt"
+    "desc_path": "dataset/Vegetables/Potato/Floury-Potato/Floury-Potato_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Solid-Potato",
@@ -597,7 +671,8 @@
     "class_name": "Potato",
     "class_id": 39,
     "img_path": "dataset/Vegetables/Potato/Solid-Potato/Solid-Potato_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Potato/Solid-Potato/Solid-Potato_Description.txt"
+    "desc_path": "dataset/Vegetables/Potato/Solid-Potato/Solid-Potato_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Sweet-Potato",
@@ -605,7 +680,8 @@
     "class_name": "Potato",
     "class_id": 39,
     "img_path": "dataset/Vegetables/Potato/Sweet-Potato/Sweet-Potato_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Potato/Sweet-Potato/Sweet-Potato_Description.txt"
+    "desc_path": "dataset/Vegetables/Potato/Sweet-Potato/Sweet-Potato_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Red-Beet",
@@ -613,7 +689,8 @@
     "class_name": "Red-Beet",
     "class_id": 40,
     "img_path": "dataset/Vegetables/Red-Beet/Red-Beet_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Red-Beet/Red-Beet_Description.txt"
+    "desc_path": "dataset/Vegetables/Red-Beet/Red-Beet_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Beef-Tomato",
@@ -621,7 +698,8 @@
     "class_name": "Tomato",
     "class_id": 41,
     "img_path": "dataset/Vegetables/Tomato/Beef-Tomato/Beef-Tomato_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Tomato/Beef-Tomato/Beef-Tomato_Description.txt"
+    "desc_path": "dataset/Vegetables/Tomato/Beef-Tomato/Beef-Tomato_Description.txt",
+    "nutrition_grade": "b"
   },
   {
     "name": "Regular-Tomato",
@@ -629,7 +707,8 @@
     "class_name": "Tomato",
     "class_id": 41,
     "img_path": "dataset/Vegetables/Tomato/Regular-Tomato/Regular-Tomato_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Tomato/Regular-Tomato/Regular-Tomato_Description.txt"
+    "desc_path": "dataset/Vegetables/Tomato/Regular-Tomato/Regular-Tomato_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Vine-Tomato",
@@ -637,7 +716,8 @@
     "class_name": "Tomato",
     "class_id": 41,
     "img_path": "dataset/Vegetables/Tomato/Vine-Tomato/Vine-Tomato_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Tomato/Vine-Tomato/Vine-Tomato_Description.txt"
+    "desc_path": "dataset/Vegetables/Tomato/Vine-Tomato/Vine-Tomato_Description.txt",
+    "nutrition_grade": "a"
   },
   {
     "name": "Zucchini",
@@ -645,6 +725,7 @@
     "class_name": "Zucchini",
     "class_id": 42,
     "img_path": "dataset/Vegetables/Zucchini/Zucchini_Iconic.jpg",
-    "desc_path": "/dataset/Vegetables/Zucchini/Zucchini_Description.txt"
+    "desc_path": "dataset/Vegetables/Zucchini/Zucchini_Description.txt",
+    "nutrition_grade": "a"
   }
 ]
