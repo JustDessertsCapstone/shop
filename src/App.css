@@ -39,6 +39,29 @@ main {
   font-size: medium;
 }
 
+.product-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 30px;
+}
+
+.product-card {
+  background-color: white;
+  width: 198px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card > * {
+  margin: 0px;
+}
+
+.product-card:hover {
+  background-color: #e0e0e0; /* Change this color to your desired hover effect */
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
