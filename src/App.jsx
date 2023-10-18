@@ -23,6 +23,7 @@ function App() {
         <div>
           <ProductContainer data={data} addToCart={addToCart} />
         </div>
+        
       </main>
 
       <footer>
