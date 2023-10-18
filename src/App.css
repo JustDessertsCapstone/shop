@@ -100,9 +100,16 @@ main {
   color: #888;
 }
 
+.header {
+ position: relative;
+}
+
 .cart-icon {
-  width: 24px; /* Adjust size as needed */
-  height: 24px;
-  margin-left: 10px; /* Adjust spacing as needed */
+  position: absolute;
+  top: 100px; /* Adjust the top position as needed */
+  right: 100px; /* Adjust the right position as needed */
+  width: 42px; /* Adjust size as needed */
+  height: 42px; /* Adjust size as needed */
   cursor: pointer; /* Add a pointer cursor for better UX */
+  color: white;
 }

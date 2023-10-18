@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import data from './assets/products.json'
 import ProductContainer from './ProductContainer'
-import CartIcon from './assets/cart-shopping-solid.svg'
+import CartIcon from './assets/google_shopping.svg'
 import { ShoppingCartState, ShoppingCartContainer } from './ShoppingCart'
 
 
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <header>
+      <header className="header">
         <h1 class="banner">Healthify</h1>
         <img src={CartIcon} alt="Shopping Cart" className="cart-icon" />
       </header>
