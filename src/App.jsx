@@ -8,8 +8,6 @@ import ProductContainer from './ProductContainer'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <header>
@@ -20,11 +18,6 @@ function App() {
         <h1> Hello, welcome to Healthify</h1>
         <div>
           <ProductContainer data={data} />
-        </div>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
         </div>
       </main>
 
