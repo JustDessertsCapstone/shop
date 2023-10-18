@@ -11,6 +11,12 @@ import ProductContainer from './ProductContainer'
 
 function App() {
   const [count, setCount] = useState(0)
+  //shopping cart
+  const [cart, setCart] = useState([]); // State to manage the shopping cart
+  //shopping cart
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+  };
 
   return (
     <>
@@ -30,13 +36,14 @@ function App() {
         </div>
         <h1>Vite + React</h1>
         <div>
-          <ProductContainer data={data} />
+          <ProductContainer data={data} addToCart={addToCart}/>
         </div>
         <div className="card">
           <button onClick={() => setCount((count) => count + 1)}>
             count is {count}
           </button>
         </div>
+        
       </main>
 
       <footer>
