@@ -1,7 +1,7 @@
 
-function ProductCard({ product }) {
+function ProductCard({ product, addToCart }) {
   return (
-     <div className="product-card">
+     <div className="product-card" role="button">
         <img
         className="product-card-img"
         src={product.img_path}
@@ -9,6 +9,7 @@ function ProductCard({ product }) {
           (!product.name.toLowerCase().includes(product.class_name.toLowerCase()) ?
             " " +product.class_name : "")
           + " on a white background."}
+          onClick={() => addToCart(product.id)}
         />
         <h3 className="product-card-name">{product.name.replaceAll('-', ' ')}</h3>
         {!product.name.toLowerCase().includes(product.class_name.toLowerCase())  &&
@@ -19,11 +20,15 @@ function ProductCard({ product }) {
   );
 }
 
-export default function ProductContainer({ data }) {
+export default function ProductContainer({ data, addToCart }) {
+  // const addProductToCart = (id) => {
+  //   addToCart(id)
+  // }
+
   return (
     <div className="product-container">
       {data.map(product => (
-        <ProductCard product={product} />
+        <ProductCard product={product} key={product.id} addToCart={addToCart} />
       ))}
     </div>
   );

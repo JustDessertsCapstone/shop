@@ -1,23 +1,27 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
 import data from './assets/products.json'
 import ProductContainer from './ProductContainer'
-//added for shoppingCart.js next two lines
-//import React from 'react'
-//import { cart, addToCart, removeFromCart, clearCart } from './cart';
+import { ShoppingCartState, ShoppingCartContainer } from './ShoppingCart'
 
 
 function App() {
+  const [cart, addToCart, removeFromCart, clearCart] = ShoppingCartState()
+
   return (
     <>
       <header>
         <h1 class="banner">Healthify</h1>
       </header>
 
+      <p>
+        Cart is {cart} {/* this is for testing purposes*/}
+      </p>
+
       <main>
         <h1> Hello, welcome to Healthify</h1>
         <div>
-          <ProductContainer data={data} />
+          <ProductContainer data={data} addToCart={addToCart} />
         </div>
       </main>
 
