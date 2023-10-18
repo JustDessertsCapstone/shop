@@ -22,6 +22,11 @@ function App() {
 
       <main>
         <h1> Hello, welcome to Healthify</h1>
+        <form id="form" role="search">
+          <input type="search" id="query" name="q" placeholder="Search...">
+          </input>
+          <button> Search </button>
+        </form>
         <div>
           <ProductContainer data={data} addToCart={addToCart} />
         </div>
