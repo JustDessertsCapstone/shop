@@ -99,3 +99,10 @@ main {
 .read-the-docs {
   color: #888;
 }
+
+.cart-icon {
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+  margin-left: 10px; /* Adjust spacing as needed */
+  cursor: pointer; /* Add a pointer cursor for better UX */
+}
