@@ -5,7 +5,10 @@ function ProductCard({ product }) {
         <img
         className="product-card-img"
         src={product.img_path}
-        alt={product.name}
+        alt={product.name.replaceAll('-', ' ') +
+          (!product.name.toLowerCase().includes(product.class_name.toLowerCase()) ?
+            " " +product.class_name : "")
+          + " on a white background."}
         />
         <h3 className="product-card-name">{product.name.replaceAll('-', ' ')}</h3>
         {!product.name.toLowerCase().includes(product.class_name.toLowerCase())  &&

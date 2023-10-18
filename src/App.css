@@ -11,6 +11,7 @@
 }
 
 .banner {
+  background-color: #3f3f3f; /* Added for contrast (accessability) when the image doesn't load*/
   background-image: url("./assets/StockSnap_AWJD4WV6W1.jpg");
   background-size: cover;
   background-position: center;
