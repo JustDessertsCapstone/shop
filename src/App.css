@@ -60,6 +60,7 @@ main {
 
 .product-card:hover {
   background-color: #e0e0e0; /* Change this color to your desired hover effect */
+  transform: scale(1.1);
 }
 
 .logo {
