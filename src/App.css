@@ -78,10 +78,10 @@ main {
 
 .cart-icon {
   position: absolute;
-  top: 100px; /* Adjust the top position as needed */
-  right: 100px; /* Adjust the right position as needed */
-  width: 42px; /* Adjust size as needed */
-  height: 42px; /* Adjust size as needed */
-  cursor: pointer; /* Add a pointer cursor for better UX */
+  top: 100px; 
+  right: 100px; 
+  width: 42px; 
+  height: 42px; 
+  cursor: pointer; 
   color: white;
 }
