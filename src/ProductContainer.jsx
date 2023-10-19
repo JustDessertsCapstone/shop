@@ -6,8 +6,9 @@ function ProductCard({ product, addToCart }) {
         className="product-card-img"
         src={product.img_path}
         alt={product.name.replaceAll('-', ' ') +
+          // Adds class name only if it is not included in the product name
           (!product.name.toLowerCase().includes(product.class_name.toLowerCase()) ?
-            " " +product.class_name : "")
+            " " + product.class_name : "")
           + " on a white background."}
           onClick={() => addToCart(product.id)}
         />
