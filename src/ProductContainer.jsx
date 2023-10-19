@@ -1,7 +1,7 @@
 
 function ProductCard({ product, addToCart }) {
   return (
-     <div className="product-card" role="button">
+     <div className="product-card" role="button" onClick={() => addToCart(product.id)}>
         <img
         className="product-card-img"
         src={product.img_path}
@@ -10,7 +10,7 @@ function ProductCard({ product, addToCart }) {
           (!product.name.toLowerCase().includes(product.class_name.toLowerCase()) ?
             " " + product.class_name : "")
           + " on a white background."}
-          onClick={() => addToCart(product.id)}
+          // onClick={() => addToCart(product.id)}
         />
         
         <h3 className="product-card-name">{product.name.replaceAll('-', ' ')}</h3>
