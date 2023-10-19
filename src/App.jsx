@@ -4,6 +4,7 @@ import data from './assets/products.json'
 import ProductContainer from './ProductContainer'
 import CartIcon from './assets/google_shopping.svg'
 import { ShoppingCartState, ShoppingCartContainer } from './ShoppingCart'
+import search from './SearchBar'
 
 
 function App() {
@@ -23,8 +24,7 @@ function App() {
       <main>
         <h1> Hello, welcome to Healthify</h1>
         <form id="form" role="search">
-          <input type="search" id="query" name="q" placeholder="Search...">
-          </input>
+          <input className="search-bar" type="search" id="query" name="q" placeholder="Search..." />
           <button> Search </button>
         </form>
         <div>
