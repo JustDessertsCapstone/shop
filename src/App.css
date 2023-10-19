@@ -85,3 +85,30 @@ main {
   cursor: pointer; 
   color: white;
 }
+
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 40px;
+}
+
+.search-button {
+  background-color: #e7edf4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 250px; 
+  height: 40px; 
+  margin-top: 20px;
+}
+
+.search-button:hover {
+  background-color: #dbe0e6;
+  height: 40px;
+  margin-top: 20px;
+}
