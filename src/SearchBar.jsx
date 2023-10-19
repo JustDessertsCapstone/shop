@@ -1,6 +1,6 @@
 import data from './assets/products.json'
 
-export default function search(keyword){
+function search(keyword) {
   let searchFields = ['name','class_name'];
   let results = [];
 
@@ -18,13 +18,11 @@ export default function search(keyword){
       results[i] = results[i].entry;
     }
 
-    print(results);
-
     return results;
   }
 }
 
-function rel(value, keyword){
+function rel(value, keyword) {
   value = value.toLowerCase();
   keyword = keyword.toLowerCase();
 
@@ -40,4 +38,15 @@ function rel(value, keyword){
 
 function compare(a, b){
   return b.rel - a.rel;
+}
+
+export default function SearchBar() {
+  return (
+    <form id="form" role="search">
+      <input className="search-bar" type="search" id="query" name="q" placeholder="Search..." />
+      <button type="button" onClick={() => {console.log(search(document.getElementById("query").value)[0].id)} /* onclick for testing purposes */}>
+        Search
+      </button>
+    </form>
+  )
 }
