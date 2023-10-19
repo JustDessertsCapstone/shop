@@ -14,7 +14,7 @@ function search(keyword) {
     }
 
     results.sort(compare);
-    for(i = 0; i < results.length; i++){
+    for(let i = 0; i < results.length; i++){
       results[i] = results[i].entry;
     }
 

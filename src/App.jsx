@@ -13,21 +13,19 @@ function App() {
   return (
     <>
       <header className="header">
-        <h1 class="banner">Healthify</h1>
+        <h1 className="banner">Healthify</h1>
         <img src={CartIcon} alt="Shopping Cart" className="cart-icon" />
+        <ShoppingCartContainer data={data} cart={cart} />
       </header>
 
       <p>
-        Cart is {cart} {/* this is for testing purposes*/}
+        {/* Cart is {cart} this is for testing purposes */}
       </p>
 
       <main>
         <h1> Hello, welcome to Healthify</h1>
         <SearchBar />
-        <div>
-          <ProductContainer data={data} addToCart={addToCart} />
-        </div>
-        
+=       <ProductContainer data={data} addToCart={addToCart} />
       </main>
 
       <footer>

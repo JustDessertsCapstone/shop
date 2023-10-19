@@ -64,26 +64,34 @@ main {
   transform: scale(1.1);
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 .header {
  position: relative;
 }
 
 .cart-icon {
   position: absolute;
-  top: 100px; 
-  right: 100px; 
-  width: 42px; 
-  height: 42px; 
-  cursor: pointer; 
+  top: 100px;
+  right: 100px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
   color: white;
+}
+
+.cart-icon:hover + .shopping-cart {
+  display: block;
+}
+
+.shopping-cart {
+  position: absolute;
+  top: 140px;
+  right: 25px;
+  background-color: #ccc;
+  display: none;
+}
+
+.shopping-cart:hover {
+  display: block;
 }
 
 .search-bar {
