@@ -24,8 +24,6 @@ export function ShoppingCartState() {
 function getTableRows(data, cart) {
    const mappedCart = new Map(); // holds productIDs and counts
 
-   // if(!Array.isArray(cart)) {console.log("not array"); return <></>}
-
    cart.forEach(productID => {
       mappedCart.set(productID, mappedCart.get(productID) + 1 || 1);
    })
