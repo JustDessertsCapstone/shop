@@ -26,7 +26,7 @@ export default function SearchBar({ data, setProducts }) {
       </button>
 
       <button type="button" onClick={() => {
-        setProducts(data)
+        setProducts(data);
       }}>
         Clear Search
       </button>
