@@ -18,13 +18,9 @@ function App() {
         <ShoppingCartContainer data={data} cart={cart} />
       </header>
 
-      <p>
-        {/* Cart is {cart} this is for testing purposes */}
-      </p>
-
       <main>
         <h1> Hello, welcome to Healthify</h1>
-        <SearchBar />
+        <SearchBar data={data} />
 =       <ProductContainer data={data} addToCart={addToCart} />
       </main>
 
