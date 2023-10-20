@@ -12,18 +12,19 @@ function search(query, data) {
 
 export default function SearchBar({ data, setProducts }) {
   return (
-    <form role="search" onSubmit={e => { e.preventDefault(); }} >
+    <form role="search" onSubmit={e => {
+      e.preventDefault();
+      setProducts(search(document.getElementById("search-input").value, data));
+    }} >
       <input className="search-bar" id="search-input" type="search" placeholder="Search..." />
 
-      <button type="button" onClick={() => {
-          setProducts(search(document.getElementById("search-input").value, data));
-        }}>
+      <button type="submit">
         Search
       </button>
 
       <button type="button" onClick={() => {
-          setProducts(data)
-        }}>
+        setProducts(data)
+      }}>
         Clear Search
       </button>
     </form>
