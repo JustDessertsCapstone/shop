@@ -1,3 +1,5 @@
+import {useState} from "react";
+
 
 function ProductCard({ product, addToCart }) {
   return (
@@ -26,10 +28,14 @@ function ProductCard({ product, addToCart }) {
   );
 }
 
-export default function ProductContainer({ data, addToCart }) {
+export function ProductContainerState(products) {
+  return useState(products);
+}
+
+export function ProductContainer({ products, addToCart }) {
   return (
     <div className="product-container">
-      {data.map(product => (
+      {products.map(product => (
         <ProductCard product={product} key={product.id} addToCart={addToCart} />
       ))}
     </div>

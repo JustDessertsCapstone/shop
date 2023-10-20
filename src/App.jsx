@@ -1,14 +1,15 @@
 import React from 'react'
 import './App.css'
 import data from './assets/products.json'
-import ProductContainer from './ProductContainer'
+import { ProductContainerState, ProductContainer } from './ProductContainer'
 import CartIcon from './assets/google_shopping.svg'
 import { ShoppingCartState, ShoppingCartContainer } from './ShoppingCart'
 import SearchBar from './SearchBar'
 
 
 function App() {
-  const [cart, addToCart, removeFromCart, clearCart] = ShoppingCartState()
+  const [cart, addToCart, removeFromCart, clearCart] = ShoppingCartState();
+  const [products, setProducts] = ProductContainerState(data);
 
   return (
     <>
@@ -20,8 +21,8 @@ function App() {
 
       <main>
         <h1> Hello, welcome to Healthify</h1>
-        <SearchBar data={data} />
-=       <ProductContainer data={data} addToCart={addToCart} />
+        <SearchBar data={data} setProducts={setProducts} />
+=       <ProductContainer products={products} addToCart={addToCart} />
       </main>
 
       <footer>

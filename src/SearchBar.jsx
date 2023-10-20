@@ -6,18 +6,25 @@ function search(query, data) {
 
       let productList = productClassClean.includes(query.toLowerCase());
 
-      return productList
+      return productList;
   })
 }
 
-export default function SearchBar({ data }) {
+export default function SearchBar({ data, setProducts }) {
   return (
-    <form role="search">
+    <form role="search" onSubmit={e => { e.preventDefault(); }} >
       <input className="search-bar" id="search-input" type="search" placeholder="Search..." />
-      <button type="button" onClick={() => {console.log(search(document.getElementById("search-input").value, data).map(product => {
-        return product.name
-      }))} /* onclick for testing purposes */}>
+
+      <button type="button" onClick={() => {
+          setProducts(search(document.getElementById("search-input").value, data));
+        }}>
         Search
+      </button>
+
+      <button type="button" onClick={() => {
+          setProducts(data)
+        }}>
+        Clear Search
       </button>
     </form>
   )
