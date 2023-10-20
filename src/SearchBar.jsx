@@ -14,7 +14,10 @@ export default function SearchBar({ data, setProducts }) {
   return (
     <form role="search" onSubmit={e => {
       e.preventDefault();
-      setProducts(search(document.getElementById("search-input").value, data));
+
+      let query = document.getElementById("search-input").value;
+      
+      setProducts(search(query, data));
     }} >
       <input className="search-bar" id="search-input" type="search" placeholder="Search..." />
 
