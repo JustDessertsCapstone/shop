@@ -12,8 +12,8 @@ function search(query, data) {
 
 export default function SearchBar({ data, setProducts }) {
   return (
-    <form role="search" onSubmit={e => {
-      e.preventDefault();
+    <form role="search" onSubmit={event => {
+      event.preventDefault();
 
       let query = document.getElementById("search-input").value;
       
