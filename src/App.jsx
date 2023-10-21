@@ -15,7 +15,7 @@ function App() {
     <>
       <header className="header">
         <h1 className="banner">Healthify</h1>
-        <img src={CartIcon} alt="Shopping Cart" className="cart-icon" />
+        <img src={CartIcon} alt="Shopping Cart Icon" className="cart-icon" />
         <ShoppingCartContainer data={data} cart={cart} />
       </header>
 

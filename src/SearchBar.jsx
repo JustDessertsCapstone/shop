@@ -19,7 +19,7 @@ export default function SearchBar({ data, setProducts }) {
       
       setProducts(search(query, data));
     }} >
-      <input className="search-bar" id="search-input" type="search" placeholder="Search..." />
+      <input className="search-bar" aria-label="Searchbar for products" id="search-input" type="search" placeholder="Search..." />
 
       <button type="submit">
         Search

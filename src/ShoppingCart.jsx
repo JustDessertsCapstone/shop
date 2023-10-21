@@ -22,6 +22,13 @@ export function ShoppingCartState() {
 }
 
 function getTableRows(data, cart) {
+   if(cart.length == 0)
+      return (
+         <tr key={0}>
+            <td>Cart Empty</td>
+         </tr>
+      );
+   
    const mappedCart = new Map(); // holds productIDs and counts
 
    cart.forEach(productID => {
