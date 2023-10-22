@@ -27,6 +27,7 @@ export default function SearchBar({ data, setProducts }) {
 
       <button type="button" onClick={() => {
         setProducts(data);
+        document.getElementById("search-input").value = "";
       }}>
         Clear Search
       </button>
