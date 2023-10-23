@@ -1,42 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
 import data from './assets/products.json'
-import ProductContainer from './ProductContainer'
-//added for shoppingCart.js next two lines
-import React from 'react'
-// import { cart, addToCart, removeFromCart, clearCart } from './cart';
+import { ProductContainerState, ProductContainer } from './ProductContainer'
+import CartIcon from './assets/google_shopping.svg'
+import { ShoppingCartState, ShoppingCartContainer } from './ShoppingCart'
+import SearchBar from './SearchBar'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [cart, addToCart, removeFromCart, clearCart] = ShoppingCartState();
+  const [products, setProducts] = ProductContainerState(data);
 
   return (
     <>
-      <header>
-        <h1 class="banner">Healthify</h1>
+      <header className="header">
+        <h1 className="banner">Healthify</h1>
+        <img src={CartIcon} alt="Shopping Cart Icon" className="cart-icon" />
+        <ShoppingCartContainer data={data} cart={cart} />
       </header>
 
       <main>
         <h1> Hello, welcome to Healthify</h1>
-        <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-        </div>
-        <h1>Vite + React</h1>
-        <div>
-          <ProductContainer data={data} />
-        </div>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
+        <SearchBar data={data} setProducts={setProducts} />
+        <br />
+        <ProductContainer products={products} addToCart={addToCart} />
       </main>
 
       <footer>

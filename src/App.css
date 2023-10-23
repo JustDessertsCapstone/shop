@@ -11,6 +11,7 @@
 }
 
 .banner {
+  background-color: #3f3f3f;
   background-image: url("./assets/StockSnap_AWJD4WV6W1.jpg");
   background-size: cover;
   background-position: center;
@@ -25,14 +26,14 @@
   font-size: 4rem;
   color: #fff;
   font-family: "Dancing Script", fantasy;
-  text-shadow: 0 0 1em #000;
+  text-shadow: 0 0 10px #000, 0 0 10px #000;
 }
 
 main {
   background-image: url("./assets/girl_sunset.jpg");
-  background-size: cover; /* This will make the image cover the entire body element */
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; /* This will prevent the image from repeating */
+  background-repeat: no-repeat;
 
   min-height: 40em;
 
@@ -52,6 +53,7 @@ main {
   background-color: white;
   width: 198px;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .product-card > * {
@@ -59,41 +61,63 @@ main {
 }
 
 .product-card:hover {
-  background-color: #e0e0e0; /* Change this color to your desired hover effect */
+  background-color: #e0e0e0;
+  transform: scale(1.1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header {
+ position: relative;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-icon {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.cart-icon:hover + .shopping-cart {
+  display: block;
 }
 
-.card {
-  padding: 2em;
+.shopping-cart {
+  position: absolute;
+  top: 140px;
+  right: 25px;
+  background-color: #ccc;
+  display: none;
 }
 
-.read-the-docs {
-  color: #888;
+.shopping-cart:hover {
+  display: block;
+}
+
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 40px;
+}
+
+.search-button {
+  background-color: #e7edf4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 250px; 
+  height: 40px; 
+  margin-top: 20px;
+}
+
+.search-button:hover {
+  background-color: #dbe0e6;
+  height: 40px;
+  margin-top: 20px;
 }
