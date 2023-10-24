@@ -12,7 +12,7 @@ function search(query, data) {
 
 export default function SearchBar({ data, setProducts }) {
   return (
-    <form role="search" onSubmit={event => {
+    <form className="search-forum" role="search" onSubmit={event => {
       event.preventDefault();
 
       let query = document.getElementById("search-input").value;
