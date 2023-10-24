@@ -53,12 +53,16 @@ main {
   width: 198px;
   position: relative;
   margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .product-card div {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: transform 1s ease;
+  grid-row-start: 1;
+  grid-column-start: 1;
 }
 
 .product-card:hover > div {
