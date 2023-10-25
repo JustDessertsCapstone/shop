@@ -28,7 +28,9 @@ function ProductCard({ product, addToCart }) {
         </div>
 
         <div className="product-card-back">
-          <p>hello</p>
+          <p>Descrition: Test</p>
+          <p>Calories: Test Calories</p>
+          <p>Price: Price test</p>
         </div>
      </div>
   );
