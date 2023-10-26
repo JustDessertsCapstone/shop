@@ -23,14 +23,20 @@ function ProductCard({ product, addToCart }) {
           <p className="product-card-class">{product.class_name}</p>
           }
 
-          <h3 className="product-card-price">${(product.price).toFixed(2)}</h3>
-          {/* <button onClick={() => addToCart(product.id)}>Add To Cart</button> */}
+          <h3 className="product-card-price">${product.price.toFixed(2)}</h3>
         </div>
 
         <div className="product-card-back">
-          <p>Descrition: Test</p>
-          <p>Calories: Test Calories</p>
-          <p>Price: Price test</p>
+          <h3><u>{product.name.replaceAll('-', ' ')}</u></h3>
+          <p style={{fontSize:"10px"}}>Description: {product.description}</p>
+          {product.mass &&
+          <p>Mass: {product.mass}</p>
+        }
+          {product.volume &&
+          <p>Volume: {product.volume}</p>
+        }
+          <p>Price: ${product.price.toFixed(2)}</p>
+          <button onClick={() => addToCart(product.id)}>Add To Cart</button>
         </div>
      </div>
   );
