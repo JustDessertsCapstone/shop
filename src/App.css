@@ -66,10 +66,14 @@ main {
 
 .product-card:hover > div {
   transform: rotateY(1turn) scale(1.2);
+  z-index: 1;
 }
 
 .product-card-front {
   background-color: white;
+  display: grid;
+  align-items: center;
+  height: 100%;
   width: 198px;
 }
 
@@ -79,6 +83,15 @@ main {
 
 .product-card-back {
   background-color: whitesmoke;
+  margin-bottom: 10%;
+  /* center contents vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* display: table-cell;
+  vertical-align: middle; */
   width: 198px;
   height: 100%;
   transform: rotateY(180deg);
