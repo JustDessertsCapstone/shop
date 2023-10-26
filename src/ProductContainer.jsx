@@ -28,14 +28,17 @@ function ProductCard({ product, addToCart }) {
 
         <div className="product-card-back">
           <h3><u>{product.name.replaceAll('-', ' ')}</u></h3>
+
           <p style={{fontSize:"10px"}}>Description: {product.description}</p>
           {product.mass &&
           <p>Mass: {product.mass}</p>
-        }
+          }
           {product.volume &&
           <p>Volume: {product.volume}</p>
-        }
+          }
+
           <p>Price: ${product.price.toFixed(2)}</p>
+          
           <button onClick={() => addToCart(product.id)}>Add To Cart</button>
         </div>
      </div>
