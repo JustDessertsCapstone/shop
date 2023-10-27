@@ -12,7 +12,9 @@
 
 ## Project Overview
 
-Welcome to the Healthify project, brought to you by the "Just Desserts" team. This application aims to improve shopping experience by incentivizing healthier choices. With Healthify, users can earn reward points by purchasing healthier items within a store's stock. These points can then be redeemed for discounts or even free items within the store.
+Heathify is a store application in which users are incentivized to purchase healthier options within the store's stock to obtain points; when enough points are earned, they may cash in said points for discounts and or free items within the store.
+
+Our goal is to encourage people to improve their eating habits. Since there are very few incentives monetarily wise to purchase and eat healthy items, our application will remedy that by making it more beneficial for a user to purchase healthier options.
 
 ![Healthify Banner](official_banner.png)
 

@@ -9,13 +9,11 @@ export default function AboutPage() {
 
          <main id="about-main">
             <div id="about-page-text">
-               <h1>
-                  Healthify - A Healthier Shopping Experience
-               </h1>
+               <h1>Healthify - A Healthier Shopping Experience</h1>
                <h2>Group Name: Just Desserts</h2>
                <p>
-                  <strong>Authors/Contributors:</strong> Joey Hernandez, Thomas Kennedy,
-                  Riley Mapel, Alek Sevilla
+                  <strong>Authors/Contributors:</strong> Joey Hernandez, Thomas
+                  Kennedy, Riley Mapel, Alek Sevilla
                </p>
                <p>
                   <strong>Course:</strong> Capstone Project Fall, 2023
@@ -26,16 +24,20 @@ export default function AboutPage() {
                <hr />
                <h2>Project Overview</h2>
                <p>
-                  Welcome to the Healthify project, brought to you by the &quot;Just
-                  Desserts&quot; team. This application aims to improve shopping
-                  experience by incentivizing healthier choices. With Healthify, users
-                  can earn reward points by purchasing healthier items within a
-                  store&#39;s stock. These points can then be redeemed for discounts or
-                  even free items within the store.
+                  Heathify is a store application in which users are incentivized to
+                  purchase healthier options within the store's stock to obtain
+                  points; when enough points are earned, they may cash in said points
+                  for discounts and or free items within the store.
                </p>
                <p>
-                  Please note that this project is a demo for a school assignment and is
-                  non-commercial.
+                  Our goal is to encourage people to improve their eating habits.
+                  Since there are very few incentives monetarily wise to purchase and
+                  eat healthy items, our application will remedy that by making it
+                  more beneficial for a user to purchase healthier options.
+               </p>
+               <p>
+                  Please note that this project is a demo for a school assignment and
+                  is non-commercial.
                </p>
                <hr />
                <h2>Technologies Used</h2>
@@ -123,7 +125,8 @@ export default function AboutPage() {
                <hr />
                <h2>Data Sources</h2>
                <p>
-                  We would like to credit the following sources for their contributions:
+                  We would like to credit the following sources for their
+                  contributions:
                </p>
                <ul>
                   <li>
@@ -159,14 +162,14 @@ export default function AboutPage() {
                </p>
                <hr />
                <p>
-                  Thank you for checking out Healthify by the &quot;Just Desserts&quot;
-                  team!
+                  Thank you for checking out Healthify by the &quot;Just
+                  Desserts&quot; team!
                </p>
                <hr />
                <p>
                   <em>
-                     This project is a demo for a school project and is not a functioning
-                     shop. It is non-commercial.
+                     This project is a demo for a school project and is not a
+                     functioning shop. It is non-commercial.
                   </em>
                </p>
             </div>
