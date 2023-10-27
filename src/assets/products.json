@@ -8,6 +8,7 @@
     "info_path": "dataset/Fruit/Apple/Golden-Delicious/Golden-Delicious_Information.txt",
     "nutrition_grade": "a",
     "price": 7.36,
+    "calories": 76,
     "mass": "180g",
     "description": "Golden Delicious has a white juicy pulp and a greenish yellow shell. The taste is mellow and sweet, making Golden Delicious suitable for desserts.",
     "source": "https://www.hemkop.se/produkt/apple-Golden-Delicious-Klass-1-100142141_KG"
@@ -21,6 +22,7 @@
     "info_path": "dataset/Fruit/Apple/Granny-Smith/Granny-Smith_Information.txt",
     "nutrition_grade": "a",
     "price": 3.68,
+    "calories": 80,
     "mass": "180g",
     "description": "Granny Smith is a green apple with white, firm pulp and a clear acidity in the flavor.",
     "source": "https://www.hemkop.se/produkt/apple-Granny-Smith-Klass-1-100142221_KG"
@@ -34,6 +36,7 @@
     "info_path": "dataset/Fruit/Apple/Pink-Lady/Pink-Lady_Information.txt",
     "nutrition_grade": "d",
     "price": 11.04,
+    "calories": 95,
     "mass": "180g",
     "description": "Pink Lady reminds of Royal Gala, though it is an even sweeter and crispier apple.",
     "source": "https://www.hemkop.se/produkt/apple-Pink-Lady-Klass-1-100144318_KG"
@@ -47,6 +50,7 @@
     "info_path": "dataset/Fruit/Apple/Red-Delicious/Red-Delicious_Information.txt",
     "nutrition_grade": "a",
     "price": 5.52,
+    "calories": 89,
     "mass": "160g",
     "description": "Red Delicious is a dark red apple with relatively soft pulp and sweet taste.",
     "source": "https://www.hemkop.se/produkt/apple-Red-Delicious-Klass-1-100144336_KG"
@@ -60,6 +64,7 @@
     "info_path": "dataset/Fruit/Apple/Royal-Gala/Royal-Gala_Information.txt",
     "nutrition_grade": "a",
     "price": 5.52,
+    "calories": 71,
     "mass": "180g",
     "description": "Royal Gala is a crispy and very juicy apple, with yellow-white pulp. The peel is thin with a red yellow speckled color.",
     "source": "https://www.hemkop.se/produkt/apple-Royal-Gala-Klass-1-100144504_KG"
@@ -73,6 +78,7 @@
     "info_path": "dataset/Fruit/Avocado/Avocado_Information.txt",
     "nutrition_grade": "d",
     "price": 12.88,
+    "calories": 322,
     "mass": "170g",
     "description": "Avocado is a fruit with a clear core in the middle. The pulp is light yellow and the peel may vary from light green to dark green, almost black. Avocado fits for starters, salads and as an ingredient in Guacamole.",
     "source": "https://www.hemkop.se/produkt/Avocado-Klass-1-100151933_ST"

@@ -33,6 +33,9 @@ function ProductCard({ product, cart, addToCart }) {
           <h3 className="product-card-name">{product.name.replaceAll('-', ' ')}</h3>
 
           <p className="product-card-description">Description: {product.description}</p>
+          {product.calories &&
+          <p className="product-card-calories">Calories: {product.calories}</p>
+          }
           {product.mass &&
           <p className="product-card-mass">Mass: {product.mass}</p>
           }
