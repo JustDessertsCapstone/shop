@@ -97,6 +97,10 @@
   transform: rotateY(180deg);
 }
 
+.product-card-back > * {
+  margin: 1%;
+}
+
 .product-card-description {
   font-size: 11px;
 }
