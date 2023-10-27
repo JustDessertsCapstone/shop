@@ -4,7 +4,9 @@ export default function AboutPage() {
    return (
       <>
          <header className="header">
+            <a href="/shop/">
             <h1 className="banner">Healthify</h1>
+            </a>
          </header>
 
          <main id="about-main">

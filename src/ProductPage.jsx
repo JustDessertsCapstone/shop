@@ -10,13 +10,37 @@ export default function ProductPage() {
   return (
     <>
       <header className="header">
+        <a href="/shop/">
         <h1 className="banner">Healthify</h1>
+        </a>
       </header>
 
       <main>
         <h1> Hello, welcome to Healthify</h1>
-        <p>Product: {product.name}</p>
-        <a href="/shop/">Home</a>
+        <h2>Product: {product.name}</h2>
+        <img
+          className="product-img"
+          src={"../" + product.img_path}
+          alt={product.name.replaceAll('-', ' ') +
+            // Adds class name only if it is not included in the product name
+            (!product.name.toLowerCase().includes(product.class_name.toLowerCase()) ?
+              " " + product.class_name : "")
+            + " on a white background."}
+            width="350" 
+            height="350"
+          />
+        <p>{product.description}</p>
+        {product.calories &&
+          <p className="product-card-calories">Calories: {product.calories}</p>
+          }
+          {product.mass &&
+          <p className="product-card-mass">Mass: {product.mass}</p>
+          }
+          {product.volume &&
+          <p className="product-card-volume">Volume: {product.volume}</p>
+          }
+
+          <p className="product-card-price">Price: ${product.price.toFixed(2)}</p>
       </main>
 
       <footer>

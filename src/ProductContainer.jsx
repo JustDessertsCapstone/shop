@@ -16,7 +16,6 @@ function ProductCard({ product, cart, addToCart }) {
             (!product.name.toLowerCase().includes(product.class_name.toLowerCase()) ?
               " " + product.class_name : "")
             + " on a white background."}
-            onClick={() => location.href="/shop/product/"}
           />
           
           <h3 className="product-card-name" onClick={() => location.href="/shop/product/"}>{product.name.replaceAll('-', ' ')}</h3>
