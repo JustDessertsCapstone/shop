@@ -34,7 +34,7 @@ function App() {
           Within Healthify, you will find that being rewarded for making better choices is so rewarding!
         </p>
         <p>
-          Learn more about this project, including our sources and credits, by visiting our&nbsp;
+          Learn more about this project, team, and sources, by visiting our&nbsp;
           <Link className="link" to={`/shop/about/`}>About Page</Link>
         </p>
       </footer>
