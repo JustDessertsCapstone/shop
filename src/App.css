@@ -97,6 +97,10 @@ main {
   transform: rotateY(180deg);
 }
 
+.product-card-description {
+  font-size: 10px;
+}
+
 .header {
  position: relative;
 }

@@ -1,7 +1,10 @@
 import {useState} from "react";
+import { Link } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 
 
-function ProductCard({ product, addToCart }) {
+function ProductCard({ product, cart, addToCart }) {
+
   return (
      <div className="product-card">
         <div className="product-card-front">
@@ -27,19 +30,19 @@ function ProductCard({ product, addToCart }) {
         </div>
 
         <div className="product-card-back">
-          <h3><u>{product.name.replaceAll('-', ' ')}</u></h3>
+          <h3 className="product-card-name"><u>{product.name.replaceAll('-', ' ')}</u></h3>
 
-          <p style={{fontSize:"10px"}}>Description: {product.description}</p>
+          <p className="product-card-description">Description: {product.description}</p>
           {product.mass &&
-          <p>Mass: {product.mass}</p>
+          <p className="product-card-mass">Mass: {product.mass}</p>
           }
           {product.volume &&
-          <p>Volume: {product.volume}</p>
+          <p className="product-card-volume">Volume: {product.volume}</p>
           }
 
-          <p>Price: ${product.price.toFixed(2)}</p>
-          
-          <button onClick={() => addToCart(product.id)}>Add To Cart</button>
+          <p className="product-card-price">Price: ${product.price.toFixed(2)}</p>
+
+          <Link to={`/shop/product/${product.id}`}>Go to Product Page</Link>
         </div>
      </div>
   );
@@ -49,11 +52,11 @@ export function ProductContainerState(products) {
   return useState(products);
 }
 
-export function ProductContainer({ products, addToCart }) {
+export function ProductContainer({ products, cart, addToCart }) {
   return (
     <div className="product-container">
       {products.map(product => (
-        <ProductCard product={product} key={product.id} addToCart={addToCart} />
+        <ProductCard product={product} key={product.id} cart={cart} addToCart={addToCart} />
       ))}
     </div>
   );

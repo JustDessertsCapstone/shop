@@ -23,7 +23,7 @@ function App() {
         <h1> Hello, welcome to Healthify</h1>
         <SearchBar data={data} setProducts={setProducts} />
         <br />
-        <ProductContainer products={products} addToCart={addToCart} />
+        <ProductContainer products={products} cart={cart} addToCart={addToCart} />
       </main>
 
       <footer>
