@@ -130,31 +130,31 @@ export default function AboutPage() {
                </p>
                <ul>
                   <li>
-                     Product images and information gathered from{" "}
+                     Product images and information gathered from&nbsp;
                      <a href="https://www.kaggle.com/datasets/validmodel/grocery-store-dataset">
                         Kaggle Grocery Store Dataset
-                     </a>{" "}
+                     </a>&nbsp;
                      (originally from <a href="https://www.hemkop.se">hemkop</a>)
                   </li>
                   <li>
-                     Banner image by{" "}
+                     Banner image by&nbsp;
                      <a href="https://stocksnap.io/photo/food-fruits-AWJD4WV6W1">
                         StockSnap
                      </a>
                   </li>
                   <li>
-                     Shopping cart icon from{" "}
+                     Shopping cart icon from&nbsp;
                      <a href="https://fontawesome.com">Font Awesome</a>
                   </li>
                   <li>
-                     Nutrition grade evaluations from{" "}
+                     Nutrition grade evaluations from&nbsp;
                      <a href="https://world.openfoodfacts.org">Open Food Facts</a>
                   </li>
                </ul>
                <hr />
                <h2>GitHub Pages</h2>
                <p>
-                  This project is hosted on{" "}
+                  This project is hosted on&nbsp;
                   <a href="https://justdessertscapstone.github.io/shop/">
                      GitHub Pages
                   </a>
