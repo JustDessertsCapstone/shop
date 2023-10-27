@@ -69,7 +69,7 @@ We would like to credit the following sources for their contributions:
 
 ---
 
-**GitHub Pages**
+## GitHub Pages
 
 This project is hosted on [GitHub Pages](https://justdessertscapstone.github.io/shop/).
 
