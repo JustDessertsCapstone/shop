@@ -30,7 +30,7 @@ function ProductCard({ product, cart, addToCart }) {
         </div>
 
         <div className="product-card-back">
-          <h3 className="product-card-name"><u>{product.name.replaceAll('-', ' ')}</u></h3>
+          <h3 className="product-card-name">{product.name.replaceAll('-', ' ')}</h3>
 
           <p className="product-card-description">Description: {product.description}</p>
           {product.mass &&
@@ -42,7 +42,7 @@ function ProductCard({ product, cart, addToCart }) {
 
           <p className="product-card-price">Price: ${product.price.toFixed(2)}</p>
 
-          <Link to={`/shop/product/${product.id}`}>Go to Product Page</Link>
+          <Link className="link" to={`/shop/product/${product.id}`}>Go to Product Page</Link>
         </div>
      </div>
   );

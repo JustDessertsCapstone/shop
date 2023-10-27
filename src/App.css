@@ -29,7 +29,7 @@
   text-shadow: 0 0 10px #000, 0 0 10px #000;
 }
 
-main {
+#shop-main {
   background-image: url("./assets/girl_sunset.jpg");
   background-size: cover;
   background-position: center;
@@ -98,7 +98,7 @@ main {
 }
 
 .product-card-description {
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .header {
@@ -156,4 +156,35 @@ main {
   background-color: #dbe0e6;
   height: 40px;
   margin-top: 20px;
+}
+
+.link {
+  color: #0A16FF;
+  text-decoration: underline;
+}
+
+#about-main {
+  background-image: url("./assets/girl_sunset.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about-page-text {
+  background-color: rgba(255,255,255,0.9);
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+}
+
+#about-page-text:first-child {
+  margin-top: 0;
+  padding-top: 1px;
+}
+
+#about-page-text:last-child {
+  margin-bottom: 0;
+  padding-bottom: 1px;
 }

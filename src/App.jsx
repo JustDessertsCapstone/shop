@@ -1,10 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './App.css'
+
 import data from './assets/products.json'
-import { ProductContainerState, ProductContainer } from './ProductContainer'
-import CartIcon from './assets/google_shopping.svg'
-import { ShoppingCartState, ShoppingCartContainer } from './ShoppingCart'
+import cartIcon from './assets/google_shopping.svg'
+
 import SearchBar from './SearchBar'
+import { ShoppingCartState, ShoppingCartContainer } from './ShoppingCart'
+import { ProductContainerState, ProductContainer } from './ProductContainer'
 
 
 function App() {
@@ -15,11 +18,11 @@ function App() {
     <>
       <header className="header">
         <h1 className="banner">Healthify</h1>
-        <img src={CartIcon} alt="Shopping Cart Icon" className="cart-icon" />
+        <img src={cartIcon} alt="Shopping Cart Icon" className="cart-icon" />
         <ShoppingCartContainer data={data} cart={cart} />
       </header>
 
-      <main>
+      <main id="shop-main">
         <h1> Hello, welcome to Healthify</h1>
         <SearchBar data={data} setProducts={setProducts} />
         <br />
@@ -29,6 +32,10 @@ function App() {
       <footer>
         <p>
           Within Healthify, you will find that being rewarded for making better choices is so rewarding!
+        </p>
+        <p>
+          Learn more about this project, including our sources and credits, by visiting our&nbsp;
+          <Link className="link" to={`/shop/about/`}>About Page</Link>
         </p>
       </footer>
     </>
