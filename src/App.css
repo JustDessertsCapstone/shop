@@ -135,6 +135,33 @@
   display: block;
 }
 
+.user-icon {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  color: white;
+}
+
+.user-icon:hover + .user-profile {
+  display: block;
+}
+
+.user-profile {
+  background-color: #fff;
+  position: absolute;
+  top: 140px;
+  right: 25px;
+  padding: 1%;
+  display: none;
+}
+
+.user-profile:hover {
+  display: block;
+}
+
 .search-bar {
   padding: 10px;
   border: 1px solid rgb(92, 92, 92);

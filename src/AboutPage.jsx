@@ -136,7 +136,7 @@ export default function AboutPage() {
                      <a href="https://www.kaggle.com/datasets/validmodel/grocery-store-dataset">
                         Kaggle Grocery Store Dataset
                      </a>&nbsp;
-                     (originally from <a href="https://www.hemkop.se">hemkop</a>)
+                     (originally from <a href="https://www.hemkop.se">Hemkop</a>)
                   </li>
                   <li>
                      Banner image by&nbsp;
@@ -147,6 +147,10 @@ export default function AboutPage() {
                   <li>
                      Shopping cart icon from&nbsp;
                      <a href="https://fontawesome.com">Font Awesome</a>
+                  </li>
+                  <li>
+                     Profile icon from&nbsp;
+                     <a href="https://www.veryicon.com/icons/avatar/user-2/user-line-1.html">Very Icon</a>
                   </li>
                   <li>
                      Nutrition grade evaluations from&nbsp;

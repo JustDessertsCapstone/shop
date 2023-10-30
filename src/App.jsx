@@ -2,13 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './App.css'
 
-import LoginButton from './Login'
-import LogoutButton from './Logout'
 import { useEffect } from 'react'
 import { gapi } from 'gapi-script'
  
 import data from './assets/products.json'
 import cartIcon from './assets/google_shopping.svg'
+import userIcon from './assets/user-profile-icon.svg'
+import UserProfile from './UserProfile'
 
 import SearchBar from './SearchBar'
 import { ShoppingCartState, ShoppingCartContainer } from './ShoppingCart'
@@ -20,27 +20,27 @@ function App() {
   const [cart, addToCart, removeFromCart, clearCart] = ShoppingCartState();
   const [products, setProducts] = ProductContainerState(data);
 
-  useEffect(() => {
-    function start() {
-      gapi.client.init({
-        clientId: clientId,
-        scope: ""
-      })
-    }
+  // useEffect(() => {
+  //   function start() {
+  //     gapi.auth2.init({
+  //       clientId: clientId,
+  //       scope: ""
+  //     })
+  //   }
 
-    gapi.load('client:auth2', start);
-  });
+  //   gapi.load('client:auth2', start);
+  // });
 
   return (
     <>
-      <LoginButton />
-      <LogoutButton />
       <header className="header">
         <a href="/shop/">
         <h1 className="banner">Healthify</h1>
         </a>
         <img src={cartIcon} alt="Shopping Cart Icon" className="cart-icon" />
         <ShoppingCartContainer data={data} cart={cart} />
+        <img src={userIcon} alt="User Profile Icon" className="user-icon" />
+        <UserProfile />
       </header>
 
       <main id="shop-main">

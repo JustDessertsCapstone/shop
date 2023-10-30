@@ -64,9 +64,10 @@ Please note that this project is a demo for a school assignment and is non-comme
 
 We would like to credit the following sources for their contributions:
 
-- Product images and information gathered from [Kaggle Grocery Store Dataset](https://www.kaggle.com/datasets/validmodel/grocery-store-dataset) (originally from [hemkop](https://www.hemkop.se))
+- Product images and information gathered from [Kaggle Grocery Store Dataset](https://www.kaggle.com/datasets/validmodel/grocery-store-dataset) (originally from [Hemkop](https://www.hemkop.se))
 - Banner image by [StockSnap](https://stocksnap.io/photo/food-fruits-AWJD4WV6W1)
 - Shopping cart icon from [Font Awesome](https://fontawesome.com)
+- Profile icon from [Very Icon](https://www.veryicon.com/icons/avatar/user-2/user-line-1.html)
 - Nutrition grade evaluations from [Open Food Facts](https://world.openfoodfacts.org)
 
 ---
