@@ -1,7 +1,5 @@
 import { describe, it, expect, vi, test } from 'vitest';
-// import {jest} from '@jest/globals';
 import { fireEvent, render, renderHook, act, screen } from '@testing-library/react';
-// import { screen, configure } from '@testing-library/react'
 import { searchTest, SearchBar } from '../SearchBar'
 import { ProductContainerState } from '../ProductContainer';
 
