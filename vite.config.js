@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
@@ -23,6 +24,12 @@ export default defineConfig({
         product: resolve(root, 'product', 'index.html'),
       },
     },
+  },
+  test: {
+    deps: {
+      inline: [/vite-test-utils/]
+    },
+    include: ['./__tests__/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
   },
 })
 

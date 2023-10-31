@@ -10,7 +10,7 @@ import cartIcon from './assets/google_shopping.svg'
 import userIcon from './assets/user-profile-icon.svg'
 import UserProfile from './UserProfile'
 
-import SearchBar from './SearchBar'
+import { SearchBar } from './SearchBar'
 import { ShoppingCartState, ShoppingCartContainer } from './ShoppingCart'
 import { ProductContainerState, ProductContainer } from './ProductContainer'
 

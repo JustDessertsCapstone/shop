@@ -10,7 +10,9 @@ function search(query, data) {
   })
 }
 
-export default function SearchBar({ data, setProducts }) {
+export const searchTest = process.env.NODE_ENV === 'test' ? search : "";
+
+export function SearchBar({ data, setProducts }) {
   return (
     <form className="search-forum" role="search" onSubmit={event => {
       event.preventDefault();
