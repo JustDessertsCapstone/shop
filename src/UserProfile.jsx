@@ -1,32 +1,33 @@
-import { GoogleLogin, googleLogout } from '@react-oauth/google';
-
+import { GoogleLogin, googleLogout } from "@react-oauth/google";
 
 function LoginButton() {
   const onSuccess = (res) => {
     console.log("Login Successful");
-  }
+  };
 
   const onFailure = (res) => {
     console.log("Login Failed");
-  }
+  };
 
-  return <GoogleLogin id="signInButton" onSuccess={onSuccess} onError={onFailure} />
+  return (
+    <GoogleLogin id="signInButton" onSuccess={onSuccess} onError={onFailure} />
+  );
 }
 
 function LogoutButton() {
   const signOut = () => {
     googleLogout();
-  }
+  };
 
   const onSuccess = () => {
     console.log("Logout Successful");
-  }
+  };
 
-  return(
+  return (
     <button id="signOutButton" onClick={signOut}>
       Sign Out
     </button>
-  )
+  );
 }
 
 export default function UserProfile() {
@@ -36,5 +37,5 @@ export default function UserProfile() {
       <LoginButton />
       {/* <LogoutButton /> */}
     </div>
-  )
+  );
 }

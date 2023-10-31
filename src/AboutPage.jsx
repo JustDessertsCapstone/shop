@@ -5,7 +5,7 @@ export default function AboutPage() {
     <>
       <header className="header">
         <a href="/shop/">
-        <h1 className="banner">Healthify</h1>
+          <h1 className="banner">Healthify</h1>
         </a>
       </header>
 
@@ -135,8 +135,9 @@ export default function AboutPage() {
               Product images and information gathered from&nbsp;
               <a href="https://www.kaggle.com/datasets/validmodel/grocery-store-dataset">
                 Kaggle Grocery Store Dataset
-              </a>&nbsp;
-              (originally from <a href="https://www.hemkop.se">Hemkop</a>)
+              </a>
+              &nbsp; (originally from <a href="https://www.hemkop.se">Hemkop</a>
+              )
             </li>
             <li>
               Banner image by&nbsp;
@@ -150,7 +151,9 @@ export default function AboutPage() {
             </li>
             <li>
               Profile icon from&nbsp;
-              <a href="https://www.veryicon.com/icons/avatar/user-2/user-line-1.html">Very Icon</a>
+              <a href="https://www.veryicon.com/icons/avatar/user-2/user-line-1.html">
+                Very Icon
+              </a>
             </li>
             <li>
               Nutrition grade evaluations from&nbsp;

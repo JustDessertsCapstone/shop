@@ -1,16 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import './App.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./App.css";
 
-import data from './assets/products.json'
-import cartIcon from './assets/google_shopping.svg'
-import userIcon from './assets/user-profile-icon.svg'
-import UserProfile from './UserProfile'
+import data from "./assets/products.json";
+import cartIcon from "./assets/google_shopping.svg";
+import userIcon from "./assets/user-profile-icon.svg";
+import UserProfile from "./UserProfile";
 
-import { SearchBar } from './SearchBar'
-import { ShoppingCartState, ShoppingCartContainer } from './ShoppingCart'
-import { ProductContainerState, ProductContainer } from './ProductContainer'
-
+import { SearchBar } from "./SearchBar";
+import { ShoppingCartState, ShoppingCartContainer } from "./ShoppingCart";
+import { ProductContainerState, ProductContainer } from "./ProductContainer";
 
 function App() {
   const [cart, addToCart, removeFromCart, clearCart] = ShoppingCartState();
@@ -20,7 +19,7 @@ function App() {
     <>
       <header className="header">
         <a href="/shop/">
-        <h1 className="banner">Healthify</h1>
+          <h1 className="banner">Healthify</h1>
         </a>
         <img src={cartIcon} alt="Shopping Cart Icon" className="cart-icon" />
         <ShoppingCartContainer data={data} cart={cart} />
@@ -32,20 +31,28 @@ function App() {
         <h1> Hello, welcome to Healthify</h1>
         <SearchBar data={data} setProducts={setProducts} />
         <br />
-        <ProductContainer products={products} cart={cart} addToCart={addToCart} />
+        <ProductContainer
+          products={products}
+          cart={cart}
+          addToCart={addToCart}
+        />
       </main>
 
       <footer>
         <p>
-          Within Healthify, you will find that being rewarded for making better choices is so rewarding!
+          Within Healthify, you will find that being rewarded for making better
+          choices is so rewarding!
         </p>
         <p>
-          Learn more about this project, team, and sources, by visiting our&nbsp;
-          <Link className="link" to={`/shop/about/`}>About Page</Link>
+          Learn more about this project, team, and sources, by visiting
+          our&nbsp;
+          <Link className="link" to={`/shop/about/`}>
+            About Page
+          </Link>
         </p>
       </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

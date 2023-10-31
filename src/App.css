@@ -106,7 +106,7 @@
 }
 
 .header {
- position: relative;
+  position: relative;
 }
 
 .cart-icon {
@@ -179,8 +179,8 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  width: 150px; 
-  height: 40px; 
+  width: 150px;
+  height: 40px;
   margin-top: 20px;
 }
 
@@ -192,7 +192,7 @@
 }
 
 .link {
-  color: #0A16FF;
+  color: #0a16ff;
   text-decoration: underline;
 }
 
@@ -204,7 +204,7 @@
 }
 
 #about-page-text {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   margin-left: 20%;
   margin-right: 20%;
   padding-left: 5%;

@@ -1,5 +1,4 @@
-import {useState} from "react";
-
+import { useState } from "react";
 
 export function ShoppingCartState() {
   const [cart, setCart] = useState([]);
@@ -22,31 +21,29 @@ export function ShoppingCartState() {
 }
 
 function getTableRows(data, cart) {
-  if(cart.length == 0)
+  if (cart.length == 0)
     return (
       <tr key={0}>
         <td>Cart Empty</td>
       </tr>
     );
-  
+
   const mappedCart = new Map(); // holds productIDs and counts
 
-  cart.forEach(productID => {
+  cart.forEach((productID) => {
     mappedCart.set(productID, mappedCart.get(productID) + 1 || 1);
-  })
+  });
 
-  return (
-    [...mappedCart].map(([productID, quantity]) => {
-      const product = data.find(product => product.id === productID);
+  return [...mappedCart].map(([productID, quantity]) => {
+    const product = data.find((product) => product.id === productID);
 
-      return (
-        <tr key={product.id}>
-          <td>{product.name.replaceAll('-', ' ')}</td>
-          <td>{quantity}</td>
-        </tr>
-      )
-    })
-  )
+    return (
+      <tr key={product.id}>
+        <td>{product.name.replaceAll("-", " ")}</td>
+        <td>{quantity}</td>
+      </tr>
+    );
+  });
 }
 
 export function ShoppingCartContainer({ data, cart }) {
@@ -58,10 +55,8 @@ export function ShoppingCartContainer({ data, cart }) {
             <th>Shopping Cart</th>
           </tr>
         </thead>
-        <tbody>
-          {getTableRows(data, cart)}
-        </tbody>
+        <tbody>{getTableRows(data, cart)}</tbody>
       </table>
     </div>
-  )
- }
+  );
+}

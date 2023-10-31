@@ -1,13 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { GoogleOAuthProvider } from '@react-oauth/google';
-import App from './App.jsx'
-import ProductPage from './ProductPage.jsx'
-import AboutPage from './AboutPage.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import App from "./App.jsx";
+import ProductPage from "./ProductPage.jsx";
+import AboutPage from "./AboutPage.jsx";
+import "./index.css";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <GoogleOAuthProvider clientId="43903682458-v5dr38m8qmeak6n5unja52qjt065p7p5.apps.googleusercontent.com">
     <React.StrictMode>
       <BrowserRouter>
@@ -18,5 +18,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Routes>
       </BrowserRouter>
     </React.StrictMode>
-  </GoogleOAuthProvider>,
-)
+  </GoogleOAuthProvider>
+);
