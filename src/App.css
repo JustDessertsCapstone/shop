@@ -145,11 +145,11 @@
   color: white;
 }
 
-.user-icon:hover + .user-profile {
+.user-icon:hover + .oath-buttons {
   display: block;
 }
 
-.user-profile {
+.oath-buttons {
   background-color: #fff;
   position: absolute;
   top: 140px;
@@ -158,7 +158,7 @@
   display: none;
 }
 
-.user-profile:hover {
+.oath-buttons:hover {
   display: block;
 }
 

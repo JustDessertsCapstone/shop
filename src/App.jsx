@@ -2,9 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './App.css'
 
-import { useEffect } from 'react'
-import { gapi } from 'gapi-script'
- 
 import data from './assets/products.json'
 import cartIcon from './assets/google_shopping.svg'
 import userIcon from './assets/user-profile-icon.svg'
@@ -14,22 +11,10 @@ import { SearchBar } from './SearchBar'
 import { ShoppingCartState, ShoppingCartContainer } from './ShoppingCart'
 import { ProductContainerState, ProductContainer } from './ProductContainer'
 
-const clientId = "43903682458-v5dr38m8qmeak6n5unja52qjt065p7p5.apps.googleusercontent.com";
 
 function App() {
   const [cart, addToCart, removeFromCart, clearCart] = ShoppingCartState();
   const [products, setProducts] = ProductContainerState(data);
-
-  // useEffect(() => {
-  //   function start() {
-  //     gapi.auth2.init({
-  //       clientId: clientId,
-  //       scope: ""
-  //     })
-  //   }
-
-  //   gapi.load('client:auth2', start);
-  // });
 
   return (
     <>
