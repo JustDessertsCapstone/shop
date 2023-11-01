@@ -92,6 +92,7 @@
     "info_path": "dataset/Fruit/Banana/Banana_Information.txt",
     "nutrition_grade": "d",
     "price": 3.68,
+    "calories": 72,
     "mass": "180g",
     "description": "An ecologically grown banana. Bananas are good as snacks. The banana is temperature sensitive, very sensitive to dehydration, ethylene and cold damage. Store in room temperature or cool, never in a refrigerator.",
     "source": "https://www.hemkop.se/produkt/Banan-Eko-Klass-1-100235247_KG"
@@ -105,6 +106,7 @@
     "info_path": "dataset/Fruit/Kiwi/Kiwi_Information.txt",
     "nutrition_grade": "a",
     "price": 5.52,
+    "calories": 46,
     "mass": "100g",
     "description": "Kiwi, or Chinese currants, as it is also called, has a sweet taste with clear acidity. The fruit is rich in vitamin C.",
     "source": "https://www.hemkop.se/produkt/Kiwi-Klass-1-100180723_ST"
@@ -118,6 +120,7 @@
     "info_path": "dataset/Fruit/Lemon/Lemon_Information.txt",
     "nutrition_grade": "b",
     "price": 13.8,
+    "calories": 17,
     "mass": "160g",
     "description": "Lemon is used as a flavor in food and drinks and has a very tart and sour taste.",
     "source": "https://www.hemkop.se/produkt/Citron-Klass-1-100255117_ST"
@@ -131,6 +134,7 @@
     "info_path": "dataset/Fruit/Lime/Lime_Information.txt",
     "nutrition_grade": "b",
     "price": 11.04,
+    "calories": 20,
     "mass": "75g",
     "description": "The lime fruit, like lemon, has sour taste, with the difference that the lime is more juicy and flavorsome than the lemon. It is mainly the juice you use but also the shell can be used.",
     "source": "https://www.hemkop.se/produkt/Lime-Klass-1-101200430_ST"
@@ -144,6 +148,7 @@
     "info_path": "dataset/Fruit/Mango/Mango_Information.txt",
     "nutrition_grade": "c",
     "price": 4.6,
+    "calories": 202,
     "mass": "400g",
     "description": "Mango has a fresh, powerful and sweet taste with an exotic twist. It's best to cut it with the skin on, then divide by cutting along both sides of the core. Enjoy mango naturally or in desserts, entrees, and main courses.",
     "source": "https://www.hemkop.se/produkt/Mango-Klass-1-101200548_ST"
@@ -157,6 +162,7 @@
     "info_path": "dataset/Fruit/Melon/Cantaloupe/Cantaloupe_Information.txt",
     "nutrition_grade": "a",
     "price": 3.68,
+    "calories": 277,
     "mass": "1.05kg",
     "description": "The cantaloupe melon is a rather small and all round sugar melon, with a greenish yellow mesh patterned shell. The pulp is orange colored with juicy and sweet taste.",
     "source": "https://www.hemkop.se/produkt/Melon-Cantaloupe-Klass-1-100256107_KG"
@@ -170,6 +176,7 @@
     "info_path": "dataset/Fruit/Melon/Galia-Melon/Galia-Melon_Information.txt",
     "nutrition_grade": "a",
     "price": 18.4,
+    "calories": 183,
     "mass": "1.01kg",
     "description": "Galia melon is a small round sugar melon with a yellowish green, orange, or light brown mesh patterned shell. The pulp is firm and juicy, with a cream white to yellowish green color and a sweet, rich flavor.",
     "source": "https://www.hemkop.se/produkt/Galiamelon-Klass-1-101242324_KG"
@@ -183,6 +190,7 @@
     "info_path": "dataset/Fruit/Melon/Honeydew-Melon/Honeydew-Melon_Information.txt",
     "nutrition_grade": "b",
     "price": 16.56,
+    "calories": 360,
     "mass": "1.2kg",
     "description": "Honeydew melon is an oval shaped sugarmelon, with a yellow shell. The pulp is creamy light yellow with juicy, sweet and fresh taste, which is milder than other melons.",
     "source": "https://www.hemkop.se/produkt/Honungsmelon-Klass-1-100256170_KG"
@@ -196,6 +204,7 @@
     "info_path": "dataset/Fruit/Melon/Watermelon/Watermelon_Information.txt",
     "nutrition_grade": "d",
     "price": 5.52,
+    "calories": 1355,
     "mass": "3kg",
     "description": "Water melon juicier than sugar melons, and has a round peel with light green base color, with long-tied dark green stripes. The pulp is very juicy, mild and sweet, and occurs with and without kernels.",
     "source": "https://www.hemkop.se/produkt/Melon-Vatten-Klass-1-101273856_KG"
@@ -209,6 +218,7 @@
     "info_path": "dataset/Fruit/Nectarine/Nectarine_Information.txt",
     "nutrition_grade": "b",
     "price": 10.12,
+    "calories": 60,
     "mass": "175g",
     "description": "The nectarine is a stone fruit with plain peel and yellow or orange pulp, which is somewhat firmer than the peach. Nectarine is suitable for eating naturally but can also be used for pastry, marmalade and jam.",
     "source": "https://www.hemkop.se/produkt/Nektarin-Klass-1-101017668_KG"
@@ -222,6 +232,7 @@
     "info_path": "dataset/Fruit/Orange/Orange_Information.txt",
     "nutrition_grade": "c",
     "price": 14.72,
+    "calories": 73,
     "mass": "280g",
     "description": "There are many different types of oranges that ripen and is sold during different parts of the year. The orange is a very important vitamin C source and the vitamins are best kept if the fruit is eaten naturally.",
     "source": "https://www.hemkop.se/produkt/Apelsin-Klass-1-101273786_KG"
@@ -235,6 +246,7 @@
     "info_path": "dataset/Fruit/Papaya/Papaya_Information.txt",
     "nutrition_grade": "d",
     "price": 17.48,
+    "calories": 80,
     "mass": "500g",
     "description": "Papayan has a salmon-pink pulp that is buttery in the texture. The fruit is rich in vitamin A and C.",
     "source": "https://www.hemkop.se/produkt/Papaya-Klass-1-100181072_ST"
@@ -248,6 +260,7 @@
     "info_path": "dataset/Fruit/Passion-Fruit/Passion-Fruit_Information.txt",
     "nutrition_grade": "c",
     "price": 14.72,
+    "calories": 229,
     "mass": "50g",
     "description": "Passion fruit is a small, round or oval fruit with yellow or dark brownish purple dented shell. Passion fruit's interior consists of many small edible kernels surrounded by succulent pulp. The taste is rich and fresh, and reminiscent of raspberries and orange.",
     "source": "https://www.hemkop.se/produkt/Passionsfrukt-Klass-1-100257650_ST"
@@ -261,6 +274,7 @@
     "info_path": "dataset/Fruit/Peach/Peach_Information.txt",
     "nutrition_grade": "b",
     "price": 18.4,
+    "calories": 51,
     "mass": "175g",
     "description": "Peach is a stone fruit with yellow or orange pulp and velvety shell. Suitable for eating naturally but can also be used for pastry, marmalade and jam.",
     "source": "https://www.hemkop.se/produkt/Persika-Klass-1-100257703_KG"
@@ -274,6 +288,7 @@
     "info_path": "dataset/Fruit/Pear/Anjou/Anjou_Information.txt",
     "nutrition_grade": "a",
     "price": 10.12,
+    "calories": 101,
     "mass": "170g",
     "description": "Anjou pear is a classic pear shaped with rounded stalk with a thin yellowish green shell. The pulp is juicy and has a sweet, nice taste. Anjou is an excellent table fruit that also fits in pastries, then rather unripe.",
     "source": "https://www.hemkop.se/produkt/Paron-Anjou-100139253_KG"
@@ -287,6 +302,7 @@
     "info_path": "dataset/Fruit/Pear/Conference/Conference_Information.txt",
     "nutrition_grade": "a",
     "price": 5.52,
+    "calories": 61,
     "mass": "200g",
     "description": "Conference is a medium sized pear with long-tapered bottle like shape and a rounded base. To the color, the Conference pear is light greenish yellow with gold brown spots. Pears taste the most when they are really ripe. Suitable for desserts, cheese tray or to eat as it is.",
     "source": "https://www.hemkop.se/produkt/Paron-Conference-Klass-1-100139342_KG"
@@ -300,6 +316,7 @@
     "info_path": "dataset/Fruit/Pear/Kaiser/Kaiser_Information.txt",
     "nutrition_grade": "a",
     "price": 18.4,
+    "calories": 101,
     "mass": "150g",
     "description": "The Kaiser Pear is drip-shaped with matte, medium-thick, flaming yellow-brown or brownish shell. The yellowish white pulp is crispy, juicy and sweet, with some fresh acid. Kaiser pears match very well with dessert cheeses and wine, but it is also good to cook, as it retains its shape well.",
     "source": "https://www.hemkop.se/produkt/Paron-Bosc-kaiser-Klass-1-100129754_KG"
@@ -313,6 +330,7 @@
     "info_path": "dataset/Fruit/Pineapple/Pineapple_Information.txt",
     "nutrition_grade": "b",
     "price": 6.44,
+    "calories": 227,
     "mass": "1kg",
     "description": "Pineapple fits well to be eaten naturally in for example desserts and fruit salad. Remember to remove the log in the middle.",
     "source": "https://www.hemkop.se/produkt/Ananas-Klass-1-100145594_ST"
@@ -326,6 +344,7 @@
     "info_path": "dataset/Fruit/Plum/Plum_Information.txt",
     "nutrition_grade": "d",
     "price": 11.96,
+    "calories": 30,
     "mass": "70g",
     "description": "Ripe plums have soft and juicy pulp with sweet taste. Suitable for being eaten naturally, but is also used for preserving and pastries.",
     "source": "https://www.hemkop.se/produkt/Plommon-Rod-Klass-1-100258347_KG"
@@ -339,6 +358,7 @@
     "info_path": "dataset/Fruit/Pomegranate/Pomegranate_Information.txt",
     "nutrition_grade": "c",
     "price": 2.76,
+    "calories": 72,
     "mass": "440g",
     "description": "Pomegranate has a sweet, gentle taste, great for salads and desserts. You eat the kernels, removed by cutting around the apple without destroying the core. Turn both halves to loosen, then tap the shell over a bowl to release the kernels.",
     "source": "https://www.hemkop.se/produkt/Granatapple-Klass-1-101203898_KG"
@@ -352,6 +372,7 @@
     "info_path": "dataset/Fruit/Red-Grapefruit/Red-Grapefruit_Information.txt",
     "nutrition_grade": "b",
     "price": 11.96,
+    "calories": 104,
     "mass": "375g",
     "description": "The red grapefruit has a red pulp and a slightly pink colored peel. The taste is characteristically bitter, but at the same time fresh and sour. The red grapefruit is sweeter than the blonde grapefruit.",
     "source": "https://www.hemkop.se/produkt/Grape-Rod-Klass-1-101204878_ST"
@@ -365,6 +386,7 @@
     "info_path": "dataset/Fruit/Satsumas/Satsumas_Information.txt",
     "nutrition_grade": "b",
     "price": 2.76,
+    "calories": 52,
     "mass": "100g",
     "description": "Satsumas is a sweet and small type of citrus fruit. The fruit is popular as a snack.",
     "source": "https://www.hemkop.se/produkt/Citrus-Sma-Klass-1-101273941_KG"
@@ -378,6 +400,7 @@
     "info_path": "dataset/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Information.txt",
     "nutrition_grade": "c",
     "price": 16.56,
+    "calories": 33,
     "volume": "2L",
     "description": "Ready to drink apple juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink.",
     "source": "https://www.hemkop.se/produkt/apple-Juice-100972967_ST"
@@ -391,6 +414,7 @@
     "info_path": "dataset/Packages/Juice/Bravo-Orange-Juice/Bravo-Orange-Juice_Information.txt",
     "nutrition_grade": "c",
     "price": 16.56,
+    "calories": 110,
     "volume": "2L",
     "description": "Ready to drink orange juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink. Without pulp.",
     "source": "https://www.hemkop.se/produkt/Apelsinjuice-Drickfardig-Juice-100972930_ST"
@@ -404,6 +428,7 @@
     "info_path": "dataset/Packages/Juice/God-Morgon-Apple-Juice/God-Morgon-Apple-Juice_Information.txt",
     "nutrition_grade": "e",
     "price": 3.68,
+    "calories": 40,
     "volume": "1L",
     "description": "God Morning Apple is unfiltered, which gives a richer, more delicious juice with real apple flavor.",
     "source": "https://www.hemkop.se/produkt/apple-Juice-med-Fruktkott-Fran-Koncentrat-101146350_ST"
@@ -417,6 +442,7 @@
     "info_path": "dataset/Packages/Juice/God-Morgon-Orange-Juice/God-Morgon-Orange-Juice_Information.txt",
     "nutrition_grade": "e",
     "price": 5.52,
+    "calories": 45,
     "volume": "1L",
     "description": "God Morgon Orange is pressed by sun-dried, hand-picked oranges. The package contains juice from 2 kilograms of oranges!",
     "source": "https://www.hemkop.se/produkt/Apelsinjuice-100985864_ST"
@@ -430,6 +456,7 @@
     "info_path": "dataset/Packages/Juice/God-Morgon-Orange-Red-Grapefruit-Juice/God-Morgon-Orange-Red-Grapefruit-Juice_Information.txt",
     "nutrition_grade": "c",
     "price": 14.72,
+    "calories": 35,
     "volume": "1L",
     "description": "God Morning Orange / Red Grapefruit is a fresh blend of sweet orange juice and tasty fresh red grapefruit.",
     "source": "https://www.hemkop.se/produkt/Apelsin-Blodgrape-Juice-med-Fruktkott-100985828_ST"
@@ -443,6 +470,7 @@
     "info_path": "dataset/Packages/Juice/God-Morgon-Red-Grapefruit-Juice/God-Morgon-Red-Grapefruit-Juice_Information.txt",
     "nutrition_grade": "c",
     "price": 9.2,
+    "calories": 96,
     "volume": "1L",
     "description": "God Morning Red Grapefruit is a real vitamin kick - mellow, rich in taste and as refreshing as only red grapefruit can be.",
     "source": "https://www.hemkop.se/produkt/Blodgrape-Juice-med-Fruktkott-100985640_ST"
@@ -456,6 +484,7 @@
     "info_path": "dataset/Packages/Juice/Tropicana-Apple-Juice/Tropicana-Apple-Juice_Information.txt",
     "nutrition_grade": "c",
     "price": 6.44,
+    "calories": 140,
     "volume": "1L",
     "description": "Tropicana Apple is a ready to drink juice with pulp pressed on apples. Not from concentrate. Mildly pasteurized.",
     "source": "https://www.hemkop.se/produkt/apple-Farskpressad-Juice-100985702_ST"
@@ -469,6 +498,7 @@
     "info_path": "dataset/Packages/Juice/Tropicana-Golden-Grapefruit/Tropicana-Golden-Grapefruit_Information.txt",
     "nutrition_grade": "e",
     "price": 7.36,
+    "calories": 170,
     "volume": "1L",
     "description": "Tropicana Golden Grape is a ready to drink juice with pulp pressed on grapefruit. Not from concentrate. Mildly pasteurized.",
     "source": "https://www.hemkop.se/produkt/Golden-Grapefruit-Farskpressad-Juice-100985739_ST"
