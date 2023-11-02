@@ -512,6 +512,7 @@
     "info_path": "dataset/Packages/Juice/Tropicana-Juice-Smooth/Tropicana-Juice-Smooth_Information.txt",
     "nutrition_grade": "c",
     "price": 15.64,
+    "calories": 72,
     "volume": "1L",
     "description": "Tropicana Smooth Style is a ready to drink juice without pulp pressed on sun-dried oranges. Not from concentrate. Mildly pasteurized.",
     "source": "https://www.hemkop.se/produkt/Smooth-Style-Utan-Fruktkott-Farskpressad-Juice-100985668_ST"
@@ -525,6 +526,7 @@
     "info_path": "dataset/Packages/Juice/Tropicana-Mandarin-Morning/Tropicana-Mandarin-Morning_Information.txt",
     "nutrition_grade": "c",
     "price": 8.28,
+    "calories": 49,
     "volume": "1L",
     "description": "Tropicana Mandarin Morning is a ready to drink juice without pulp pressed on orange, mandarin and grapes. Not from concentrate. Mildly pasteurized.",
     "source": "https://www.hemkop.se/produkt/Mandarin-Grape-Orange-Farskpressad-Juice-100985935_ST"
@@ -538,6 +540,7 @@
     "info_path": "dataset/Packages/Milk/Arla-Ecological-Medium-Fat-Milk/Arla-Ecological-Medium-Fat-Milk_Information.txt",
     "nutrition_grade": "a",
     "price": 17.48,
+    "calories": 41,
     "volume": "1L",
     "description": "Fresh skimmed Milk made from Swedish Milk from organic Arlag\u00e5rdar. A delicious choice for breakfast cereals, porridge, or a mealtime drink. Natural source of protein, calcium, and vitamin B12. Arla Ko guarantees 100% Swedish milk.",
     "source": "https://www.hemkop.se/produkt/Mellanmjolk-Ekologisk-1-5procent-101123632_ST"
@@ -551,6 +554,7 @@
     "info_path": "dataset/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Information.txt",
     "nutrition_grade": "a",
     "price": 11.04,
+    "calories": 163,
     "volume": "1L",
     "description": "Lactose-free skimmed milk from Swedish milk at Arlag\u00e5rdar. Ideal for lactose-intolerant adults and kids. Delicious in cereals, porridge, or as a mealtime drink. Arla Ko guarantees 100% Swedish milk.",
     "source": "https://www.hemkop.se/produkt/Mellanmjolk-Laktosfri-1-5procent-100906879_ST"
@@ -564,6 +568,7 @@
     "info_path": "dataset/Packages/Milk/Arla-Medium-Fat-Milk/Arla-Medium-Fat-Milk_Information.txt",
     "nutrition_grade": "a",
     "price": 8.28,
+    "calories": 122,
     "volume": "1L",
     "description": "Fresh skimmed milk from Swedish milk at Arlag\u00e5rdar. Delicious for breakfast cereals, porridge, or a mealtime drink. Natural source of protein, calcium, and vitamin B12. Arla Ko guarantees 100% Swedish milk.",
     "source": "https://www.hemkop.se/produkt/Mellanmjolk-1-5procent-100183962_ST"
@@ -577,6 +582,7 @@
     "info_path": "dataset/Packages/Milk/Arla-Standard-Milk/Arla-Standard-Milk_Information.txt",
     "nutrition_grade": "a",
     "price": 9.2,
+    "calories": 149,
     "volume": "1L",
     "description": "Fresh standard milk from Swedish milk at Arlag\u00e5rdar. Round, creamy flavor makes it great for coffee, tea, and chocolate. Also perfect for cooking, berries, and porridge. Natural source of protein, calcium, and vitamin B12. Arla Ko guarantees 100% Swedish milk.",
     "source": "https://www.hemkop.se/produkt/Mjolk-3procent-100183944_ST"
@@ -590,6 +596,7 @@
     "info_path": "dataset/Packages/Milk/Garant-Ecological-Medium-Fat-Milk/Garant-Ecological-Medium-Fat-Milk_Information.txt",
     "nutrition_grade": "b",
     "price": 7.36,
+    "calories": 122,
     "volume": "1L",
     "description": "Organic skimmed milk from our Swedish KRAV farms. 1.5 percent fat. Garant's organic labeling tells us that a product is organic and sometimes even KRAV-labeled. Our assortment is constantly filled with more EKO products.",
     "source": "https://www.hemkop.se/produkt/Mellanmjolk-Ekologisk-1-5procent-101187327_ST"
@@ -603,6 +610,7 @@
     "info_path": "dataset/Packages/Milk/Garant-Ecological-Standard-Milk/Garant-Ecological-Standard-Milk_Information.txt",
     "nutrition_grade": "b",
     "price": 4.6,
+    "calories": 130,
     "volume": "1L",
     "description": "Ecological milk from Swedish KRAV-labeled farms.",
     "source": "https://www.hemkop.se/produkt/Standardmjolk-Ekologisk-3procent-101187312_ST"
@@ -616,6 +624,7 @@
     "info_path": "dataset/Packages/Oatghurt/Oatly-Natural-Oatghurt/Oatly-Natural-Oatghurt_Information.txt",
     "nutrition_grade": "b",
     "price": 5.52,
+    "calories": 130,
     "mass": "1kg",
     "description": "Whole vegetable ghurt, used as yoghurt. Can also be used for cold sauces.",
     "source": "https://www.hemkop.se/produkt/Havregurt-Naturell-101223139_ST"
@@ -629,6 +638,7 @@
     "info_path": "dataset/Packages/Oat-Milk/Oatly-Oat-Milk/Oatly-Oat-Milk_Information.txt",
     "nutrition_grade": "b",
     "price": 15.64,
+    "calories": 120,
     "volume": "1L",
     "description": "A natural oat drink, enriched with calcium and vitamins. Has long shelf life and can be stored at room temperature.",
     "source": "https://www.hemkop.se/produkt/Havredryck-Berikad-Farsk-101223155_ST"
@@ -642,6 +652,7 @@
     "info_path": "dataset/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Information.txt",
     "nutrition_grade": "c",
     "price": 12.88,
+    "calories": 49,
     "volume": "3dL",
     "description": "KRAV-labeled sour cream from fresh cream at Swedish organic Arlag\u00e5rdar. A classic for both everyday and weekend use. It has an acidic, creamy and fresh taste, great as an accessory or in sauces. Softens the heat of spicy dishes. Arla Ko guarantees 100% Swedish milk.",
     "source": "https://www.hemkop.se/produkt/Graddfil-Eko-12procent-101196968_ST"
@@ -655,6 +666,7 @@
     "info_path": "dataset/Packages/Sour-Cream/Arla-Sour-Cream/Arla-Sour-Cream_Information.txt",
     "nutrition_grade": "d",
     "price": 6.44,
+    "calories": 57,
     "volume": "3dL",
     "description": "Sour cream from fresh cream at Swedish Arlag\u00e5rdar. A classic for both weekday and weekend use. It has an acidic, creamy and fresh taste with a slightly creamy texture. Excellent as an accessory or in sauces. Softens the heat of spicy dishes. Arla Ko guarantees 100% Swedish milk.",
     "source": "https://www.hemkop.se/produkt/Graddfil-12procent-100480800_ST"
@@ -668,6 +680,7 @@
     "info_path": "dataset/Packages/Sour-Milk/Arla-Sour-Milk/Arla-Sour-Milk_Information.txt",
     "nutrition_grade": "d",
     "price": 12.88,
+    "calories": 83,
     "mass": "1kg",
     "description": "Classic sour milk from Swedish milk at Arlag\u00e5rdar. Slightly acidic with a characteristic sour milk aroma and light creaminess. Enjoy with muesli, cereal, fruit, or berries. Sour milk has a long history in Sweden. Arla Ko guarantees 100% Swedish milk.",
     "source": "https://www.hemkop.se/produkt/Filmjolk-3procent-101207046_ST"
@@ -681,6 +694,7 @@
     "info_path": "dataset/Packages/Soyghurt/Alpro-Blueberry-Soyghurt/Alpro-Blueberry-Soyghurt_Information.txt",
     "nutrition_grade": "a",
     "price": 18.4,
+    "calories": 70,
     "mass": "750g",
     "description": "Soy based ghurt, used as yoghurt, with mild blueberry taste and creamy texture.",
     "source": "https://www.hemkop.se/produkt/Blabar-Yofu-Sojayoghurt-101189719_ST"
@@ -694,6 +708,7 @@
     "info_path": "dataset/Packages/Soyghurt/Alpro-Vanilla-Soyghurt/Alpro-Vanilla-Soyghurt_Information.txt",
     "nutrition_grade": "a",
     "price": 15.64,
+    "calories": 66,
     "mass": "750g",
     "description": "Soy based ghurt, used as yoghurt, with mild vanilla taste and and creamy texture.",
     "source": "https://www.hemkop.se/produkt/Mild-och-Creamy-Vanilj-Sojayoghurt-101189736_ST"
@@ -707,6 +722,7 @@
     "info_path": "dataset/Packages/Soy-Milk/Alpro-Fresh-Soy-Milk/Alpro-Fresh-Soy-Milk_Information.txt",
     "nutrition_grade": "a",
     "price": 4.6,
+    "calories": 40,
     "volume": "1L",
     "description": "Fresh soy based drink, enriched with calcium and vitamins.",
     "source": "https://www.hemkop.se/produkt/Sojadryck-Kalcium-Farsk-101026569_ST"
@@ -720,6 +736,7 @@
     "info_path": "dataset/Packages/Soy-Milk/Alpro-Shelf-Soy-Milk/Alpro-Shelf-Soy-Milk_Information.txt",
     "nutrition_grade": "a",
     "price": 8.28,
+    "calories": 31,
     "volume": "1L",
     "description": "Soy based drink, enriched with calcium and vitamins. Can be stored in room temperature.",
     "source": "https://www.hemkop.se/produkt/Sojadryck-Kalcium-101220250_ST"
@@ -733,6 +750,7 @@
     "info_path": "dataset/Packages/Yoghurt/Arla-Mild-Vanilla-Yoghurt/Arla-Mild-Vanilla-Yoghurt_Information.txt",
     "nutrition_grade": "a",
     "price": 5.52,
+    "calories": 70,
     "volume": "1L",
     "description": "Mild vanilla yogurt from Swedish milk at Arlag\u00e5rdar. Creamy, tender texture with a soft, round taste. Perfect for breakfast, snacks, or smoothies. Enjoy with muesli, flakes, fruit, or berries. Arla Ko guarantees 100% Swedish milk.",
     "source": "https://www.hemkop.se/produkt/Mild-Yoghurt-Vanilj-100575995_ST"
@@ -746,6 +764,7 @@
     "info_path": "dataset/Packages/Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt_Information.txt",
     "nutrition_grade": "a",
     "price": 4.6,
+    "calories": 78,
     "volume": "1L",
     "description": "Keyhole-labeled light yogurt with creamy texture and natural taste. An excellent choice for a healthy yet tasty option. Perfect for breakfast and snacks, with muesli, flakes, fruit, or berries. Arla Ko guarantees 100% Swedish milk.",
     "source": "https://www.hemkop.se/produkt/Mild-Lattyoghurt-Naturell-0-5procent-100232240_ST"
@@ -759,6 +778,7 @@
     "info_path": "dataset/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Information.txt",
     "nutrition_grade": "a",
     "price": 7.36,
+    "calories": 218,
     "volume": "1L",
     "description": "Creamy, slightly more acidic yogurt with a clear character. Tastes great for breakfast or as a snack, and pairs well with nuts, honey, and fresh berries. Ideal for kebab sauce, baking bread, and yogurt drinks. Arla Ko guarantees 100% Swedish milk.",
     "source": "https://www.hemkop.se/produkt/Yoghurt-Naturell-101257113_ST"
@@ -772,6 +792,7 @@
     "info_path": "dataset/Packages/Yoghurt/Valio-Vanilla-Yoghurt/Valio-Vanilla-Yoghurt_Information.txt",
     "nutrition_grade": "b",
     "price": 11.04,
+    "calories": 232,
     "mass": "1kg",
     "description": "The original! Valio's creamy vanilla yoghurt original. The yogurt is carefully sugared with 30 percent less added sugar than regular flavored yogurt. Great for both breakfast and snacks.",
     "source": "https://www.hemkop.se/produkt/Vaniljyoghurt-Original-2procent-100300906_ST"
@@ -785,6 +806,7 @@
     "info_path": "dataset/Packages/Yoghurt/Yoggi-Strawberry-Yoghurt/Yoggi-Strawberry-Yoghurt_Information.txt",
     "nutrition_grade": "b",
     "price": 14.72,
+    "calories": 343,
     "mass": "1kg",
     "description": "Creamy yogurt rich in natural ingredients with a mild, round taste of strawberries and vanilla. Yoggi original is a satisfying and energizing delight for the whole family. Enjoy it at breakfast, as a quick snack, or a simple dessert. The blueish yellow milk can symbol guarantees 100% Swedish milk.",
     "source": "https://www.hemkop.se/produkt/Vaniljyoghurt-Jordgubb-2procent-100049877_ST"
@@ -798,6 +820,7 @@
     "info_path": "dataset/Packages/Yoghurt/Yoggi-Vanilla-Yoghurt/Yoggi-Vanilla-Yoghurt_Information.txt",
     "nutrition_grade": "b",
     "price": 11.96,
+    "calories": 145,
     "volume": "1L",
     "description": "Creamy yogurt with a mild, tender taste of real vanilla from Madagascar. Belongs to the popular Yoggi original family, perfect for breakfast, a quick snack, or dessert. The blueish yellow milk can symbol guarantees 100% Swedish milk.",
     "source": "https://www.hemkop.se/produkt/Madagaskar-Vanilj-Yoghurt-2procent-101024268_ST"
@@ -811,6 +834,7 @@
     "info_path": "dataset/Vegetables/Asparagus/Asparagus_Information.txt",
     "nutrition_grade": "a",
     "price": 4.6,
+    "calories": 50,
     "mass": "250g",
     "description": "Asparagus has a mild taste, ideal as an accessory or in vegetable dishes. Enjoy it boiled or grilled. Fresh asparagus is known for its stiff stalk and should be stored in the refrigerator. Shelf life is up to one week in the fridge or a few days at room temperature.",
     "source": "https://www.hemkop.se/produkt/Sparris-Gron-Klass-1-100771309_ST"
@@ -824,6 +848,7 @@
     "info_path": "dataset/Vegetables/Aubergine/Aubergine_Information.txt",
     "nutrition_grade": "b",
     "price": 4.6,
+    "calories": 198,
     "mass": "300g",
     "description": "Aubergine, or eggplant as it is also called, is usually dark violet. It has a shiny peel and is 15-20 cm long. The pulp is white. Aubergine is always eaten cooked. In addition to Moussaka, Aubergine fits well in pots and gratins.",
     "source": "https://www.hemkop.se/produkt/Aubergine-Klass-1-100773272_ST"
@@ -837,6 +862,7 @@
     "info_path": "dataset/Vegetables/Cabbage/Cabbage_Information.txt",
     "nutrition_grade": "b",
     "price": 9.2,
+    "calories": 21,
     "mass": "2.8kg",
     "description": "White cabbage can be used as a raw food, but it also fits well in for example cabbage rolls, cabbage pudding, cabbage soup, etc.",
     "source": "https://www.hemkop.se/produkt/Vitkal-Import-Klass-1-100152905_KG"
@@ -850,6 +876,7 @@
     "info_path": "dataset/Vegetables/Carrots/Carrots_Information.txt",
     "nutrition_grade": "a",
     "price": 5.52,
+    "calories": 25,
     "mass": "170g",
     "description": "The orange red color of the carrot comes from the high content of beta carotene, which in the body is converted into vitamin A. Tastefully, carrot is sweet, with a crunchy texture. Carrots can be eaten raw, and are also used in pots, gratins, soups and wok.",
     "source": "https://www.hemkop.se/produkt/Morot-Klass-1-100148868_KG"
@@ -863,6 +890,7 @@
     "info_path": "dataset/Vegetables/Cucumber/Cucumber_Information.txt",
     "nutrition_grade": "c",
     "price": 4.6,
+    "calories": 16,
     "mass": "300g",
     "description": "Fresh cucumber. Fits well in the salad or on the sandwich.",
     "source": "https://www.hemkop.se/produkt/Gurka-Sverige-Klass-1-100594965_ST"
@@ -876,6 +904,7 @@
     "info_path": "dataset/Vegetables/Garlic/Garlic_Information.txt",
     "nutrition_grade": "b",
     "price": 17.48,
+    "calories": 74,
     "mass": "50g",
     "description": "Garlic has unique flavor and smell, and is a good flavoring in pasta dishes, pots, mixes, etc.",
     "source": "https://www.hemkop.se/produkt/Vitlok-Klass-1-100148225_KG"
@@ -889,6 +918,7 @@
     "info_path": "dataset/Vegetables/Ginger/Ginger_Information.txt",
     "nutrition_grade": "e",
     "price": 16.56,
+    "calories": 2,
     "mass": "150g",
     "description": "Ginger is a herb with a characteristically sharp taste. It is used for flavoring and accessories, especially in Asian cuisine. Vegetables and curries, rice, pickles, meat and fish are good for flavoring with ginger. The rich aroma also fits well with cookies, biscuits, marmalades and sweet desserts.",
     "source": "https://www.hemkop.se/produkt/Ingefara-Klass-1-100147388_KG"
@@ -902,6 +932,7 @@
     "info_path": "dataset/Vegetables/Leek/Leek_Information.txt",
     "nutrition_grade": "b",
     "price": 13.8,
+    "calories": 38,
     "mass": "300g",
     "description": "Leek has a slightly milder onion flavor and is preferably used for soups and pots, but can also be finely shredded into a salad. It is mainly the white part that is used, although it is fine to eat the green leaves.",
     "source": "https://www.hemkop.se/produkt/Purjolok-Klass-1-101249333_KG"
@@ -915,6 +946,7 @@
     "info_path": "dataset/Vegetables/Mushroom/Brown-Cap-Mushroom/Brown-Cap-Mushroom_Information.txt",
     "nutrition_grade": "a",
     "price": 18.4,
+    "calories": 15,
     "description": "The forest mushroom is also called chestnut mushroom, and is a brown mushroom with a fuller flavor than the white mushrooms. It can be eaten raw in for example salads, but are also good to boil, pan-fry or fry.",
     "source": "https://www.hemkop.se/produkt/Skogschampinjo-Klass-1-100152166_KG"
   },
