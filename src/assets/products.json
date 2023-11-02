@@ -959,6 +959,7 @@
     "info_path": "dataset/Vegetables/Onion/Yellow-Onion/Yellow-Onion_Information.txt",
     "nutrition_grade": "a",
     "price": 5.52,
+    "calories": 67,
     "mass": "150g",
     "description": "Yellow onion is a good flavoring. Fits well both cold and hot in cooking.",
     "source": "https://www.hemkop.se/produkt/Lok-Gul-Klass-1-100269139_KG"
@@ -972,6 +973,7 @@
     "info_path": "dataset/Vegetables/Pepper/Green-Bell-Pepper/Green-Bell-Pepper_Information.txt",
     "nutrition_grade": "a",
     "price": 5.52,
+    "calories": 34,
     "mass": "210g",
     "description": "Peppers come in various colors, including green, yellow, orange, red, and white. Green peppers are unripe and slightly firmer, ideal for warm dishes like chili con carne, pies, gratin, and stews. Peppers change color as they ripen.",
     "source": "https://www.hemkop.se/produkt/Paprika-Gron-Gron-Klass-1-100149224_KG"
@@ -985,6 +987,7 @@
     "info_path": "dataset/Vegetables/Pepper/Orange-Bell-Pepper/Orange-Bell-Pepper_Information.txt",
     "nutrition_grade": "a",
     "price": 8.28,
+    "calories": 32,
     "mass": "210g",
     "description": "The orange pepper is sweeter than the green. It also contains more vitamins and antioxidants than the green. Peppers are good to eat raw in salads and as garnish, but are also good to fry, stew or gratinate, for example with filling. Paprika also fits well in pots, gratins and pies.",
     "source": "https://www.hemkop.se/produkt/Paprika-Orange-Klass-1-100149288_KG"
@@ -998,6 +1001,7 @@
     "info_path": "dataset/Vegetables/Pepper/Red-Bell-Pepper/Red-Bell-Pepper_Information.txt",
     "nutrition_grade": "b",
     "price": 11.04,
+    "calories": 32,
     "mass": "210g",
     "description": "The red peppers are much sweeter than the green ones. It also contains more vitamins and antioxidants than the green. Peppers are good to eat raw in salads and as garnish, but are also good to fry, stew or gratinate, for example. with filling. Paprika also fits well in pots, gratins and pies.",
     "source": "https://www.hemkop.se/produkt/Paprika-Rod-Rod-Klass-1-100149359_KG"
@@ -1011,6 +1015,7 @@
     "info_path": "dataset/Vegetables/Pepper/Yellow-Bell-Pepper/Yellow-Bell-Pepper_Information.txt",
     "nutrition_grade": "b",
     "price": 12.88,
+    "calories": 50,
     "mass": "210g",
     "description": "The yellow pepper is much sweeter than the green. It also contains more vitamins and antioxidants than the green. Peppers are good to eat raw in salads and as garnish, but are also good to fry, stew or gratinate, for example with filling. Paprika also fits well in pots, gratins and pies.",
     "source": "https://www.hemkop.se/produkt/Paprika-Gul-Gul-Klass-1-100149251_KG"
@@ -1024,6 +1029,7 @@
     "info_path": "dataset/Vegetables/Potato/Floury-Potato/Floury-Potato_Information.txt",
     "nutrition_grade": "a",
     "price": 11.04,
+    "calories": 57,
     "description": "Floury potatoes. Extra good for mashed potatoes and to press.",
     "source": "https://www.hemkop.se/produkt/Potatis-Mjolig-Klass-1-100150541_KG"
   },
@@ -1036,6 +1042,7 @@
     "info_path": "dataset/Vegetables/Potato/Solid-Potato/Solid-Potato_Information.txt",
     "nutrition_grade": "a",
     "price": 9.2,
+    "calories": 150,
     "description": "Solid potatoes. A good allround potato that fits well most of the time.",
     "source": "https://www.hemkop.se/produkt/Potatis-Fast-Klass-1-100150587_KG"
   },
@@ -1048,6 +1055,7 @@
     "info_path": "dataset/Vegetables/Potato/Sweet-Potato/Sweet-Potato_Information.txt",
     "nutrition_grade": "a",
     "price": 18.4,
+    "calories": 112,
     "mass": "360g",
     "description": "Sweet potatoes are oblong tubers, larger than regular potatoes. They have light brown or red peel and come in two varieties, with light or yellow-orange pulp. Sweet potatoes are sweet and slightly softer than regular potatoes. They can be used in various dishes, including desserts, pies, and cakes.",
     "source": "https://www.hemkop.se/produkt/Sotpotatis-Klass-1-100150827_KG"
@@ -1061,6 +1069,7 @@
     "info_path": "dataset/Vegetables/Red-Beet/Red-Beet_Information.txt",
     "nutrition_grade": "b",
     "price": 12.88,
+    "calories": 58,
     "mass": "100g",
     "description": "Red beets have an earthy, sweet taste. They're often served cooked or preserved in dishes like p\u00f6lsa, pyttipanna, or steak Lindstr\u00f6m. They can also be used in Borstj (red beet soup) or as raw food. Red beets are sensitive to heat, frost, and dehydration and should be stored cool.",
     "source": "https://www.hemkop.se/produkt/Rodbeta-Klass-1-100151210_KG"
@@ -1074,6 +1083,7 @@
     "info_path": "dataset/Vegetables/Tomato/Beef-Tomato/Beef-Tomato_Information.txt",
     "nutrition_grade": "b",
     "price": 11.04,
+    "calories": 33,
     "mass": "200g",
     "description": "An extra large tomato suitable for well for hamburgers and on the grill or in the oven.",
     "source": "https://www.hemkop.se/produkt/Bifftomat-Klass-1-100152488_KG"
@@ -1087,6 +1097,7 @@
     "info_path": "dataset/Vegetables/Tomato/Regular-Tomato/Regular-Tomato_Information.txt",
     "nutrition_grade": "a",
     "price": 12.88,
+    "calories": 22,
     "mass": "80g",
     "description": "Round and fine tomatoes from Sweden. Rinse and have in the salad or on the sandwich.",
     "source": "https://www.hemkop.se/produkt/Tomat-Sverige-Klass-1-100521259_KG"
@@ -1100,6 +1111,7 @@
     "info_path": "dataset/Vegetables/Tomato/Vine-Tomato/Vine-Tomato_Information.txt",
     "nutrition_grade": "a",
     "price": 15.64,
+    "calories": 22,
     "mass": "140g",
     "description": "Round tomatoes with vines in the package. Rinse and have in the salad or on the sandwich.",
     "source": "https://www.hemkop.se/produkt/Kvisttomat-Klass-1-100152282_KG"
@@ -1113,6 +1125,7 @@
     "info_path": "dataset/Vegetables/Zucchini/Zucchini_Information.txt",
     "nutrition_grade": "a",
     "price": 9.2,
+    "calories": 20,
     "mass": "360g",
     "description": "Zucchini can be eaten raw, but is usually used in soups, pots, stews, etc.",
     "source": "https://www.hemkop.se/produkt/Zucchini-Klass-1-100268130_ST"
