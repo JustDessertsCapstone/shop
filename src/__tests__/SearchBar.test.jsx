@@ -79,7 +79,7 @@ describe('SearchBar', () => {
     // verify 'smith' results
     expect(getProducts()).toStrictEqual(smith_expected);
 
-    // submit 'smiappleth' in search
+    // submit 'apple' in search
     act(() => {
       fireEvent.change(searchInput, { target: { value: 'apple' } });
       fireEvent.click(submitButton)
