@@ -29,14 +29,22 @@
   text-shadow: 0 0 10px #000, 0 0 10px #000;
 }
 
-#shop-main {
+#shop-main,
+#about-page-main,
+#product-page-main {
   background-image: url("./assets/girl_sunset.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
 
+#product-page-text {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: auto;
+}
+
+#shop-main {
   min-height: 40em;
-
   font-size: medium;
 }
 
@@ -103,6 +111,12 @@
 
 .product-card-description {
   font-size: 11px;
+}
+
+.product-card-add {
+  width: auto;
+  height: auto;
+  font-size: 0.8em;
 }
 
 .header {
@@ -196,13 +210,6 @@
   text-decoration: underline;
 }
 
-#about-main {
-  background-image: url("./assets/girl_sunset.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 #about-page-text {
   background-color: rgba(255, 255, 255, 0.9);
   margin-left: 20%;
@@ -212,12 +219,14 @@
   text-align: left;
 }
 
-#about-page-text:first-child {
+#about-page-text:first-child,
+#product-page-text:first-child {
   margin-top: 0;
   padding-top: 1px;
 }
 
-#about-page-text:last-child {
+#about-page-text:last-child,
+#product-page-text:last-child {
   margin-bottom: 0;
   padding-bottom: 1px;
 }

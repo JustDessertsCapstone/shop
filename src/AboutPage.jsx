@@ -9,7 +9,7 @@ export default function AboutPage() {
         </a>
       </header>
 
-      <main id="about-main">
+      <main id="about-page-main">
         <div id="about-page-text">
           <h1>Healthify - A Healthier Shopping Experience</h1>
           <h2>Group Name: Just Desserts</h2>

@@ -58,6 +58,13 @@ function ProductCard({ product, cart, addToCart }) {
 
         <p className="product-card-price">Price: ${product.price.toFixed(2)}</p>
 
+        <button
+          className="product-card-add"
+          onClick={() => addToCart(product.id)}
+        >
+          Add to cart
+        </button>
+
         <Link className="link" to={`/shop/product/${product.id}`}>
           Go to Product Page
         </Link>

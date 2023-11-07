@@ -14,37 +14,39 @@ export default function ProductPage() {
         </a>
       </header>
 
-      <main>
-        <h1> Hello, welcome to Healthify</h1>
-        <h2>Product: {product.name}</h2>
-        <img
-          className="product-img"
-          src={"../" + product.img_path}
-          alt={
-            product.name.replaceAll("-", " ") +
-            // Adds class name only if it is not included in the product name
-            (!product.name
-              .toLowerCase()
-              .includes(product.class_name.toLowerCase())
-              ? " " + product.class_name
-              : "") +
-            " on a white background."
-          }
-          width="350"
-          height="350"
-        />
-        <p>{product.description}</p>
-        {product.calories && (
-          <p className="product-card-calories">Calories: {product.calories}</p>
-        )}
-        {product.mass && (
-          <p className="product-card-mass">Mass: {product.mass}</p>
-        )}
-        {product.volume && (
-          <p className="product-card-volume">Volume: {product.volume}</p>
-        )}
+      <main id="product-page-main">
+        <div id="product-page-text">
+          <h1> Hello, welcome to Healthify</h1>
+          <h2>Product: {product.name}</h2>
+          <img
+            className="product-img"
+            src={"../" + product.img_path}
+            alt={
+              product.name.replaceAll("-", " ") +
+              // Adds class name only if it is not included in the product name
+              (!product.name
+                .toLowerCase()
+                .includes(product.class_name.toLowerCase())
+                ? " " + product.class_name
+                : "") +
+              " on a white background."
+            }
+            width="350"
+            height="350"
+          />
+          <p>{product.description}</p>
+          {product.calories && (
+            <p className="product-page-calories">Calories: {product.calories}</p>
+          )}
+          {product.mass && (
+            <p className="product-page-mass">Mass: {product.mass}</p>
+          )}
+          {product.volume && (
+            <p className="product-page-volume">Volume: {product.volume}</p>
+          )}
 
-        <p className="product-card-price">Price: ${product.price.toFixed(2)}</p>
+          <p className="product-page-price">Price: ${product.price.toFixed(2)}</p>
+        </div>
       </main>
 
       <footer>
