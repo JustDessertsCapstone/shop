@@ -29,14 +29,22 @@
   text-shadow: 0 0 10px #000, 0 0 10px #000;
 }
 
-main {
+#shop-main,
+#about-page-main,
+#product-page-main {
   background-image: url("./assets/girl_sunset.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
 
+#product-page-text {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: auto;
+}
+
+#shop-main {
   min-height: 40em;
-
   font-size: medium;
 }
 
@@ -45,28 +53,74 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 10px;
-  row-gap: 30px;
+  margin: 2%;
 }
 
 .product-card {
-  background-color: white;
   width: 198px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
+  position: relative;
+  margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.product-card > * {
+.product-card div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.product-card:hover > div {
+  transform: rotateY(1turn) scale(1.2);
+  z-index: 1;
+}
+
+.product-card-front {
+  background-color: white;
+  display: grid;
+  align-items: center;
+  height: 100%;
+  width: 198px;
+}
+
+.product-card-front > * {
   margin: 0px;
 }
 
-.product-card:hover {
-  background-color: #e0e0e0;
-  transform: scale(1.1);
+.product-card-back {
+  background-color: whitesmoke;
+  margin-bottom: 10%;
+  /* center contents vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* display: table-cell;
+  vertical-align: middle; */
+  width: 198px;
+  height: 100%;
+  transform: rotateY(180deg);
+}
+
+.product-card-back > * {
+  margin: 1%;
+}
+
+.product-card-description {
+  font-size: 11px;
+}
+
+.product-card-add {
+  width: auto;
+  height: auto;
+  font-size: 0.8em;
 }
 
 .header {
- position: relative;
+  position: relative;
 }
 
 .cart-icon {
@@ -95,29 +149,84 @@ main {
   display: block;
 }
 
+.user-icon {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  color: white;
+}
+
+.user-icon:hover + .oath-buttons {
+  display: block;
+}
+
+.oath-buttons {
+  background-color: #fff;
+  position: absolute;
+  top: 140px;
+  right: 25px;
+  padding: 1%;
+  display: none;
+}
+
+.oath-buttons:hover {
+  display: block;
+}
+
 .search-bar {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(92, 92, 92);
   border-radius: 5px;
   font-size: 16px;
+  width: 300px;
   height: 40px;
 }
 
-.search-button {
-  background-color: #e7edf4;
+.search-forum > button {
+  background-color: #595959;
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  width: 250px; 
-  height: 40px; 
+  width: 150px;
+  height: 40px;
   margin-top: 20px;
 }
 
-.search-button:hover {
+.search-forum > button:hover {
   background-color: #dbe0e6;
+  color: #404040;
   height: 40px;
   margin-top: 20px;
+}
+
+.link {
+  color: #0a16ff;
+  text-decoration: underline;
+}
+
+#about-page-text {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+}
+
+#about-page-text:first-child,
+#product-page-text:first-child {
+  margin-top: 0;
+  padding-top: 1px;
+}
+
+#about-page-text:last-child,
+#product-page-text:last-child {
+  margin-bottom: 0;
+  padding-bottom: 1px;
 }

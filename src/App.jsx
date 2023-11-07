@@ -1,11 +1,15 @@
-import React from 'react'
-import './App.css'
-import data from './assets/products.json'
-import { ProductContainerState, ProductContainer } from './ProductContainer'
-import CartIcon from './assets/google_shopping.svg'
-import { ShoppingCartState, ShoppingCartContainer } from './ShoppingCart'
-import SearchBar from './SearchBar'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./App.css";
 
+import data from "./assets/products.json";
+import cartIcon from "./assets/google_shopping.svg";
+import userIcon from "./assets/user-profile-icon.svg";
+import UserProfile from "./UserProfile";
+
+import { SearchBar } from "./SearchBar";
+import { ShoppingCartState, ShoppingCartContainer } from "./ShoppingCart";
+import { ProductContainerState, ProductContainer } from "./ProductContainer";
 
 function App() {
   const [cart, addToCart, removeFromCart, clearCart] = ShoppingCartState();
@@ -14,25 +18,41 @@ function App() {
   return (
     <>
       <header className="header">
-        <h1 className="banner">Healthify</h1>
-        <img src={CartIcon} alt="Shopping Cart Icon" className="cart-icon" />
+        <a href="/shop/">
+          <h1 className="banner">Healthify</h1>
+        </a>
+        <img src={cartIcon} alt="Shopping Cart Icon" className="cart-icon" />
         <ShoppingCartContainer data={data} cart={cart} />
+        <img src={userIcon} alt="User Profile Icon" className="user-icon" />
+        <UserProfile />
       </header>
 
-      <main>
+      <main id="shop-main">
         <h1> Hello, welcome to Healthify</h1>
         <SearchBar data={data} setProducts={setProducts} />
         <br />
-        <ProductContainer products={products} addToCart={addToCart} />
+        <ProductContainer
+          products={products}
+          cart={cart}
+          addToCart={addToCart}
+        />
       </main>
 
       <footer>
         <p>
-          Within Healthify, you will find that being rewarded for making better choices is so rewarding!
+          Within Healthify, you will find that being rewarded for making better
+          choices is so rewarding!
+        </p>
+        <p>
+          Learn more about this project, team, and sources, by visiting
+          our&nbsp;
+          <Link className="link" to={`/shop/about/`}>
+            About Page
+          </Link>
         </p>
       </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
