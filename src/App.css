@@ -230,3 +230,10 @@
   margin-bottom: 0;
   padding-bottom: 1px;
 }
+
+.shopping-cart-page-item-list {
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
