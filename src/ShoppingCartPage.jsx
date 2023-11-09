@@ -1,14 +1,21 @@
 import React from "react";
-import { getTableRows } from "./ShoppingCart.jsx";
-import data from "./assets/products.json"
+import { Link } from "react-router-dom";
 
-export default function ShoppingCartPage({ cart }) {
+import data from "./assets/products.json";
+
+import { getTableRows } from "./ShoppingCart.jsx";
+
+
+export default function ShoppingCartPage(states) {
+  const { cart, addToCart, removeFromCart, clearCart } = states;
+  console.log(cart);
+
   return (
     <>
       <header className="header">
-        <a href="/shop/">
+        <Link to="/shop/">
           <h1 className="banner">Healthify</h1>
-        </a>
+        </Link>
       </header>
 
       <main id="shopping-cart-page-main">

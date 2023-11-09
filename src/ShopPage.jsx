@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "./App.css";
 
 import data from "./assets/products.json";
@@ -7,28 +8,27 @@ import cartIcon from "./assets/google_shopping.svg";
 import userIcon from "./assets/user-profile-icon.svg";
 
 import { SearchBar } from "./SearchBar";
-import { ShoppingCartState, ShoppingCartContainer } from "./ShoppingCart";
-import { ProductContainerState, ProductContainer } from "./ProductContainer";
-import { UserState, OAuthButtons } from "./OAuthButtons";
+import { ShoppingCartContainer } from "./ShoppingCart";
+import { ProductContainer } from "./ProductContainer";
+import { OAuthButtons } from "./OAuthButtons";
 
-function App() {
-  const [cart, addToCart, removeFromCart, clearCart] = ShoppingCartState();
-  const [products, setProducts] = ProductContainerState(data);
-  const [user, setUser] = UserState();
+
+export default function ShopPage(states) {
+  const { cart, addToCart, products, setProducts, setUser } = states;
 
   return (
     <>
       <header className="header">
-        <a href="/shop/">
+        <Link to="/shop/">
           <h1 className="banner">Healthify</h1>
-        </a>
-        <a href="/shop/cart">
-        <img src={cartIcon} alt="Shopping Cart Icon" className="cart-icon" />
-        <ShoppingCartContainer
-          data={data}
-          cart={cart}
-        />
-        </a>
+        </Link>
+        <Link to="/shop/cart/">
+          <img src={cartIcon} alt="Shopping Cart Icon" className="cart-icon" />
+          <ShoppingCartContainer
+            data={data}
+            cart={cart}
+          />
+        </Link>
         <img src={userIcon} alt="User Profile Icon" className="user-icon" />
         <OAuthButtons
           setUser={setUser}
@@ -57,7 +57,7 @@ function App() {
         <p>
           Learn more about this project, team, and sources, by visiting
           our&nbsp;
-          <Link className="link" to={`/shop/about/`}>
+          <Link className="link" to="/shop/about/">
             About Page
           </Link>
         </p>
@@ -65,5 +65,3 @@ function App() {
     </>
   );
 }
-
-export default App;

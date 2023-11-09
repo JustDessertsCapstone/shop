@@ -1,17 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+
 import products from "./assets/products.json";
 
-export default function ProductPage() {
+
+export default function ProductPage(states) {
+  const { cart, addToCart } = states;
   const { productID } = useParams();
   const product = products.find((product) => product.id == productID);
 
   return (
     <>
       <header className="header">
-        <a href="/shop/">
+        <Link to="/shop/">
           <h1 className="banner">Healthify</h1>
-        </a>
+        </Link>
       </header>
 
       <main id="product-page-main">
@@ -53,6 +57,13 @@ export default function ProductPage() {
         <p>
           Within Healthify, you will find that being rewarded for making better
           choices is so rewarding!
+        </p>
+        <p>
+          Learn more about this project, team, and sources, by visiting
+          our&nbsp;
+          <Link className="link" to="/shop/about/">
+            About Page
+          </Link>
         </p>
       </footer>
     </>

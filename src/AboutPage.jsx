@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 export default function AboutPage() {
   return (
     <>
       <header className="header">
-        <a href="/shop/">
+        <Link to="/shop/">
           <h1 className="banner">Healthify</h1>
-        </a>
+        </Link>
       </header>
 
       <main id="about-page-main">

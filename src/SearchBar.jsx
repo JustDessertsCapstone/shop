@@ -1,3 +1,4 @@
+
 function search(query, data) {
   return data.filter((product) => {
     let productClassClean =
