@@ -20,7 +20,7 @@ export function ShoppingCartState() {
   return [cart, addToCart, removeFromCart, clearCart];
 }
 
-function getTableRows(data, cart) {
+export function getTableRows(data, cart) {
   if (cart.length == 0)
     return (
       <tr key={0}>
