@@ -22,11 +22,13 @@ function App() {
         <a href="/shop/">
           <h1 className="banner">Healthify</h1>
         </a>
+        <a href="/shop/cart">
         <img src={cartIcon} alt="Shopping Cart Icon" className="cart-icon" />
         <ShoppingCartContainer
           data={data}
           cart={cart}
         />
+        </a>
         <img src={userIcon} alt="User Profile Icon" className="user-icon" />
         <OAuthButtons
           setUser={setUser}
