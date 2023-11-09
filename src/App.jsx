@@ -5,15 +5,16 @@ import "./App.css";
 import data from "./assets/products.json";
 import cartIcon from "./assets/google_shopping.svg";
 import userIcon from "./assets/user-profile-icon.svg";
-import UserProfile from "./UserProfile";
 
 import { SearchBar } from "./SearchBar";
 import { ShoppingCartState, ShoppingCartContainer } from "./ShoppingCart";
 import { ProductContainerState, ProductContainer } from "./ProductContainer";
+import { UserState, OAuthButtons } from "./OAuthButtons";
 
 function App() {
   const [cart, addToCart, removeFromCart, clearCart] = ShoppingCartState();
   const [products, setProducts] = ProductContainerState(data);
+  const [user, setUser] = UserState();
 
   return (
     <>
@@ -22,14 +23,22 @@ function App() {
           <h1 className="banner">Healthify</h1>
         </a>
         <img src={cartIcon} alt="Shopping Cart Icon" className="cart-icon" />
-        <ShoppingCartContainer data={data} cart={cart} />
+        <ShoppingCartContainer
+          data={data}
+          cart={cart}
+        />
         <img src={userIcon} alt="User Profile Icon" className="user-icon" />
-        <UserProfile />
+        <OAuthButtons
+          setUser={setUser}
+        />
       </header>
 
       <main id="shop-main">
         <h1> Hello, welcome to Healthify</h1>
-        <SearchBar data={data} setProducts={setProducts} />
+        <SearchBar
+          data={data}
+          setProducts={setProducts}
+        />
         <br />
         <ProductContainer
           products={products}
