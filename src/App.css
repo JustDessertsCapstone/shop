@@ -48,7 +48,8 @@
   font-size: medium;
 }
 
-.product-container {
+.product-container,
+#shopping-cart-page-suggested-products {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

@@ -44,7 +44,6 @@ export default function ShopPage(states) {
         <br />
         <ProductContainer
           products={products}
-          cart={cart}
           addToCart={addToCart}
         />
       </main>

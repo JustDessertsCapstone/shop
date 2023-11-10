@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-function ProductCard({ product, cart, addToCart }) {
+export function ProductCard({ product, addToCart }) {
   return (
     <div className="product-card">
       <div className="product-card-front">
@@ -77,14 +77,13 @@ export function ProductContainerState(products) {
   return useState(products);
 }
 
-export function ProductContainer({ products, cart, addToCart }) {
+export function ProductContainer({ products, addToCart }) {
   return (
     <div className="product-container">
       {products.map((product) => (
         <ProductCard
           product={product}
           key={product.id}
-          cart={cart}
           addToCart={addToCart}
         />
       ))}

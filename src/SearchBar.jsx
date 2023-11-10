@@ -1,5 +1,5 @@
 
-function search(query, data) {
+export function search(query, data) {
   return data.filter((product) => {
     let productClassClean =
       product.name.toLowerCase().replaceAll("-", " ") +
@@ -11,8 +11,6 @@ function search(query, data) {
     return productList;
   });
 }
-
-export const searchTest = process.env.NODE_ENV === "test" ? search : "";
 
 export function SearchBar({ data, setProducts }) {
   return (
