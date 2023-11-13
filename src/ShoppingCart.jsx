@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+const mappedCart = new Map(); // holds productIDs and counts
 
 export function ShoppingCartState() {
   const [cart, setCart] = useState([]);
@@ -22,14 +23,13 @@ export function ShoppingCartState() {
 }
 
 export function getTableRows(data, cart) {
-  if (cart.length == 0)
+  if (cart.length === 0)
     return (
       <tr key={0}>
         <td>Cart Empty</td>
       </tr>
     );
 
-  const mappedCart = new Map(); // holds productIDs and counts
 
   cart.forEach((productID) => {
     mappedCart.set(productID, mappedCart.get(productID) + 1 || 1);
@@ -46,6 +46,33 @@ export function getTableRows(data, cart) {
     );
   });
 }
+let totalCost = 0;
+
+const cartRows = [...mappedCart].map(([productID, quantity]) => {
+  const product = data.find((product) => product.id === productID);
+  totalCost += product.price * quantity;
+
+  return (
+    <tr key={product.id}>
+      <td>{product.name.replaceAll("-", " ")}</td>
+      <td>{quantity}</td>
+      <td>${product.price}</td>
+      <td>${product.price * quantity}</td>
+      <td>
+        <button onClick={() => removeFromCart(product.id)}>Remove</button>
+      </td>
+    </tr>
+  );
+});
+
+cartRows.push(
+  <tr key="total">
+    <td colSpan="3">Total:</td>
+    <td>${totalCost}</td>
+    <td></td>
+  </tr>
+);
+
 
 export function ShoppingCartContainer({ data, cart }) {
   return (

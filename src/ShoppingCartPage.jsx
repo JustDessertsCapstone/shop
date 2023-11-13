@@ -84,7 +84,9 @@ export default function ShoppingCartPage(states) {
           <table>
             <thead>
               <tr>
-                <th>Shopping Cart</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
               </tr>
             </thead>
             <tbody>{getTableRows(data, cart)}</tbody>
