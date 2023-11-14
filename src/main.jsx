@@ -31,6 +31,7 @@ function App() {
               <ShopPage
                 cart={cart}
                 addToCart={addToCart}
+                removeFromCart={removeFromCart}
                 products={products}
                 setProducts={setProducts}
                 setUser={setUser}

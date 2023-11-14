@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import data from "./assets/products.json";
 
-import { getTableRows } from "./ShoppingCart.jsx";
+import { getTableRows, getTotalCost } from "./ShoppingCart.jsx";
 import { search } from "./SearchBar";
 import { ProductCard } from "./ProductContainer"
 
@@ -81,30 +81,49 @@ export default function ShoppingCartPage(states) {
       <main id="shopping-cart-page-main">
         <div className="shopping-cart-page-item-list">
           <h1>Shopping Cart</h1>
-          <table>
-            <thead>
-              <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Total Price</th>
-              </tr>
-            </thead>
-            <tbody>{getTableRows(data, cart)}</tbody>
-          </table>
+          {cart.length !== 0 ?
+            <table>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th colSpan="3">Quantity</th>
+                  <th>Total Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                {getTableRows(data, cart, addToCart, removeFromCart)}
+                {cart.length !== 0 ?
+                  <tr key="total">
+                    <td colSpan="4">Total:</td>
+                    <td>${getTotalCost(data, cart)}</td>
+                    <td></td>
+                  </tr> : <></>
+                }
+              </tbody>
+            </table> :
+            <>
+              <p>Your shopping cart is empty.</p>
+              <Link to="/shop/">
+                <p>Go to Shop Page</p>
+              </Link>
+            </>
+          }
         </div>
 
         <br />
 
-        <div className="shopping-cart-page-suggestions">
-          <h2>Recommended Products</h2>
-          <p>
-            Based on your shopping cart, we recommend the following products:
-          </p>
-          <SuggestedProducts
-            products={getSuggestedProducts(cart)}
-            addToCart={addToCart}
-          />
-        </div>
+        {getSuggestedProducts(cart).length !== 0 ?
+          <div className="shopping-cart-page-suggestions">
+            <h2>Recommended Products</h2>
+            <p>
+              Based on your shopping cart, we recommend the following products:
+            </p>
+            <SuggestedProducts
+              products={getSuggestedProducts(cart)}
+              addToCart={addToCart}
+            />
+          </div> : <></>
+        }
       </main>
 
       <footer>

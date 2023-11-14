@@ -150,6 +150,16 @@
   display: block;
 }
 
+.add-product-arrow,
+.remove-product-arrow {
+  width: auto;
+  height: auto;
+  padding:0;
+  margin:0;
+  text-align: center;
+  display: inline-block;
+}
+
 .user-icon {
   position: absolute;
   top: 100px;

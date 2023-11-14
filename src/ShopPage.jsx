@@ -14,7 +14,11 @@ import { OAuthButtons } from "./OAuthButtons";
 
 
 export default function ShopPage(states) {
-  const { cart, addToCart, products, setProducts, setUser } = states;
+  const {
+    cart, addToCart, removeFromCart, 
+    products, setProducts, 
+    setUser
+  } = states;
 
   return (
     <>
@@ -27,6 +31,8 @@ export default function ShopPage(states) {
           <ShoppingCartContainer
             data={data}
             cart={cart}
+            addToCart={addToCart}
+            removeFromCart={removeFromCart}
           />
         </Link>
         <img src={userIcon} alt="User Profile Icon" className="user-icon" />

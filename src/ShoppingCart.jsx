@@ -1,18 +1,18 @@
 import { useState } from "react";
 
-const mappedCart = new Map(); // holds productIDs and counts
 
 export function ShoppingCartState() {
   const [cart, setCart] = useState([]);
 
-  const addToCart = (product) => {
-    setCart([...cart, product]);
+  const addToCart = (productID) => {
+    setCart([...cart, productID]);
   };
 
-  const removeFromCart = (index) => {
-    const updateCart = [...index];
-    updateCart.splice(index, 1);
-    setCart(updateCart);
+  const removeFromCart = (productID) => {
+    const index = cart.findIndex((id) => id === productID);
+
+    cart.splice(index, 1);
+    setCart([...cart])
   };
 
   const clearCart = () => {
@@ -22,7 +22,7 @@ export function ShoppingCartState() {
   return [cart, addToCart, removeFromCart, clearCart];
 }
 
-export function getTableRows(data, cart) {
+export function getTableRows(data, cart, addToCart, removeFromCart) {
   if (cart.length === 0)
     return (
       <tr key={0}>
@@ -30,6 +30,8 @@ export function getTableRows(data, cart) {
       </tr>
     );
 
+  const mappedCart = new Map(); // holds productIDs and counts
+  let totalCost = 0;
 
   cart.forEach((productID) => {
     mappedCart.set(productID, mappedCart.get(productID) + 1 || 1);
@@ -38,43 +40,48 @@ export function getTableRows(data, cart) {
   return [...mappedCart].map(([productID, quantity]) => {
     const product = data.find((product) => product.id === productID);
 
+    totalCost += product.price * quantity;
+
     return (
       <tr key={product.id}>
         <td>{product.name.replaceAll("-", " ")}</td>
+        <td>
+          <button
+            className="remove-product-arrow"
+            onClick={() => removeFromCart(product.id)}
+          >
+            {String.fromCharCode(8592)}
+          </button>
+        </td>
         <td>{quantity}</td>
+        <td>
+          <button
+            className="add-product-arrow"
+            onClick={() => addToCart(product.id)}
+          >
+            {String.fromCharCode(8594)}
+          </button>
+        </td>
+        {/* <td>${product.price}</td> */}
+        <td>${(product.price * quantity).toFixed(2)}</td>
       </tr>
     );
   });
 }
-let totalCost = 0;
 
-const cartRows = [...mappedCart].map(([productID, quantity]) => {
-  const product = data.find((product) => product.id === productID);
-  totalCost += product.price * quantity;
+export function getTotalCost(data, cart) {
+  let totalCost = 0;
 
-  return (
-    <tr key={product.id}>
-      <td>{product.name.replaceAll("-", " ")}</td>
-      <td>{quantity}</td>
-      <td>${product.price}</td>
-      <td>${product.price * quantity}</td>
-      <td>
-        <button onClick={() => removeFromCart(product.id)}>Remove</button>
-      </td>
-    </tr>
-  );
-});
+  cart.forEach((productID) => {
+    const product = data.find((product) => product.id === productID);
 
-cartRows.push(
-  <tr key="total">
-    <td colSpan="3">Total:</td>
-    <td>${totalCost}</td>
-    <td></td>
-  </tr>
-);
+    totalCost += product.price;
+  });
 
+  return totalCost.toFixed(2);
+}
 
-export function ShoppingCartContainer({ data, cart }) {
+export function ShoppingCartContainer({ data, cart, addToCart, removeFromCart }) {
   return (
     <div className="shopping-cart">
       <table>
@@ -83,7 +90,16 @@ export function ShoppingCartContainer({ data, cart }) {
             <th>Shopping Cart</th>
           </tr>
         </thead>
-        <tbody>{getTableRows(data, cart)}</tbody>
+        <tbody>
+          {getTableRows(data, cart, addToCart, removeFromCart)}
+          {cart.length !== 0 ?
+            <tr key="total">
+              <td colSpan="4">Total:</td>
+              <td>${getTotalCost(data, cart)}</td>
+              <td></td>
+            </tr> : <></>
+          }
+        </tbody>
       </table>
     </div>
   );
