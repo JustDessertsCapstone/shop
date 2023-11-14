@@ -1,18 +1,80 @@
-import { useState } from "react";
+// import { useState } from "react";
+// import db from "./firebase";
+// import { collection, doc, updateDoc, arrayUnion, arrayRemove } from "firebase/firestore";
 
+// export function useShoppingCartState(db) {
+//   const [cart, setCart] = useState([]);
 
-export function useShoppingCartState() {
+//   const addToCart = async (productID) => {
+//     try {
+//       const updatedCart = [...cart, productID];
+//       setCart(updatedCart);
+
+//       const cartRef = doc(db, 'Users', 'FJ1myWcXwfC6cd8QvhUh');
+//       await updateDoc(cartRef, { cart: arrayUnion(productID) });
+//     } catch (error) {
+//       console.error("Error adding to cart:", error);
+//     }
+//   };
+
+//   const removeFromCart = async (productID) => {
+//     try {
+//       const updatedCart = cart.filter((id) => id !== productID);
+//       setCart(updatedCart);
+  
+//       const cartRef = doc(db, 'Users', 'FJ1myWcXwfC6cd8QvhUh');
+//       await updateDoc(cartRef, { cart: arrayRemove(productID) });
+//     } catch (error) {
+//       console.error("Error removing from cart:", error);
+//     }
+//   };
+
+import { useState, useEffect } from "react";
+import { collection, doc, getDoc, updateDoc, setDoc } from "firebase/firestore"; // Import necessary Firestore functions
+
+export function useShoppingCartState(db, userSub) {
   const [cart, setCart] = useState([]);
 
-  const addToCart = (productID) => {
-    setCart([...cart, productID]);
+  useEffect(() => {
+    const fetchCart = async () => {
+      try {
+        const userRef = doc(collection(db, 'Users'), userSub); // Replace with the actual user document ID
+        const userDoc = await getDoc(userRef);
+
+        if (userDoc.exists()) {
+          const userData = userDoc.data();
+          setCart(userData.cart || []); // Set the cart from the document data
+        }
+      } catch (error) {
+        console.error("Error fetching cart:", error);
+      }
+    };
+
+    fetchCart();
+  }, [db, userSub]);
+
+  const addToCart = async (productID) => {
+    try {
+      const updatedCart = [...cart, productID];
+      setCart(updatedCart);
+
+      const userRef = doc(collection(db, 'Users'), 'FJ1myWcXwfC6cd8QvhUh'); // Replace 'FJ1myWcXwfC6cd8QvhUh' with the current user document ID
+      await updateDoc(userRef, { cart: updatedCart });
+    } catch (error) {
+      console.error("Error adding to cart:", error);
+    }
   };
 
-  const removeFromCart = (productID) => {
-    const index = cart.findIndex((id) => id === productID);
+  const removeFromCart = async (productID) => {
+    try {
+      const updatedCart = cart.filter((id) => id !== productID);
+      setCart(updatedCart);
 
-    cart.splice(index, 1);
-    setCart([...cart])
+      const userRef = doc(collection(db, 'Users'), 'FJ1myWcXwfC6cd8QvhUh'); // Replace 'FJ1myWcXwfC6cd8QvhUh' with the current user document ID
+      await updateDoc(userRef, { cart: updatedCart });
+    } catch (error) {
+      console.error("Error removing from cart:", error);
+    }
   };
 
   const clearCart = () => {

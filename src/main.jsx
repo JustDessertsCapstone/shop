@@ -15,9 +15,10 @@ import ProductPage from "./ProductPage.jsx";
 import AboutPage from "./AboutPage.jsx";
 import ShoppingCartPage from "./ShoppingCartPage.jsx";
 
+import db from "./firebase"
 
 function App() {
-  const [cart, addToCart, removeFromCart, clearCart] = useShoppingCartState();
+  const [cart, addToCart, removeFromCart, clearCart] = useShoppingCartState(db);
   const [user, setUser] = useUserState();
   
   return (
