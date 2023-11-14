@@ -94,7 +94,7 @@ export default function ShoppingCartPage(states) {
       <main id="shopping-cart-page-main">
         <div className="shopping-cart-page-item-list">
           <h1>Shopping Cart</h1>
-          {cart.length !== 0 ?
+          { cart.length !== 0 ?
             <table>
               <thead>
                 <tr>
@@ -105,7 +105,7 @@ export default function ShoppingCartPage(states) {
               </thead>
               <tbody>
                 {getTableRows(data, cart, addToCart, removeFromCart)}
-                {cart.length !== 0 ?
+                { cart.length !== 0 ?
                   <tr key="total">
                     <td colSpan="4">Total:</td>
                     <td>${getTotalCost(data, cart)}</td>
@@ -125,7 +125,7 @@ export default function ShoppingCartPage(states) {
 
         <br />
 
-        {suggestedProducts.length !== 0 ?
+        { suggestedProducts.length !== 0 ?
           <div className="shopping-cart-page-suggestions">
             <h2>Recommended Products</h2>
             <p>
