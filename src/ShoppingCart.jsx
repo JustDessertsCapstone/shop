@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-export function ShoppingCartState() {
+export function useShoppingCartState() {
   const [cart, setCart] = useState([]);
 
   const addToCart = (productID) => {

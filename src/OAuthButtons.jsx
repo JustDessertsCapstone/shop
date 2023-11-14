@@ -54,7 +54,7 @@ function LogoutButton({ setUser }) {
   );
 }
 
-export function UserState() {
+export function useUserState() {
   const [ user, setUser ] = useState([]);
 
   return [ user, setUser ];

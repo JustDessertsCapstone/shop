@@ -7,8 +7,8 @@ import "./index.css";
 
 import data from "./assets/products.json";
 
-import { ShoppingCartState } from "./ShoppingCart";
-import { UserState } from "./OAuthButtons";
+import { useShoppingCartState } from "./ShoppingCart";
+import { useUserState } from "./OAuthButtons";
 
 import ShopPage from "./ShopPage.jsx";
 import ProductPage from "./ProductPage.jsx";
@@ -17,8 +17,8 @@ import ShoppingCartPage from "./ShoppingCartPage.jsx";
 
 
 function App() {
-  const [cart, addToCart, removeFromCart, clearCart] = ShoppingCartState();
-  const [user, setUser] = UserState();
+  const [cart, addToCart, removeFromCart, clearCart] = useShoppingCartState();
+  const [user, setUser] = useUserState();
   
   return (
     <GoogleOAuthProvider clientId="43903682458-v5dr38m8qmeak6n5unja52qjt065p7p5.apps.googleusercontent.com">

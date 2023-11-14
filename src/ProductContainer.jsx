@@ -73,7 +73,7 @@ export function ProductCard({ product, addToCart }) {
   );
 }
 
-export function ProductContainerState(products) {
+export function useProductContainerState(products) {
   return useState(products);
 }
 
