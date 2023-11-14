@@ -6,7 +6,7 @@ import { collection, query, where, getDocs, addDoc } from "firebase/firestore";
 import { auth } from "./firebase";
 
 function LoginButton({ setUser }) {
-  const [user, setUserExists] = useState(null);
+  const [isSignedIn, setSignedIn] = useState(false);
 
   const checkUserExistence = async (subValue) => {
     try {
@@ -14,18 +14,15 @@ function LoginButton({ setUser }) {
       const querySnapshot = await getDocs(q);
     
       if (querySnapshot.size === 0) {
-        console.log("User doesn't exist");
+        console.log("User not in DB. Adding user.");
         
         await addDoc(collection(db, 'Users'), {
           sub: subValue,
           cart: null,
           points: 0
         });
-        
-        setUserExists(false);
       } else {
-        console.log("User exists.");
-        setUserExists(true);
+        console.log("User already in DB.");
       }
     } catch (error) {
       console.error('Error checking user existence:', error);
@@ -39,6 +36,7 @@ function LoginButton({ setUser }) {
     await checkUserExistence(userSub);
     
     setUser(decodedCredentials);
+    setSignedIn(true);
   };
 
   const onFailure = (res) => {
@@ -49,6 +47,8 @@ function LoginButton({ setUser }) {
     try {
       await auth.signOut();
       setUser(null);
+      googleLogout();
+      setSignedIn(false);
       console.log("sign out successful");
     } catch (error) {
       console.error("Error signing out:", error);
@@ -57,7 +57,7 @@ function LoginButton({ setUser }) {
 
   return (
     <div>
-      {user ? (
+      {isSignedIn ? (
         <div>
           <button onClick={signOut}>Sign Out</button>
         </div>
