@@ -1,17 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { GoogleLogin, googleLogout } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
 import db from "./firebase";
 import { collection, query, where, getDocs, addDoc } from "firebase/firestore"; 
+import { auth } from "./firebase";
 
 function LoginButton({ setUser }) {
-  const [userExists, setUserExists] = useState(false);
+  const [user, setUserExists] = useState(null);
 
   const checkUserExistence = async (subValue) => {
     try {
       const q = query(collection(db, 'Users'), where('sub', '==', subValue));
       const querySnapshot = await getDocs(q);
-
+    
       if (querySnapshot.size === 0) {
         console.log("User doesn't exist");
         
@@ -44,27 +45,29 @@ function LoginButton({ setUser }) {
     console.log("Login Failed");
   };
 
+  const signOut = async () => {
+    try {
+      await auth.signOut();
+      setUser(null);
+      console.log("sign out successful");
+    } catch (error) {
+      console.error("Error signing out:", error);
+    }
+  };
+
   return (
     <div>
-      <GoogleLogin id="signInButton" onSuccess={onSuccess} onError={onFailure} />
+      {user ? (
+        <div>
+          <button onClick={signOut}>Sign Out</button>
+        </div>
+      ) : (
+        <div>
+          <p>You are signed out. Please sign in to continue:</p>
+          <GoogleLogin id="signInButton" onSuccess={onSuccess} onError={onFailure} />
+        </div>
+      )}
     </div>
-  );
-}
-
-function LogoutButton({ setUser }) {
-  const signOut = () => {
-    googleLogout();
-    setUser([]);
-  };
-
-  const onSuccess = () => {
-    console.log("Logout Successful");
-  };
-
-  return (
-    <button id="signOutButton" onClick={signOut}>
-      Sign Out
-    </button>
   );
 }
 
@@ -77,9 +80,7 @@ export function useUserState() {
 export function OAuthButtons({ setUser }) {
   return (
     <div className="oath-buttons">
-      <p>Please Sign In:</p>
       <LoginButton setUser={setUser} />
-      {/* <LogoutButton setUser={setUser} /> */}
     </div>
   );
 }
