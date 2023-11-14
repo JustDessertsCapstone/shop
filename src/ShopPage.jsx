@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "./App.css";
 
@@ -17,10 +17,11 @@ import { OAuthButtons } from "./OAuthButtons";
 
 export default function ShopPage(states) {
   const {
-    cart, addToCart, removeFromCart, 
+    cart, addToCart, removeFromCart,
     setUser
   } = states;
   const [products, setProducts] = useProductContainerState(data);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -28,15 +29,18 @@ export default function ShopPage(states) {
         <Link to="/shop/">
           <h1 className="banner">Healthify</h1>
         </Link>
-        <Link to="/shop/cart/">
-          <img src={cartIcon} alt="Shopping Cart Icon" className="cart-icon" />
-          <ShoppingCartContainer
-            data={data}
-            cart={cart}
-            addToCart={addToCart}
-            removeFromCart={removeFromCart}
+          <img
+            onClick={() => navigate("/shop/cart/")}
+            src={cartIcon}
+            alt="Shopping Cart Icon"
+            className="cart-icon"
           />
-        </Link>
+        <ShoppingCartContainer
+          data={data}
+          cart={cart}
+          addToCart={addToCart}
+          removeFromCart={removeFromCart}
+        />
         <img src={userIcon} alt="User Profile Icon" className="user-icon" />
         <OAuthButtons
           setUser={setUser}
