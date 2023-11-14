@@ -1,39 +1,53 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GoogleLogin, googleLogout } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
 import db from "./firebase";
-import { collection, addDoc } from "firebase/firestore"; 
+import { collection, query, where, getDocs, addDoc } from "firebase/firestore"; 
 
 function LoginButton({ setUser }) {
+  const [userExists, setUserExists] = useState(false);
 
-  const onSuccess = (res) => {
-    setUser(jwtDecode(res["credential"]));
-
-    let decodedCredentials = (jwtDecode(res["credential"]));
-    let stringCredentials = (JSON.stringify(decodedCredentials));
-    let subStart = stringCredentials.search("sub") + 3;
-    let subLength = 21;
-    let userSub = stringCredentials.substr(subStart + 3, subLength);
-
+  const checkUserExistence = async (subValue) => {
     try {
-      const docRef = addDoc(collection(db, "Users"), {
-        name: "",  // we need to ask them for their name, or we can use what is given from the google OAuth
-        sub: userSub,
-        points: 0  // defaulted to 0 points
-      });
-      console.log("Document written with ID: ", docRef.id);
-    } catch (e) {
-      console.error("Error adding document: ", e);
+      const q = query(collection(db, 'Users'), where('sub', '==', subValue));
+      const querySnapshot = await getDocs(q);
+
+      if (querySnapshot.size === 0) {
+        console.log("User doesn't exist");
+        
+        await addDoc(collection(db, 'Users'), {
+          sub: subValue,
+          cart: null,
+          points: 0
+        });
+        
+        setUserExists(false);
+      } else {
+        console.log("User exists.");
+        setUserExists(true);
+      }
+    } catch (error) {
+      console.error('Error checking user existence:', error);
     }
+  };
+
+  const onSuccess = async (res) => {
+    const decodedCredentials = jwtDecode(res["credential"]);
+    const userSub = decodedCredentials.sub;
     
+    await checkUserExistence(userSub);
+    
+    setUser(decodedCredentials);
   };
 
   const onFailure = (res) => {
     console.log("Login Failed");
   };
-  
+
   return (
-    <GoogleLogin id="signInButton" onSuccess={onSuccess} onError={onFailure} />
+    <div>
+      <GoogleLogin id="signInButton" onSuccess={onSuccess} onError={onFailure} />
+    </div>
   );
 }
 
