@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import data from "./assets/products.json";
 
 import { getTableRows, getTotalCost } from "./ShoppingCart.jsx";
-import { search } from "./SearchBar";
 import { ProductCard } from "./ProductContainer"
+import { Header, Footer } from "./Layout";
 
 
 // Durstenfeld shuffle - Copied from https://stackoverflow.com/a/12646864
@@ -81,16 +81,15 @@ function SuggestedProducts({ products, addToCart }) {
 }
 
 export default function ShoppingCartPage(states) {
-  const { cart, addToCart, removeFromCart, clearCart } = states;
+  const {
+    cart, addToCart, removeFromCart, clearCart,
+    setUser
+  } = states;
   const { suggestedProducts } = useSuggestedProducts(cart);
 
   return (
     <>
-      <header className="header">
-        <Link to="/shop/">
-          <h1 className="banner">Healthify</h1>
-        </Link>
-      </header>
+      <Header setUser={setUser}/>
 
       <main id="shopping-cart-page-main">
         <div className="shopping-cart-page-item-list">
@@ -140,12 +139,7 @@ export default function ShoppingCartPage(states) {
         }
       </main>
 
-      <footer>
-        <p>
-          Within Healthify, you will find that being rewarded for making better
-          choices is so rewarding!
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }

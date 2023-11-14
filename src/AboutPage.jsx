@@ -1,15 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Header, Footer } from "./Layout";
 
 
 export default function AboutPage() {
   return (
     <>
-      <header className="header">
-        <Link to="/shop/">
-          <h1 className="banner">Healthify</h1>
-        </Link>
-      </header>
+      <Header />
 
       <main id="about-page-main">
         <div id="about-page-text">
@@ -186,12 +182,7 @@ export default function AboutPage() {
         </div>
       </main>
 
-      <footer>
-        <p>
-          Within Healthify, you will find that being rewarded for making better
-          choices is so rewarding!
-        </p>
-      </footer>
+      <Footer includeLink={false}/>
     </>
   );
 }

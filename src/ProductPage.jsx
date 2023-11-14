@@ -1,22 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 import products from "./assets/products.json";
 
+import { Header, Footer } from "./Layout";
+
 
 export default function ProductPage(states) {
-  const { cart, addToCart } = states;
+  const {
+    cart, addToCart, removeFromCart,
+    setUser
+  } = states;
   const { productID } = useParams();
   const product = products.find((product) => product.id == productID);
 
   return (
     <>
-      <header className="header">
-        <Link to="/shop/">
-          <h1 className="banner">Healthify</h1>
-        </Link>
-      </header>
+      <Header
+        cart={cart}
+        addToCart={addToCart}
+        removeFromCart={removeFromCart}
+        setUser={setUser}
+      />
 
       <main id="product-page-main">
         <div id="product-page-text">
@@ -53,19 +58,7 @@ export default function ProductPage(states) {
         </div>
       </main>
 
-      <footer>
-        <p>
-          Within Healthify, you will find that being rewarded for making better
-          choices is so rewarding!
-        </p>
-        <p>
-          Learn more about this project, team, and sources, by visiting
-          our&nbsp;
-          <Link className="link" to="/shop/about/">
-            About Page
-          </Link>
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }

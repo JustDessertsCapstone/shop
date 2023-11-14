@@ -1,18 +1,14 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
 
 import "./App.css";
 
 import data from "./assets/products.json";
-import cartIcon from "./assets/google_shopping.svg";
-import userIcon from "./assets/user-profile-icon.svg";
 
 import { useProductContainerState } from "./ProductContainer";
 
+import { Header, Footer } from "./Layout"
 import { SearchBar } from "./SearchBar";
-import { ShoppingCartContainer } from "./ShoppingCart";
 import { ProductContainer } from "./ProductContainer";
-import { OAuthButtons } from "./OAuthButtons";
 
 
 export default function ShopPage(states) {
@@ -21,31 +17,15 @@ export default function ShopPage(states) {
     setUser
   } = states;
   const [products, setProducts] = useProductContainerState(data);
-  const navigate = useNavigate();
 
   return (
     <>
-      <header className="header">
-        <Link to="/shop/">
-          <h1 className="banner">Healthify</h1>
-        </Link>
-          <img
-            onClick={() => navigate("/shop/cart/")}
-            src={cartIcon}
-            alt="Shopping Cart Icon"
-            className="cart-icon"
-          />
-        <ShoppingCartContainer
-          data={data}
-          cart={cart}
-          addToCart={addToCart}
-          removeFromCart={removeFromCart}
-        />
-        <img src={userIcon} alt="User Profile Icon" className="user-icon" />
-        <OAuthButtons
-          setUser={setUser}
-        />
-      </header>
+      <Header
+        cart={cart}
+        addToCart={addToCart}
+        removeFromCart={removeFromCart}
+        setUser={setUser}
+      />
 
       <main id="shop-main">
         <h1> Hello, welcome to Healthify</h1>
@@ -60,19 +40,7 @@ export default function ShopPage(states) {
         />
       </main>
 
-      <footer>
-        <p>
-          Within Healthify, you will find that being rewarded for making better
-          choices is so rewarding!
-        </p>
-        <p>
-          Learn more about this project, team, and sources, by visiting
-          our&nbsp;
-          <Link className="link" to="/shop/about/">
-            About Page
-          </Link>
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }

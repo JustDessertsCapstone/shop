@@ -37,6 +37,8 @@ function App() {
               <ProductPage
                 cart={cart}
                 addToCart={addToCart}
+                removeFromCart={removeFromCart}
+                setUser={setUser}
               />}
             />
             <Route path="/shop/about/" element={<AboutPage />} />
@@ -46,6 +48,7 @@ function App() {
                 addToCart={addToCart}
                 removeFromCart={removeFromCart}
                 clearCart={clearCart}
+                setUser={setUser}
               />}
             />
           </Routes>
