@@ -38,6 +38,19 @@ function getSuggestedProducts(cart) {
   return suggestedProducts;
 }
 
+function useSuggestedProducts(cart) {
+  const [suggestedProducts, setSuggestedProducts] = useState(getSuggestedProducts(cart));
+
+  useEffect(() => {
+    const newSuggestedProducts = getSuggestedProducts(cart);
+
+    if (newSuggestedProducts.length !== suggestedProducts.length)
+      setSuggestedProducts(newSuggestedProducts);
+  }, [cart]);
+
+  return { suggestedProducts };
+}
+
 function SuggestedProducts({ products, addToCart }) {
   const [numElements, setNumElements] = useState(products.length);
 
@@ -69,6 +82,7 @@ function SuggestedProducts({ products, addToCart }) {
 
 export default function ShoppingCartPage(states) {
   const { cart, addToCart, removeFromCart, clearCart } = states;
+  const { suggestedProducts } = useSuggestedProducts(cart);
 
   return (
     <>
@@ -112,14 +126,14 @@ export default function ShoppingCartPage(states) {
 
         <br />
 
-        {getSuggestedProducts(cart).length !== 0 ?
+        {suggestedProducts.length !== 0 ?
           <div className="shopping-cart-page-suggestions">
             <h2>Recommended Products</h2>
             <p>
               Based on your shopping cart, we recommend the following products:
             </p>
             <SuggestedProducts
-              products={getSuggestedProducts(cart)}
+              products={suggestedProducts}
               addToCart={addToCart}
             />
           </div> : <></>

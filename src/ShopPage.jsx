@@ -7,6 +7,8 @@ import data from "./assets/products.json";
 import cartIcon from "./assets/google_shopping.svg";
 import userIcon from "./assets/user-profile-icon.svg";
 
+import { ProductContainerState } from "./ProductContainer";
+
 import { SearchBar } from "./SearchBar";
 import { ShoppingCartContainer } from "./ShoppingCart";
 import { ProductContainer } from "./ProductContainer";
@@ -16,9 +18,9 @@ import { OAuthButtons } from "./OAuthButtons";
 export default function ShopPage(states) {
   const {
     cart, addToCart, removeFromCart, 
-    products, setProducts, 
     setUser
   } = states;
+  const [products, setProducts] = ProductContainerState(data);
 
   return (
     <>

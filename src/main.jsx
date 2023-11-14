@@ -8,7 +8,6 @@ import "./index.css";
 import data from "./assets/products.json";
 
 import { ShoppingCartState } from "./ShoppingCart";
-import { ProductContainerState } from "./ProductContainer";
 import { UserState } from "./OAuthButtons";
 
 import ShopPage from "./ShopPage.jsx";
@@ -19,7 +18,6 @@ import ShoppingCartPage from "./ShoppingCartPage.jsx";
 
 function App() {
   const [cart, addToCart, removeFromCart, clearCart] = ShoppingCartState();
-  const [products, setProducts] = ProductContainerState(data);
   const [user, setUser] = UserState();
   
   return (
@@ -32,8 +30,6 @@ function App() {
                 cart={cart}
                 addToCart={addToCart}
                 removeFromCart={removeFromCart}
-                products={products}
-                setProducts={setProducts}
                 setUser={setUser}
               />
             }/>
