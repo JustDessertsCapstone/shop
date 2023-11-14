@@ -92,7 +92,7 @@ export function ShoppingCartContainer({ data, cart, addToCart, removeFromCart })
         </thead>
         <tbody>
           {getTableRows(data, cart, addToCart, removeFromCart)}
-          {cart.length !== 0 ?
+          { cart.length !== 0 ?
             <tr key="total">
               <td colSpan="4">Total:</td>
               <td>${getTotalCost(data, cart)}</td>
