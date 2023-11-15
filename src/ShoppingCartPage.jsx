@@ -113,6 +113,7 @@ export default function ShoppingCartPage(states) {
                   </tr> : <></>
                 }
               </tbody>
+              <button className="checkout-button">Checkout</button>
             </table> :
             <>
               <p>Your shopping cart is empty.</p>

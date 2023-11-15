@@ -263,3 +263,17 @@
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.checkout-button {
+  padding: 10px 15px;
+  background-color: #404040;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
