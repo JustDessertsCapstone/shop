@@ -271,6 +271,9 @@
 }
 
 .checkout-button {
+  display: block;
+  margin: auto;
+  margin-top: 20px; 
   padding: 10px 15px;
   background-color: #404040;
   color: #fff;
