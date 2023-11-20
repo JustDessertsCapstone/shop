@@ -25,7 +25,6 @@ export default function ProductPage(states) {
 
       <main id="product-page-main">
         <div id="product-page-text">
-          <h1> Hello, welcome to Healthify</h1>
           <h2>Product: {product.name}</h2>
           <img
             className="product-img"
@@ -55,6 +54,13 @@ export default function ProductPage(states) {
           )}
 
           <p className="product-page-price">Price: ${product.price.toFixed(2)}</p>
+
+          <button
+          className="product-card-add"
+          onClick={() => addToCart(product.id)}
+          >
+            Add to cart
+          </button>
         </div>
       </main>
 
