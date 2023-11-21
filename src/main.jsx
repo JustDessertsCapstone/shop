@@ -17,9 +17,9 @@ import ShoppingCartPage from "./ShoppingCartPage.jsx";
 import db from "./firebase"
 
 function App() {
-  const [cart, addToCart, removeFromCart, clearCart] = useShoppingCartState(db);
-  const [productPopup, setProductPopup] = useProductAddedPopUp();
   const [user, setUser] = useUserState();
+  const [cart, addToCart, removeFromCart, clearCart] = useShoppingCartState(db, user);
+  const [productPopup, setProductPopup] = useProductAddedPopUp();
   
   return (
     <GoogleOAuthProvider clientId="43903682458-v5dr38m8qmeak6n5unja52qjt065p7p5.apps.googleusercontent.com">
@@ -33,6 +33,7 @@ function App() {
                 removeFromCart={removeFromCart}
                 productPopup={productPopup}
                 setProductPopup={setProductPopup}
+                user={user}
                 setUser={setUser}
               />
             }/>
@@ -43,6 +44,7 @@ function App() {
                 removeFromCart={removeFromCart}
                 productPopup={productPopup}
                 setProductPopup={setProductPopup}
+                user={user}
                 setUser={setUser}
               />}
             />
@@ -53,6 +55,7 @@ function App() {
                 addToCart={addToCart}
                 removeFromCart={removeFromCart}
                 clearCart={clearCart}
+                user={user}
                 setUser={setUser}
               />}
             />

@@ -154,6 +154,7 @@
   right: 25px;
   background-color: #ccc;
   display: none;
+  z-index: 1;
 }
 
 .shopping-cart:hover {
@@ -178,6 +179,7 @@
   height: 42px;
   cursor: pointer;
   color: white;
+  border-radius: 100%;
 }
 
 .user-icon:hover + .oath-buttons {
@@ -185,7 +187,7 @@
 }
 
 .oath-buttons {
-  background-color: #fff;
+  background-color: #ccc;
   position: absolute;
   top: 140px;
   right: 25px;

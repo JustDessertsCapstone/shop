@@ -83,13 +83,13 @@ function SuggestedProducts({ products, addToCart }) {
 export default function ShoppingCartPage(states) {
   const {
     cart, addToCart, removeFromCart, clearCart,
-    setUser
+    user, setUser
   } = states;
   const { suggestedProducts } = useSuggestedProducts(cart);
 
   return (
     <>
-      <Header setUser={setUser}/>
+      <Header user={user} setUser={setUser}/>
 
       <main id="shopping-cart-page-main">
         <div className="shopping-cart-page-item-list">

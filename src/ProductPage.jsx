@@ -9,7 +9,7 @@ import { Header, Footer } from "./Layout";
 export default function ProductPage(states) {
   const {
     cart, addToCart, removeFromCart,
-    setUser
+    user, setUser
   } = states;
   const { productID } = useParams();
   const product = products.find((product) => product.id == productID);
@@ -20,6 +20,7 @@ export default function ProductPage(states) {
         cart={cart}
         addToCart={addToCart}
         removeFromCart={removeFromCart}
+        user={user}
         setUser={setUser}
       />
 

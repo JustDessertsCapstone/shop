@@ -9,7 +9,12 @@ import { ShoppingCartContainer } from "./ShoppingCart";
 import { OAuthButtons } from "./OAuthButtons";
 import { ProductAddedPopUp } from "./ProductAddedPopUp.jsx"
 
-export function Header({ cart, addToCart, removeFromCart, productPopup, setUser }) {
+export function Header(states) {
+  const {
+    cart, addToCart, removeFromCart,
+    productPopup,
+    user, setUser
+  } = states;
   const navigate = useNavigate();
 
   return (
@@ -18,12 +23,11 @@ export function Header({ cart, addToCart, removeFromCart, productPopup, setUser 
         <h1 className="banner">Healthify</h1>
       </Link>
 
-      { productPopup !== undefined ? 
+      { productPopup !== undefined &&
         <ProductAddedPopUp productPopup={productPopup} />
-        : <></>
       }
 
-      { cart && addToCart && removeFromCart ?
+      { cart && addToCart && removeFromCart &&
         <>
           <img
             onClick={() => navigate("/shop/cart/")}
@@ -37,14 +41,17 @@ export function Header({ cart, addToCart, removeFromCart, productPopup, setUser 
             addToCart={addToCart}
             removeFromCart={removeFromCart}
           />
-        </> : <></>
+        </>
       }
 
-      { setUser ?
+      { setUser &&
         <>
-          <img src={userIcon} alt="User Profile Icon" className="user-icon" />
-          <OAuthButtons setUser={setUser} />
-        </> : <></>
+          {user
+            ? <img src={user.picture} alt="User Profile Icon" className="user-icon" />
+            : <img src={userIcon} alt="User Profile Icon" className="user-icon" />
+          }
+          <OAuthButtons user={user} setUser={setUser} />
+        </>
       }
     </header>
   );
