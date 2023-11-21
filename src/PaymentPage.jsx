@@ -8,84 +8,11 @@ import { ProductCard } from "./ProductContainer"
 import { Header, Footer } from "./Layout";
 
 
-// Durstenfeld shuffle - Copied from https://stackoverflow.com/a/12646864
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-
-function getSuggestedProducts(cart) {
-  const classes = [];
-
-  // Get all unique product classes from cart
-  cart.forEach((productID) => {
-    const product = data.find((product) => product.id === productID);
-    
-    if (!classes.includes(product.class_name))
-      classes.push(product.class_name);
-  });
-
-  // Get all other products with the same classes as found in cart
-  const suggestedProducts = data.filter((product) => {
-    return !cart.includes(product.id) &&
-      classes.includes(product.class_name);
-  });
-
-  shuffleArray(suggestedProducts);
-
-  return suggestedProducts;
-}
-
-function useSuggestedProducts(cart) {
-  const [suggestedProducts, setSuggestedProducts] = useState(getSuggestedProducts(cart));
-
-  useEffect(() => {
-    const newSuggestedProducts = getSuggestedProducts(cart);
-
-    if (newSuggestedProducts.length !== suggestedProducts.length)
-      setSuggestedProducts(newSuggestedProducts);
-  }, [cart]);
-
-  return { suggestedProducts };
-}
-
-function SuggestedProducts({ products, addToCart }) {
-  const [numElements, setNumElements] = useState(products.length);
-
-  const updateNumElements = () => {
-    const suggestedProductsElement = document.getElementById("shopping-cart-page-suggested-products");
-
-    setNumElements(Math.floor(suggestedProductsElement.clientWidth / 198));
-  }
-
-  useEffect(() => {
-    window.addEventListener("resize", updateNumElements, false);
-  }, []);  
-
-  return (
-    <div
-      id="shopping-cart-page-suggested-products"
-      onLoad={updateNumElements}
-    >
-      {products.slice(0, numElements).map((product) => (
-        <ProductCard
-          product={product}
-          key={product.id}
-          addToCart={addToCart}
-        />
-      ))}
-    </div>
-  );
-}
-
-export default function ShoppingCartPage(states) {
+export default function PaymentPage(states) {
   const {
     cart, addToCart, removeFromCart, clearCart,
     setUser
   } = states;
-  const { suggestedProducts } = useSuggestedProducts(cart);
 
   return (
     <>
@@ -122,21 +49,6 @@ export default function ShoppingCartPage(states) {
             </>
           }
         </div>
-
-        <br />
-
-        { suggestedProducts.length !== 0 ?
-          <div className="shopping-cart-page-suggestions">
-            <h2>Recommended Products</h2>
-            <p>
-              Based on your shopping cart, we recommend the following products:
-            </p>
-            <SuggestedProducts
-              products={suggestedProducts}
-              addToCart={addToCart}
-            />
-          </div> : <></>
-        }
       </main>
 
       <Footer />
