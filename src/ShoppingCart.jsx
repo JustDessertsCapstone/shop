@@ -6,7 +6,10 @@ export function useShoppingCartState(db, user) {
 
   useEffect(() => {
     const fetchCart = async () => {
-      if (!user) return;
+      if (!user) {
+        setCart([]);
+        return;
+      }
       if (!db) return;
 
       try {
@@ -14,10 +17,13 @@ export function useShoppingCartState(db, user) {
 
         if (userDoc.exists()) {
           const userData = userDoc.data();
-          setCart(userData.cart || []); // Set the cart from the document data
+          const updatedCart = cart.concat(userData.cart);
+
+          setCart(updatedCart);
+          await updateDoc(user.ref, { cart: updatedCart });
         }
       } catch (error) {
-        console.error("Error fetching cart:", error);
+        console.error("Error fetching or updating cart:", error);
       }
     };
 
