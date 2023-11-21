@@ -1,36 +1,5 @@
-// import { useState } from "react";
-// import db from "./firebase";
-// import { collection, doc, updateDoc, arrayUnion, arrayRemove } from "firebase/firestore";
-
-// export function useShoppingCartState(db) {
-//   const [cart, setCart] = useState([]);
-
-//   const addToCart = async (productID) => {
-//     try {
-//       const updatedCart = [...cart, productID];
-//       setCart(updatedCart);
-
-//       const cartRef = doc(db, 'Users', 'FJ1myWcXwfC6cd8QvhUh');
-//       await updateDoc(cartRef, { cart: arrayUnion(productID) });
-//     } catch (error) {
-//       console.error("Error adding to cart:", error);
-//     }
-//   };
-
-//   const removeFromCart = async (productID) => {
-//     try {
-//       const updatedCart = cart.filter((id) => id !== productID);
-//       setCart(updatedCart);
-  
-//       const cartRef = doc(db, 'Users', 'FJ1myWcXwfC6cd8QvhUh');
-//       await updateDoc(cartRef, { cart: arrayRemove(productID) });
-//     } catch (error) {
-//       console.error("Error removing from cart:", error);
-//     }
-//   };
-
 import { useState, useEffect } from "react";
-import { collection, doc, getDoc, updateDoc, setDoc } from "firebase/firestore"; // Import necessary Firestore functions
+import { getDoc, updateDoc } from "firebase/firestore";
 
 export function useShoppingCartState(db, user) {
   const [cart, setCart] = useState([]);

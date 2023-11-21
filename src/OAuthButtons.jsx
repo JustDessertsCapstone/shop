@@ -2,7 +2,7 @@ import { useState } from "react";
 import { GoogleLogin, googleLogout } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
 import db from "./firebase";
-import { collection, query, where, getDoc, doc, setDoc, addDoc } from "firebase/firestore"; 
+import { collection, getDoc, doc, setDoc } from "firebase/firestore"; 
 import { auth } from "./firebase";
 
 function LoginButton({ user, setUser }) {
