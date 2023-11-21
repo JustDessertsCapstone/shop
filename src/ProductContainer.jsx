@@ -21,10 +21,7 @@ export function ProductCard({ product, addToCart, setProductPopup }) {
           }
         />
 
-        <h3
-          className="product-card-name"
-          onClick={() => (location.href = "/shop/product/")}
-        >
+        <h3 className="product-card-name">
           {product.name.replaceAll("-", " ")}
         </h3>
 
