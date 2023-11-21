@@ -7,8 +7,9 @@ import userIcon from "./assets/user-profile-icon.svg";
 
 import { ShoppingCartContainer } from "./ShoppingCart";
 import { OAuthButtons } from "./OAuthButtons";
+import { ProductAddedPopUp } from "./ProductAddedPopUp.jsx"
 
-export function Header({ cart, addToCart, removeFromCart, setUser }) {
+export function Header({ cart, addToCart, removeFromCart, productPopup, setUser }) {
   const navigate = useNavigate();
 
   return (
@@ -16,6 +17,11 @@ export function Header({ cart, addToCart, removeFromCart, setUser }) {
       <Link to="/shop/">
         <h1 className="banner">Healthify</h1>
       </Link>
+
+      { productPopup !== undefined ? 
+        <ProductAddedPopUp productPopup={productPopup} />
+        : <></>
+      }
 
       { cart && addToCart && removeFromCart ?
         <>

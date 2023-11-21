@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-export function ProductCard({ product, addToCart }) {
+export function ProductCard({ product, addToCart, setProductPopup }) {
   return (
     <div className="product-card">
       <div className="product-card-front">
@@ -60,7 +60,10 @@ export function ProductCard({ product, addToCart }) {
 
         <button
           className="product-card-add"
-          onClick={() => addToCart(product.id)}
+          onClick={() => {
+            addToCart(product.id);
+            setProductPopup(product.name.replaceAll("-", " "));
+          }}
         >
           Add to cart
         </button>
@@ -77,7 +80,13 @@ export function useProductContainerState(products) {
   return useState(products);
 }
 
-export function ProductContainer({ products, addToCart }) {
+export function ProductContainer(states) {
+  const {
+    products,
+    addToCart,
+    setProductPopup,
+  } = states;
+
   return (
     <div className="product-container">
       {products.map((product) => (
@@ -85,6 +94,7 @@ export function ProductContainer({ products, addToCart }) {
           product={product}
           key={product.id}
           addToCart={addToCart}
+          setProductPopup={setProductPopup}
         />
       ))}
     </div>

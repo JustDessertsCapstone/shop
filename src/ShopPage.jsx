@@ -14,6 +14,7 @@ import { ProductContainer } from "./ProductContainer";
 export default function ShopPage(states) {
   const {
     cart, addToCart, removeFromCart,
+    productPopup, setProductPopup,
     setUser
   } = states;
   const [products, setProducts] = useProductContainerState(data);
@@ -24,6 +25,7 @@ export default function ShopPage(states) {
         cart={cart}
         addToCart={addToCart}
         removeFromCart={removeFromCart}
+        productPopup={productPopup}
         setUser={setUser}
       />
 
@@ -37,6 +39,7 @@ export default function ShopPage(states) {
         <ProductContainer
           products={products}
           addToCart={addToCart}
+          setProductPopup={setProductPopup}
         />
       </main>
 

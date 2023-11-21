@@ -5,10 +5,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./index.css";
 
-import data from "./assets/products.json";
-
 import { useShoppingCartState } from "./ShoppingCart";
 import { useUserState } from "./OAuthButtons";
+import { useProductAddedPopUp } from "./ProductAddedPopUp"
 
 import ShopPage from "./ShopPage.jsx";
 import ProductPage from "./ProductPage.jsx";
@@ -19,6 +18,7 @@ import db from "./firebase"
 
 function App() {
   const [cart, addToCart, removeFromCart, clearCart] = useShoppingCartState(db);
+  const [productPopup, setProductPopup] = useProductAddedPopUp();
   const [user, setUser] = useUserState();
   
   return (
@@ -31,6 +31,8 @@ function App() {
                 cart={cart}
                 addToCart={addToCart}
                 removeFromCart={removeFromCart}
+                productPopup={productPopup}
+                setProductPopup={setProductPopup}
                 setUser={setUser}
               />
             }/>
@@ -39,6 +41,8 @@ function App() {
                 cart={cart}
                 addToCart={addToCart}
                 removeFromCart={removeFromCart}
+                productPopup={productPopup}
+                setProductPopup={setProductPopup}
                 setUser={setUser}
               />}
             />
