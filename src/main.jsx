@@ -9,10 +9,10 @@ import { useShoppingCartState } from "./ShoppingCart";
 import { useUserState } from "./OAuthButtons";
 import { usePopup } from "./Popup"
 
-import ShopPage from "./ShopPage.jsx";
-import ProductPage from "./ProductPage.jsx";
-import AboutPage from "./AboutPage.jsx";
-import ShoppingCartPage from "./ShoppingCartPage.jsx";
+import ShopPage from "./ShopPage";
+import ProductPage from "./ProductPage";
+import AboutPage from "./AboutPage";
+import ShoppingCartPage from "./ShoppingCartPage";
 
 import db from "./firebase"
 

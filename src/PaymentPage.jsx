@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import data from "./assets/products.json";
 
-import { getTableRows, getTotalCost } from "./ShoppingCart.jsx";
+import { getTableRows, getTotalCost } from "./ShoppingCart";
 import { ProductCard } from "./ProductContainer"
 import { Header, Footer } from "./Layout";
 
