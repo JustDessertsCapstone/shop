@@ -99,23 +99,27 @@ export function getTableRows(data, cart, addToCart, removeFromCart) {
     return (
       <tr key={product.id}>
         <td>{product.name.replaceAll("-", " ")}</td>
-        <td>
-          <button
-            className="remove-product-arrow"
-            onClick={() => removeFromCart(product.id)}
-          >
-            {String.fromCharCode(8592)}
-          </button>
-        </td>
-        <td>{quantity}</td>
-        <td>
-          <button
-            className="add-product-arrow"
-            onClick={() => addToCart(product.id)}
-          >
-            {String.fromCharCode(8594)}
-          </button>
-        </td>
+        {removeFromCart &&
+          <td>
+            <button
+              className="remove-product-arrow"
+              onClick={() => removeFromCart(product.id)}
+            >
+              {String.fromCharCode(8592)}
+            </button>
+          </td>
+        }
+        <td colSpan={addToCart ? "1" : "3"}>{quantity}</td>
+        {addToCart &&
+          <td>
+            <button
+              className="add-product-arrow"
+              onClick={() => addToCart(product.id)}
+            >
+              {String.fromCharCode(8594)}
+            </button>
+          </td>
+        }
         {/* <td>${product.price}</td> */}
         <td>${(product.price * quantity).toFixed(2)}</td>
       </tr>
@@ -146,12 +150,12 @@ export function ShoppingCartContainer({ data, cart, addToCart, removeFromCart })
         </thead>
         <tbody>
           {getTableRows(data, cart, addToCart, removeFromCart)}
-          { cart.length !== 0 ?
+          { cart.length !== 0 &&
             <tr key="total">
               <td colSpan="4">Total:</td>
               <td>${getTotalCost(data, cart)}</td>
               <td></td>
-            </tr> : <></>
+            </tr>
           }
         </tbody>
       </table>

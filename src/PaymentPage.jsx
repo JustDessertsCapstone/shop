@@ -4,19 +4,18 @@ import { Link } from "react-router-dom";
 import data from "./assets/products.json";
 
 import { getTableRows, getTotalCost } from "./ShoppingCart";
-import { ProductCard } from "./ProductContainer"
 import { Header, Footer } from "./Layout";
 
 
 export default function PaymentPage(states) {
   const {
-    cart, addToCart, removeFromCart, clearCart,
-    setUser
+    cart,
+    user
   } = states;
 
   return (
     <>
-      <Header setUser={setUser}/>
+      <Header/>
 
       <main id="payment-page-main">
         <div className="payment-page-item-list">
@@ -32,16 +31,17 @@ export default function PaymentPage(states) {
                   </tr>
                 </thead>
                 <tbody>
-                  {getTableRows(data, cart, addToCart, removeFromCart)}
-                  { cart.length !== 0 ?
+                  {getTableRows(data, cart)}
+                  { cart.length !== 0 &&
                     <tr key="total">
-                      <td colSpan="4">Total:</td>
+                      <td>Total:</td>
+                      <td colSpan="3"></td>
                       <td>${getTotalCost(data, cart)}</td>
-                    </tr> : <></>
+                    </tr>
                   }
                 </tbody>
               </table>
-              <button className="place-order">PlaceOrder</button>
+              <button className="place-order-button">PlaceOrder</button>
             </> :
             <>
               <p>Your shopping cart is empty.</p>

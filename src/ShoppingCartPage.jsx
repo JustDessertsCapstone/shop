@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import data from "./assets/products.json";
 
@@ -86,6 +86,7 @@ export default function ShoppingCartPage(states) {
     user, setUser
   } = states;
   const { suggestedProducts } = useSuggestedProducts(cart);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -114,7 +115,12 @@ export default function ShoppingCartPage(states) {
                   }
                 </tbody>
               </table>
-              <button className="checkout-button">Checkout</button>
+              <button
+                className="checkout-button"
+                onClick={() => navigate("/shop/payment/")}
+              >
+                Checkout
+              </button>
             </> :
             <>
               <p>Your shopping cart is empty.</p>

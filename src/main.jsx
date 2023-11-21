@@ -13,6 +13,7 @@ import ShopPage from "./ShopPage";
 import ProductPage from "./ProductPage";
 import AboutPage from "./AboutPage";
 import ShoppingCartPage from "./ShoppingCartPage";
+import PaymentPage from "./PaymentPage";
 
 import db from "./firebase"
 
@@ -57,6 +58,12 @@ function App() {
                 clearCart={clearCart}
                 user={user}
                 setUser={setUser}
+              />}
+            />
+            <Route path="/shop/payment/" element={
+              <PaymentPage
+                cart={cart}
+                user={user}
               />}
             />
           </Routes>
