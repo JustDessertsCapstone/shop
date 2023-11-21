@@ -22,25 +22,27 @@ export default function PaymentPage(states) {
         <div className="payment-page-item-list">
           <h1>Order Placement</h1>
           { cart.length !== 0 ?
-            <table>
-              <thead>
-                <tr>
-                  <th>Product</th>
-                  <th colSpan="3">Quantity</th>
-                  <th>Total Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                {getTableRows(data, cart, addToCart, removeFromCart)}
-                { cart.length !== 0 ?
-                  <tr key="total">
-                    <td colSpan="4">Total:</td>
-                    <td>${getTotalCost(data, cart)}</td>
-                  </tr> : <></>
-                }
-              </tbody>
+            <>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th colSpan="3">Quantity</th>
+                    <th>Total Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {getTableRows(data, cart, addToCart, removeFromCart)}
+                  { cart.length !== 0 ?
+                    <tr key="total">
+                      <td colSpan="4">Total:</td>
+                      <td>${getTotalCost(data, cart)}</td>
+                    </tr> : <></>
+                  }
+                </tbody>
+              </table>
               <button className="place-order">PlaceOrder</button>
-            </table> :
+            </> :
             <>
               <p>Your shopping cart is empty.</p>
               <Link to="/shop/">
