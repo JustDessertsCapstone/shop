@@ -2,37 +2,37 @@ import { useState, useEffect } from "react";
 import { animated, useSpring } from '@react-spring/web'
 
 
-export function useProductAddedPopUp() {
-  const [productPopup, setProductPopup] = useState(null);
+export function usePopup() {
+  const [popupText, setPopupText] = useState(null);
 
   useEffect(() => {
     let timeout;
-    if (productPopup != "") {
+    if (popupText != "") {
       timeout = setTimeout(() => {
-        setProductPopup(null);
+        setPopupText(null);
       }, 3000);
     }
 
     return () => {
       clearTimeout(timeout);
     };
-  }, [productPopup]);
+  }, [popupText]);
 
-  return [productPopup, setProductPopup];
+  return [popupText, setPopupText];
 }
 
-export const ProductAddedPopUp = ({ productPopup }) => {
+export const Popup = ({ popupText }) => {
   const popUpElement = document.getElementById("huk");
   const width = popUpElement ? popUpElement.clientWidth : 0;
   
   const styles = useSpring({
     from: {
       opacity: 0,
-      x: !productPopup ? -10 : width,
+      x: !popupText ? -10 : width,
     },
     to: {
-      opacity: productPopup ? 1 : 0,
-      x: productPopup ? -10 : width,
+      opacity: popupText ? 1 : 0,
+      x: popupText ? -10 : width,
     },
     config: {
       tension: 50,
@@ -42,7 +42,7 @@ export const ProductAddedPopUp = ({ productPopup }) => {
 
   return (
     <animated.div id="huk" style={styles} >
-        {productPopup}
+        {popupText}
       &nbsp;was added to your cart
     </animated.div>
   );

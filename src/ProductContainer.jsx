@@ -2,7 +2,13 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-export function ProductCard({ product, addToCart, setProductPopup }) {
+export function ProductCard(states) {
+  const {
+    product,
+    addToCart,
+    setPopupText,
+  } = states;
+
   return (
     <div className="product-card">
       <div className="product-card-front">
@@ -59,7 +65,7 @@ export function ProductCard({ product, addToCart, setProductPopup }) {
           className="product-card-add"
           onClick={() => {
             addToCart(product.id);
-            setProductPopup(product.name.replaceAll("-", " "));
+            setPopupText(product.name.replaceAll("-", " "));
           }}
         >
           Add to cart
@@ -81,7 +87,7 @@ export function ProductContainer(states) {
   const {
     products,
     addToCart,
-    setProductPopup,
+    setPopupText,
   } = states;
 
   return (
@@ -91,7 +97,7 @@ export function ProductContainer(states) {
           product={product}
           key={product.id}
           addToCart={addToCart}
-          setProductPopup={setProductPopup}
+          setPopupText={setPopupText}
         />
       ))}
     </div>

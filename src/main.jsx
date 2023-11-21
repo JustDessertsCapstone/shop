@@ -7,7 +7,7 @@ import "./index.css";
 
 import { useShoppingCartState } from "./ShoppingCart";
 import { useUserState } from "./OAuthButtons";
-import { useProductAddedPopUp } from "./ProductAddedPopUp"
+import { usePopup } from "./Popup"
 
 import ShopPage from "./ShopPage.jsx";
 import ProductPage from "./ProductPage.jsx";
@@ -19,7 +19,7 @@ import db from "./firebase"
 function App() {
   const [user, setUser] = useUserState();
   const [cart, addToCart, removeFromCart, clearCart] = useShoppingCartState(db, user);
-  const [productPopup, setProductPopup] = useProductAddedPopUp();
+  const [popupText, setPopupText] = usePopup();
   
   return (
     <GoogleOAuthProvider clientId="43903682458-v5dr38m8qmeak6n5unja52qjt065p7p5.apps.googleusercontent.com">
@@ -31,8 +31,8 @@ function App() {
                 cart={cart}
                 addToCart={addToCart}
                 removeFromCart={removeFromCart}
-                productPopup={productPopup}
-                setProductPopup={setProductPopup}
+                popupText={popupText}
+                setPopupText={setPopupText}
                 user={user}
                 setUser={setUser}
               />
@@ -42,8 +42,8 @@ function App() {
                 cart={cart}
                 addToCart={addToCart}
                 removeFromCart={removeFromCart}
-                productPopup={productPopup}
-                setProductPopup={setProductPopup}
+                popupText={popupText}
+                setPopupText={setPopupText}
                 user={user}
                 setUser={setUser}
               />}

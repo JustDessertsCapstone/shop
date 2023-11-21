@@ -9,6 +9,7 @@ import { Header, Footer } from "./Layout";
 export default function ProductPage(states) {
   const {
     cart, addToCart, removeFromCart,
+    popupText, setPopupText,
     user, setUser
   } = states;
   const { productID } = useParams();
@@ -20,6 +21,7 @@ export default function ProductPage(states) {
         cart={cart}
         addToCart={addToCart}
         removeFromCart={removeFromCart}
+        popupText={popupText}
         user={user}
         setUser={setUser}
       />
@@ -57,8 +59,11 @@ export default function ProductPage(states) {
           <p className="product-page-price">Price: ${product.price.toFixed(2)}</p>
 
           <button
-          className="product-card-add"
-          onClick={() => addToCart(product.id)}
+            className="product-card-add"
+            onClick={() => {
+              addToCart(product.id)
+              setPopupText(product.name.replaceAll("-", " "));
+            }}
           >
             Add to cart
           </button>

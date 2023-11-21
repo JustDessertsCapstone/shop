@@ -7,12 +7,12 @@ import userIcon from "./assets/user-profile-icon.svg";
 
 import { ShoppingCartContainer } from "./ShoppingCart";
 import { OAuthButtons } from "./OAuthButtons";
-import { ProductAddedPopUp } from "./ProductAddedPopUp.jsx"
+import { Popup } from "./Popup"
 
 export function Header(states) {
   const {
     cart, addToCart, removeFromCart,
-    productPopup,
+    popupText,
     user, setUser
   } = states;
   const navigate = useNavigate();
@@ -23,8 +23,8 @@ export function Header(states) {
         <h1 className="banner">Healthify</h1>
       </Link>
 
-      { productPopup !== undefined &&
-        <ProductAddedPopUp productPopup={productPopup} />
+      { popupText !== undefined &&
+        <Popup popupText={popupText} />
       }
 
       { cart && addToCart && removeFromCart &&
