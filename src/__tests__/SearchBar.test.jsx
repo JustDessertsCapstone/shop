@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, test } from 'vitest';
 import { fireEvent, render, renderHook, act, screen } from '@testing-library/react';
-import { searchTest, SearchBar } from '../SearchBar'
-import { ProductContainerState } from '../ProductContainer';
+import { search, SearchBar } from '../SearchBar'
+import { useProductContainerState } from '../ProductContainer';
 
 
 // sample data for products
@@ -53,15 +53,15 @@ const juice_expected = [
 ]
 
 test('testing search function', () => {
-  expect(searchTest('smith', data)).toStrictEqual(smith_expected)
-  expect(searchTest('apple', data)).toStrictEqual(apple_expected)
-  expect(searchTest('juice', data)).toStrictEqual(juice_expected)
+  expect(search('smith', data)).toStrictEqual(smith_expected)
+  expect(search('apple', data)).toStrictEqual(apple_expected)
+  expect(search('juice', data)).toStrictEqual(juice_expected)
 })
 
 describe('SearchBar', () => {   
   it('should update product state based on search', () => {
     // setup state hook
-    const { result } = renderHook(() => ProductContainerState(data))
+    const { result } = renderHook(() => useProductContainerState(data))
 
     // make Searchbar with setState (result.current[1])
     render(<SearchBar data={data} setProducts={result.current[1]} />);
