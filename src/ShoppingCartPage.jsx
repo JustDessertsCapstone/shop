@@ -109,7 +109,6 @@ export default function ShoppingCartPage(states) {
                   <tr key="total">
                     <td colSpan="4">Total:</td>
                     <td>${getTotalCost(data, cart)}</td>
-                    <td></td>
                   </tr> : <></>
                 }
               </tbody>

@@ -12,7 +12,8 @@ function LoginButton({ setUser }) {
     try {
       const q = query(collection(db, 'Users'), where('sub', '==', subValue));
       const querySnapshot = await getDocs(q);
-    
+      console.log(subValue);  //for demo
+
       if (querySnapshot.size === 0) {
         console.log("User not in DB. Adding user.");
         
