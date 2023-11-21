@@ -255,6 +255,8 @@
 .shopping-cart-page-item-list table {
   width: 25%;
   border-collapse: collapse;
+  text-align: center;
+  display: block;
 }
 
 .shopping-cart-page-item-list th,
@@ -265,14 +267,14 @@
 }
 
 .centered-container {
-  display: flex;
   justify-content: center;
   margin-top: 20px; 
 }
 
 .checkout-button {
   display: block;
-  margin: auto;
+  margin-left: 85px;
+  width: 50%;
   margin-top: 20px; 
   padding: 10px 15px;
   background-color: #404040;
