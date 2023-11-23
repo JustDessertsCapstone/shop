@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { getDoc, updateDoc } from "firebase/firestore";
 
+import data from "./assets/products.json";
+
+
 export function useShoppingCartState(db, user) {
   const [cart, setCart] = useState([]);
 
@@ -76,7 +79,7 @@ export function useShoppingCartState(db, user) {
   return [cart, addToCart, removeFromCart, clearCart];
 }
 
-export function getTableRows(data, cart, addToCart, removeFromCart) {
+export function getTableRows(cart, addToCart, removeFromCart) {
   if (cart.length === 0)
     return (
       <tr key={0}>
@@ -127,7 +130,7 @@ export function getTableRows(data, cart, addToCart, removeFromCart) {
   });
 }
 
-export function getTotalCost(data, cart) {
+export function getTotalCost(cart) {
   let totalCost = 0;
 
   cart.forEach((productID) => {
@@ -139,7 +142,7 @@ export function getTotalCost(data, cart) {
   return totalCost.toFixed(2);
 }
 
-function calculatePoints(data, productID) {
+function calculatePoints(productID) {
   const product = data.find((product) => product.id === productID);
   const grade = product.nutrition_grade;
 
@@ -153,15 +156,15 @@ function calculatePoints(data, productID) {
   return 0;
 }
 
-export function calculatePointTotal(data, cart) {
+export function calculatePointTotal(cart) {
   let pointTotal = 0;
 
-  cart.forEach((productID) => pointTotal += calculatePoints(data, productID));
+  cart.forEach((productID) => pointTotal += calculatePoints(productID));
 
   return pointTotal.toFixed(0);
 }
 
-export function ShoppingCartContainer({ data, cart, addToCart, removeFromCart }) {
+export function ShoppingCartContainer({ cart, addToCart, removeFromCart }) {
   return (
     <div className="shopping-cart">
       <table>
@@ -171,11 +174,11 @@ export function ShoppingCartContainer({ data, cart, addToCart, removeFromCart })
           </tr>
         </thead>
         <tbody>
-          {getTableRows(data, cart, addToCart, removeFromCart)}
+          {getTableRows(cart, addToCart, removeFromCart)}
           { cart.length !== 0 &&
             <tr key="total">
               <td colSpan="4">Total:</td>
-              <td>${getTotalCost(data, cart)}</td>
+              <td>${getTotalCost(cart)}</td>
               <td></td>
             </tr>
           }

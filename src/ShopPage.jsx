@@ -33,7 +33,6 @@ export default function ShopPage(states) {
       <main id="shop-main">
         <h1> Hello, Welcome to Healthify</h1>
         <SearchBar
-          data={data}
           setProducts={setProducts}
         />
         <br />

@@ -2,8 +2,6 @@ import { React, useState} from "react";
 import { Link } from "react-router-dom";
 import { getDoc, updateDoc } from "firebase/firestore";
 
-import data from "./assets/products.json";
-
 import { getTableRows, getTotalCost, calculatePointTotal } from "./ShoppingCart";
 import { Header, Footer } from "./Layout";
 
@@ -33,8 +31,8 @@ export default function PaymentPage(states) {
   }
 
   const handlePurchase = (usingBal) => {
-    let money = usingBal ? parseFloat(getTotalCost(data, cart)) : 0;
-    let points = usingBal ? parseFloat(calculatePointTotal(data, cart)) : parseFloat(getTotalCost(data, cart)) * -100;
+    let money = usingBal ? parseFloat(getTotalCost(cart)) : 0;
+    let points = usingBal ? parseFloat(calculatePointTotal(cart)) : parseFloat(getTotalCost(cart)) * -100;
     
     if (
       (usingBal  && user.balance < money) ||
@@ -100,18 +98,18 @@ export default function PaymentPage(states) {
                       </tr>
                     </thead>
                     <tbody>
-                      {getTableRows(data, cart)}
+                      {getTableRows(cart)}
                       { cart.length !== 0 &&
                         <>
                           <tr key="total">
                             <td>Total:</td>
                             <td colSpan="3"></td>
-                            <td>${getTotalCost(data, cart)}</td>
+                            <td>${getTotalCost(cart)}</td>
                           </tr>
                           <tr key="points">
                             <td>Points Gained:</td>
                             <td colSpan="3"></td>
-                            <td>{calculatePointTotal(data, cart)}</td>
+                            <td>{calculatePointTotal(cart)}</td>
                           </tr>
                         </>
                       }
@@ -125,8 +123,8 @@ export default function PaymentPage(states) {
                     >
                       Place Order
                     </button>
-                    
-                    {user.points + parseFloat(getTotalCost(data, cart)) * -100 >= 0 &&
+
+                    {user.points + parseFloat(getTotalCost(cart)) * -100 >= 0 &&
                       <button
                         className="place-order-points-button"
                         onClick={() => handlePurchase(false)}

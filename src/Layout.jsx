@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import data from "./assets/products.json";
 import cartIcon from "./assets/google_shopping.svg";
 import userIcon from "./assets/user-profile-icon.svg";
 
@@ -36,7 +35,6 @@ export function Header(states) {
             className="cart-icon"
           />
           <ShoppingCartContainer
-            data={data}
             cart={cart}
             addToCart={addToCart}
             removeFromCart={removeFromCart}
