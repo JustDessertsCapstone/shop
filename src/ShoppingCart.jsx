@@ -67,7 +67,7 @@ export function useShoppingCartState(db, user) {
     if (!db) return;
 
     try {
-      await updateDoc(user.ref, { cart: cart });
+      await updateDoc(user.ref, { cart: [] });
     } catch (error) {
       console.error("Error clearing cart:", error);
     }
@@ -137,6 +137,28 @@ export function getTotalCost(data, cart) {
   });
 
   return totalCost.toFixed(2);
+}
+
+function calculatePoints(data, productID) {
+  const product = data.find((product) => product.id === productID);
+  const grade = product.nutrition_grade;
+
+  if (grade === 'a') return product.price * 0.10  * 100;
+  if (grade === 'b') return product.price * 0.075 * 100;
+  if (grade === 'c') return product.price * 0.05  * 100;
+  if (grade === 'd') return product.price * 0.025 * 100;
+  if (grade === 'e') return product.price * 0.01  * 100;
+
+  console.log("Unknown grade for " + product.name);
+  return 0;
+}
+
+export function calculatePointTotal(data, cart) {
+  let pointTotal = 0;
+
+  cart.forEach((productID) => pointTotal += calculatePoints(data, productID));
+
+  return pointTotal.toFixed(0);
 }
 
 export function ShoppingCartContainer({ data, cart, addToCart, removeFromCart }) {

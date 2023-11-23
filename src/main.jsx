@@ -63,7 +63,9 @@ function App() {
             <Route path="/shop/payment/" element={
               <PaymentPage
                 cart={cart}
+                clearCart={clearCart}
                 user={user}
+                setUser={setUser}
               />}
             />
           </Routes>

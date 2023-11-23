@@ -282,10 +282,18 @@
   margin-top: 20px; 
 }
 
-.checkout-button,
-.place-order-button {
+.shopping-cart-buttons,
+.place-order-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  gap: 5%;
+}
+
+.shopping-cart-buttons > button,
+.place-order-buttons > button {
   display: block;
-  width: 12.5%;
   margin-top: 20px; 
   padding: 10px 15px;
   background-color: #404040;
@@ -301,4 +309,8 @@
   align-items: center; 
   padding: 20px;
   border-radius: 10px;
+}
+
+.payment-page-item-list > p {
+  margin: 0;
 }

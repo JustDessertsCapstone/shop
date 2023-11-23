@@ -107,20 +107,28 @@ export default function ShoppingCartPage(states) {
                 </thead>
                 <tbody>
                   {getTableRows(data, cart, addToCart, removeFromCart)}
-                  { cart.length !== 0 ?
+                  { cart.length !== 0 &&
                     <tr key="total">
                       <td colSpan="4">Total:</td>
                       <td>${getTotalCost(data, cart)}</td>
-                    </tr> : <></>
+                    </tr>
                   }
                 </tbody>
               </table>
-              <button
-                className="checkout-button"
-                onClick={() => navigate("/shop/payment/")}
-              >
-                Checkout
-              </button>
+              <div className="shopping-cart-buttons">
+                <button
+                  className="checkout-button"
+                  onClick={() => navigate("/shop/payment/")}
+                >
+                  Checkout
+                </button>
+                <button
+                  className="clear-cart-button"
+                  onClick={() => clearCart()}
+                >
+                  Clear Cart
+                </button>
+              </div>
             </> :
             <>
               <p>Your shopping cart is empty.</p>
@@ -133,7 +141,7 @@ export default function ShoppingCartPage(states) {
 
         <br />
 
-        { suggestedProducts.length !== 0 ?
+        { suggestedProducts.length !== 0 &&
           <div className="shopping-cart-page-suggestions">
             <h2>Recommended Products</h2>
             <p>
@@ -143,7 +151,7 @@ export default function ShoppingCartPage(states) {
               products={suggestedProducts}
               addToCart={addToCart}
             />
-          </div> : <></>
+          </div>
         }
       </main>
 

@@ -20,6 +20,11 @@ function LoginButton({ user, setUser }) {
         });
       } else {
         console.log("User already in DB.");
+
+        const userData = docSnapshot.data();
+        
+        user.balance = userData.balance;
+        user.points = userData.points;
       }
     } catch (error) {
       console.error('Error checking user existence:', error);
@@ -31,10 +36,12 @@ function LoginButton({ user, setUser }) {
     const userSub = decodedCredentials.sub;
     const userRef = doc(collection(db, 'Users'), userSub);
     
-    await addUserToBD(userRef);
-    
     decodedCredentials.ref = userRef;
-    setUser(decodedCredentials);
+    user = decodedCredentials;
+    
+    await addUserToBD(userRef);
+
+    setUser(user);
   };
 
   const onFailure = (res) => {
