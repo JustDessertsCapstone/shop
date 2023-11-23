@@ -87,6 +87,8 @@ export function getTableRows(cart, addToCart, removeFromCart) {
       </tr>
     );
 
+  cart.sort((a, b) => a - b);
+
   const mappedCart = new Map(); // holds productIDs and counts
   let totalCost = 0;
 
