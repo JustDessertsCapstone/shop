@@ -62,14 +62,14 @@ export function Footer({ includeLink = true }) {
         Within Healthify, you will find that being rewarded for making better
         choices is so rewarding!
       </p>
-      { includeLink ?
+      { includeLink &&
         <p>
           Learn more about this project, team, and sources, by visiting
           our&nbsp;
           <Link className="link" to="/shop/about/">
             About Page
           </Link>
-        </p> : <></>
+        </p>
       }
     </footer>
   );

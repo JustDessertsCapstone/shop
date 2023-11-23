@@ -87,7 +87,13 @@ export default function PaymentPage(states) {
               }
 
               <h2>Your Order</h2>
-              { cart.length !== 0 ?
+              { cart.length === 0 ?
+                <>
+                  <p>Your shopping cart is empty.</p>
+                  <Link to="/shop/">
+                    <p>Go to Shop Page</p>
+                  </Link>
+                </> :
                 <>
                   <table>
                     <thead>
@@ -133,12 +139,6 @@ export default function PaymentPage(states) {
                       </button>
                     }
                   </div>
-                </> :
-                <>
-                  <p>Your shopping cart is empty.</p>
-                  <Link to="/shop/">
-                    <p>Go to Shop Page</p>
-                  </Link>
                 </>
               }
             </>}

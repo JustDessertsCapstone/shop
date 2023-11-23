@@ -61,17 +61,16 @@ function LoginButton({ user, setUser }) {
 
   return (
     <div>
-      {user ? (
-        <div>
+      {user ?
+        <>
           <p>You are signed in as<br />{user.name}</p>
           <button onClick={signOut}>Sign Out</button>
-        </div>
-      ) : (
-        <div>
+        </> :
+        <>
           <p>You are signed out.<br />Please sign in to continue:</p>
           <GoogleLogin id="signInButton" onSuccess={onSuccess} onError={onFailure} />
-        </div>
-      )}
+        </>
+      }
     </div>
   );
 }
