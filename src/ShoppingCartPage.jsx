@@ -95,14 +95,20 @@ export default function ShoppingCartPage(states) {
       <main id="shopping-cart-page-main">
         <div className="shopping-cart-page-item-list">
           <h1>Shopping Cart</h1>
-          { cart.length !== 0 ?
+          { cart.length === 0 ?
+            <>
+              <p>Your shopping cart is empty.</p>
+              <Link to="/shop/">
+                <p>Go to Shop Page</p>
+              </Link>
+            </> :
             <>
               <table>
                 <thead>
                   <tr>
                     <th>Product</th>
                     <th colSpan="3">Quantity</th>
-                    <th>Total Price</th>
+                    <th>Price</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -129,12 +135,6 @@ export default function ShoppingCartPage(states) {
                   Clear Cart
                 </button>
               </div>
-            </> :
-            <>
-              <p>Your shopping cart is empty.</p>
-              <Link to="/shop/">
-                <p>Go to Shop Page</p>
-              </Link>
             </>
           }
         </div>

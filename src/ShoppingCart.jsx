@@ -123,7 +123,6 @@ export function getTableRows(cart, addToCart, removeFromCart) {
             </button>
           </td>
         }
-        {/* <td>${product.price}</td> */}
         <td>${(product.price * quantity).toFixed(2)}</td>
       </tr>
     );

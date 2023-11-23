@@ -263,15 +263,15 @@
   border-radius: 10px;
 }
 
-.shopping-cart-page-item-list table {
-  width: 25%;
+.shopping-cart-page-item-list table,
+.payment-page-item-list table {
   border-collapse: collapse;
-  text-align: center;
-  display: block;
 }
 
 .shopping-cart-page-item-list th,
-.shopping-cart-page-item-list td {
+.shopping-cart-page-item-list td,
+.payment-page-item-list th,
+.payment-page-item-list td {
   padding: 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
