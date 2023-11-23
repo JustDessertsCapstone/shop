@@ -87,7 +87,10 @@ export default function PaymentPage(states) {
 
               <p>Current Balance: ${user.balance}</p>
               {user.points !== 0 &&
-                <p>Points Earned: {user.points}</p>
+                <>
+                  <p>Points Earned: {user.points}</p>
+                  <small>$1 = 100 points</small>
+                </>
               }
 
               <h2>Your Order</h2>
