@@ -9,7 +9,8 @@ import { Header, Footer } from "./Layout";
 export default function PaymentPage(states) {
   const {
     cart, clearCart,
-    user, setUser
+    user, setUser,
+    popupText, setPopupText
   } = states;
   const [ purchaseMade, setPurchaseMade ] = useState(false);
 
@@ -39,6 +40,7 @@ export default function PaymentPage(states) {
       (!usingBal && user.points + points < 0)
     ) {
         console.log("Purchase Unsuccessful : Insufficient Funds");
+        setPopupText("Purchase Unsuccessful : Insufficient Funds");
         
         return;
     }
@@ -54,6 +56,8 @@ export default function PaymentPage(states) {
       <Header
         user={user}
         setUser={setUser}
+        popupText={popupText}
+        popupTextGood={false}
       />
 
       <main id="payment-page-main">

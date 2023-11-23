@@ -66,6 +66,8 @@ function App() {
                 clearCart={clearCart}
                 user={user}
                 setUser={setUser}
+                popupText={popupText}
+                setPopupText={setPopupText}
               />}
             />
           </Routes>

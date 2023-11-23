@@ -65,7 +65,7 @@ export function ProductCard(states) {
           className="product-card-add"
           onClick={() => {
             addToCart(product.id);
-            setPopupText(product.name.replaceAll("-", " "));
+            setPopupText(product.name.replaceAll("-", " ") + " was added to your cart");
           }}
         >
           Add to cart

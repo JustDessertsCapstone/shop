@@ -11,8 +11,8 @@ import { Popup } from "./Popup"
 export function Header(states) {
   const {
     cart, addToCart, removeFromCart,
-    popupText,
-    user, setUser
+    user, setUser,
+    popupText, popupTextGood = true
   } = states;
   const navigate = useNavigate();
 
@@ -23,7 +23,7 @@ export function Header(states) {
       </Link>
 
       { popupText !== undefined &&
-        <Popup popupText={popupText} />
+        <Popup popupText={popupText} popupTextGood={popupTextGood} />
       }
 
       { cart && addToCart && removeFromCart &&

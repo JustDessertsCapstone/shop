@@ -21,18 +21,20 @@ export function usePopup() {
   return [popupText, setPopupText];
 }
 
-export const Popup = ({ popupText }) => {
-  const popUpElement = document.getElementById("huk");
+export const Popup = ({ popupText, popupTextGood = true }) => {
+  const popUpElement = document.getElementById("popup");
   const width = popUpElement ? popUpElement.clientWidth : 0;
   
   const styles = useSpring({
     from: {
       opacity: 0,
       x: !popupText ? -10 : width,
+      backgroundColor: popupTextGood ? "#93cc3e" : "#ba3636",
     },
     to: {
       opacity: popupText ? 1 : 0,
       x: popupText ? -10 : width,
+      backgroundColor: popupTextGood ? "#93cc3e" : "#ba3636",
     },
     config: {
       tension: 50,
@@ -41,9 +43,8 @@ export const Popup = ({ popupText }) => {
   });
 
   return (
-    <animated.div id="huk" style={styles} >
-        {popupText}
-      &nbsp;was added to your cart
+    <animated.div id="popup" style={styles} >
+      {popupText}
     </animated.div>
   );
 }
