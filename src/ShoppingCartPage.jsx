@@ -98,7 +98,7 @@ export default function ShoppingCartPage(states) {
           { cart.length === 0 ?
             <>
               <p>Your shopping cart is empty.</p>
-              <Link to="/shop/">
+              <Link className="link" to="/shop/">
                 <p>Go to Shop Page</p>
               </Link>
             </> :

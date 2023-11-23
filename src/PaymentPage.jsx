@@ -70,7 +70,7 @@ export default function PaymentPage(states) {
               <p>Your new point total is {user.points}.</p>
               <p>Thank you for shopping with us!</p>
 
-              <Link to="/shop/">
+              <Link className="link" to="/shop/">
                 <p>Continue Shopping</p>
               </Link>
             </> :
@@ -78,7 +78,7 @@ export default function PaymentPage(states) {
             <>
               <h1>Please log in to place an order.</h1>
 
-              <Link to="/shop/">
+              <Link className="link" to="/shop/">
                 <p>Go to Shop Page</p>
               </Link>
             </> :
@@ -94,7 +94,7 @@ export default function PaymentPage(states) {
               { cart.length === 0 ?
                 <>
                   <p>Your shopping cart is empty.</p>
-                  <Link to="/shop/">
+                  <Link className="link" to="/shop/">
                     <p>Go to Shop Page</p>
                   </Link>
                 </> :
