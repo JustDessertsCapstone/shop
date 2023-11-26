@@ -1,19 +1,20 @@
-function search(query, data) {
+import data2 from "./assets/products.json";
+
+
+export function search(query, data) {
   return data.filter((product) => {
     let productClassClean =
       product.name.toLowerCase().replaceAll("-", " ") +
       " " +
       product.class_name.toLowerCase();
 
-    let productList = productClassClean.includes(query.toLowerCase());
-
-    return productList;
+    return productClassClean.includes(query.toLowerCase());;
   });
 }
 
-export const searchTest = process.env.NODE_ENV === "test" ? search : "";
+export function SearchBar({ setProducts, data }) {
+  if (!data) data = data2;
 
-export function SearchBar({ data, setProducts }) {
   return (
     <form
       className="search-forum"

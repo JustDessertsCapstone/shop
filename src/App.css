@@ -4,6 +4,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  cursor: default;
 }
 
 #root > * {
@@ -48,7 +49,8 @@
   font-size: medium;
 }
 
-.product-container {
+.product-container,
+#shopping-cart-page-suggested-products {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -123,6 +125,15 @@
   position: relative;
 }
 
+#popup{
+  position: fixed;
+  top: 20px;
+  right: 0;
+  /* background-color: rgb(147, 204, 62); */
+  padding: 1%;
+  z-index: 2;
+}
+
 .cart-icon {
   position: absolute;
   top: 100px;
@@ -143,10 +154,21 @@
   right: 25px;
   background-color: #ccc;
   display: none;
+  z-index: 1;
 }
 
 .shopping-cart:hover {
   display: block;
+}
+
+.add-product-arrow,
+.remove-product-arrow {
+  width: auto;
+  height: auto;
+  padding:0;
+  margin:0;
+  text-align: center;
+  display: inline-block;
 }
 
 .user-icon {
@@ -157,6 +179,7 @@
   height: 42px;
   cursor: pointer;
   color: white;
+  border-radius: 100%;
 }
 
 .user-icon:hover + .oath-buttons {
@@ -164,7 +187,7 @@
 }
 
 .oath-buttons {
-  background-color: #fff;
+  background-color: #ccc;
   position: absolute;
   top: 140px;
   right: 25px;
@@ -229,4 +252,65 @@
 #product-page-text:last-child {
   margin-bottom: 0;
   padding-bottom: 1px;
+}
+
+.shopping-cart-page-item-list {
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.shopping-cart-page-item-list table,
+.payment-page-item-list table {
+  border-collapse: collapse;
+}
+
+.shopping-cart-page-item-list th,
+.shopping-cart-page-item-list td,
+.payment-page-item-list th,
+.payment-page-item-list td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.centered-container {
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.shopping-cart-buttons,
+.place-order-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  gap: 5%;
+}
+
+.shopping-cart-buttons > button,
+.place-order-buttons > button {
+  display: block;
+  margin-top: 20px; 
+  padding: 10px 15px;
+  background-color: #404040;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.payment-page-item-list {
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.payment-page-item-list > p {
+  margin: 0;
 }

@@ -1,8 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import { useHistory } from 'react-router-dom';
 
-function ProductCard({ product, cart, addToCart }) {
+
+export function ProductCard(states) {
+  const {
+    product,
+    addToCart,
+    setPopupText,
+  } = states;
+
   return (
     <div className="product-card">
       <div className="product-card-front">
@@ -21,10 +27,7 @@ function ProductCard({ product, cart, addToCart }) {
           }
         />
 
-        <h3
-          className="product-card-name"
-          onClick={() => (location.href = "/shop/product/")}
-        >
+        <h3 className="product-card-name">
           {product.name.replaceAll("-", " ")}
         </h3>
 
@@ -60,7 +63,10 @@ function ProductCard({ product, cart, addToCart }) {
 
         <button
           className="product-card-add"
-          onClick={() => addToCart(product.id)}
+          onClick={() => {
+            addToCart(product.id);
+            setPopupText(product.name.replaceAll("-", " ") + " was added to your cart");
+          }}
         >
           Add to cart
         </button>
@@ -73,19 +79,25 @@ function ProductCard({ product, cart, addToCart }) {
   );
 }
 
-export function ProductContainerState(products) {
+export function useProductContainerState(products) {
   return useState(products);
 }
 
-export function ProductContainer({ products, cart, addToCart }) {
+export function ProductContainer(states) {
+  const {
+    products,
+    addToCart,
+    setPopupText,
+  } = states;
+
   return (
     <div className="product-container">
       {products.map((product) => (
         <ProductCard
           product={product}
           key={product.id}
-          cart={cart}
           addToCart={addToCart}
+          setPopupText={setPopupText}
         />
       ))}
     </div>

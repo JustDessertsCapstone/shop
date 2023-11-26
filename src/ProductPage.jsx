@@ -1,22 +1,33 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+
 import products from "./assets/products.json";
 
-export default function ProductPage() {
+import { Header, Footer } from "./Layout";
+
+
+export default function ProductPage(states) {
+  const {
+    cart, addToCart, removeFromCart,
+    popupText, setPopupText,
+    user, setUser
+  } = states;
   const { productID } = useParams();
   const product = products.find((product) => product.id == productID);
 
   return (
     <>
-      <header className="header">
-        <a href="/shop/">
-          <h1 className="banner">Healthify</h1>
-        </a>
-      </header>
+      <Header
+        cart={cart}
+        addToCart={addToCart}
+        removeFromCart={removeFromCart}
+        popupText={popupText}
+        user={user}
+        setUser={setUser}
+      />
 
       <main id="product-page-main">
         <div id="product-page-text">
-          <h1> Hello, welcome to Healthify</h1>
           <h2>Product: {product.name}</h2>
           <img
             className="product-img"
@@ -46,15 +57,20 @@ export default function ProductPage() {
           )}
 
           <p className="product-page-price">Price: ${product.price.toFixed(2)}</p>
+
+          <button
+            className="product-card-add"
+            onClick={() => {
+              addToCart(product.id)
+              setPopupText(product.name.replaceAll("-", " ") + " was added to your cart");
+            }}
+          >
+            Add to cart
+          </button>
         </div>
       </main>
 
-      <footer>
-        <p>
-          Within Healthify, you will find that being rewarded for making better
-          choices is so rewarding!
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }

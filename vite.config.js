@@ -25,6 +25,7 @@ export default defineConfig({
     },
   },
   test: {
+    environment: 'jsdom',
     deps: {
       inline: [/vite-test-utils/],
     },
