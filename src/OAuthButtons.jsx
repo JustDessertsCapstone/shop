@@ -14,7 +14,7 @@ function LoginButton({ user, setUser }) {
         console.log("User not in DB. Adding user.");
         
         await setDoc(userRef, {
-          cart: null,
+          cart: [],
           balance: 100.00,
           points: 0
         });
