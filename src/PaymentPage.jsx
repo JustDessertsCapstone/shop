@@ -88,7 +88,7 @@ export default function PaymentPage(states) {
               <p>Current Balance: ${user.balance.toFixed(2)}</p>
               {user.points !== 0 &&
                 <>
-                  <p>Points Earned: {user.points}</p>
+                  <p>Points Earned: {user.points.toFixed(0)}</p>
                   <small>$1 = 100 points</small>
                 </>
               }
