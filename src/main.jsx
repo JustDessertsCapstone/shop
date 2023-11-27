@@ -54,8 +54,6 @@ function App() {
                 cart={cart}
                 addToCart={addToCart}
                 removeFromCart={removeFromCart}
-                popupText={popupText}
-                setPopupText={setPopupText}
                 user={user}
                 setUser={setUser}
               />}
