@@ -1,11 +1,23 @@
 import React from "react";
+
 import { Header, Footer } from "./Layout";
 
 
-export default function AboutPage() {
+export default function AboutPage(states) {
+  const {
+    cart, addToCart, removeFromCart,
+    user, setUser
+  } = states;
+  
   return (
     <>
-      <Header />
+      <Header
+        cart={cart}
+        addToCart={addToCart}
+        removeFromCart={removeFromCart}
+        user={user}
+        setUser={setUser}
+      />
 
       <main id="about-page-main">
         <div id="about-page-text">
