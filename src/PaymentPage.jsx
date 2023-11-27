@@ -1,5 +1,5 @@
 import { React, useState} from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { getDoc, updateDoc } from "firebase/firestore";
 
 import { getTableRows, getTotalCost, calculatePointTotal } from "./ShoppingCart";
@@ -50,6 +50,7 @@ export default function PaymentPage(states) {
     clearCart();
     setPurchaseMade(true);
   }
+  const navigate = useNavigate();
 
   return (
     <>
@@ -130,6 +131,13 @@ export default function PaymentPage(states) {
                   </table>
 
                   <div className="place-order-buttons">
+                    <button
+                      className="return-to-cart-button"
+                      onClick={() => navigate("/shop/cart/")}
+                    >
+                      Return to Cart
+                    </button>
+
                     <button
                       className="place-order-button"
                       onClick={() => handlePurchase(true)}
