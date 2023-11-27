@@ -7,11 +7,12 @@
     "img_path": "./dataset/Fruit/Apple/Golden-Delicious/Golden-Delicious_Iconic.jpg",
     "info_path": "dataset/Fruit/Apple/Golden-Delicious/Golden-Delicious_Information.txt",
     "nutrition_grade": "a",
-    "price": 7.36,
+    "price": 2.96,
     "calories": 76,
     "mass": "180g",
     "description": "Golden Delicious has a white juicy pulp and a greenish yellow shell. The taste is mellow and sweet, making Golden Delicious suitable for desserts.",
-    "source": "https://www.hemkop.se/produkt/apple-Golden-Delicious-Klass-1-100142141_KG"
+    "source": "https://www.hemkop.se/produkt/apple-Golden-Delicious-Klass-1-100142141_KG",
+    "volume": ""
   },
   {
     "name": "Granny-Smith",
@@ -21,11 +22,12 @@
     "img_path": "./dataset/Fruit/Apple/Granny-Smith/Granny-Smith_Iconic.jpg",
     "info_path": "dataset/Fruit/Apple/Granny-Smith/Granny-Smith_Information.txt",
     "nutrition_grade": "a",
-    "price": 3.68,
+    "price": 0.98,
     "calories": 80,
     "mass": "180g",
     "description": "Granny Smith is a green apple with white, firm pulp and a clear acidity in the flavor.",
-    "source": "https://www.hemkop.se/produkt/apple-Granny-Smith-Klass-1-100142221_KG"
+    "source": "https://www.hemkop.se/produkt/apple-Granny-Smith-Klass-1-100142221_KG",
+    "volume": ""
   },
   {
     "name": "Pink-Lady",
@@ -35,11 +37,12 @@
     "img_path": "./dataset/Fruit/Apple/Pink-Lady/Pink-Lady_Iconic.jpg",
     "info_path": "dataset/Fruit/Apple/Pink-Lady/Pink-Lady_Information.txt",
     "nutrition_grade": "d",
-    "price": 11.04,
+    "price": 2.25,
     "calories": 95,
     "mass": "180g",
     "description": "Pink Lady reminds of Royal Gala, though it is an even sweeter and crispier apple.",
-    "source": "https://www.hemkop.se/produkt/apple-Pink-Lady-Klass-1-100144318_KG"
+    "source": "https://www.hemkop.se/produkt/apple-Pink-Lady-Klass-1-100144318_KG",
+    "volume": ""
   },
   {
     "name": "Red-Delicious",
@@ -49,11 +52,12 @@
     "img_path": "./dataset/Fruit/Apple/Red-Delicious/Red-Delicious_Iconic.jpg",
     "info_path": "dataset/Fruit/Apple/Red-Delicious/Red-Delicious_Information.txt",
     "nutrition_grade": "a",
-    "price": 5.52,
+    "price": 0.92,
     "calories": 89,
     "mass": "160g",
     "description": "Red Delicious is a dark red apple with relatively soft pulp and sweet taste.",
-    "source": "https://www.hemkop.se/produkt/apple-Red-Delicious-Klass-1-100144336_KG"
+    "source": "https://www.hemkop.se/produkt/apple-Red-Delicious-Klass-1-100144336_KG",
+    "volume": ""
   },
   {
     "name": "Royal-Gala",
@@ -63,11 +67,12 @@
     "img_path": "./dataset/Fruit/Apple/Royal-Gala/Royal-Gala_Iconic.jpg",
     "info_path": "dataset/Fruit/Apple/Royal-Gala/Royal-Gala_Information.txt",
     "nutrition_grade": "a",
-    "price": 5.52,
+    "price": 0.67,
     "calories": 71,
     "mass": "180g",
     "description": "Royal Gala is a crispy and very juicy apple, with yellow-white pulp. The peel is thin with a red yellow speckled color.",
-    "source": "https://www.hemkop.se/produkt/apple-Royal-Gala-Klass-1-100144504_KG"
+    "source": "https://www.hemkop.se/produkt/apple-Royal-Gala-Klass-1-100144504_KG",
+    "volume": ""
   },
   {
     "name": "Avocado",
@@ -77,11 +82,12 @@
     "img_path": "./dataset/Fruit/Avocado/Avocado_Iconic.jpg",
     "info_path": "dataset/Fruit/Avocado/Avocado_Information.txt",
     "nutrition_grade": "d",
-    "price": 12.88,
+    "price": 0.74,
     "calories": 322,
     "mass": "170g",
     "description": "Avocado is a fruit with a clear core in the middle. The pulp is light yellow and the peel may vary from light green to dark green, almost black. Avocado fits for starters, salads and as an ingredient in Guacamole.",
-    "source": "https://www.hemkop.se/produkt/Avocado-Klass-1-100151933_ST"
+    "source": "https://www.hemkop.se/produkt/Avocado-Klass-1-100151933_ST",
+    "volume": ""
   },
   {
     "name": "Banana",
@@ -91,11 +97,12 @@
     "img_path": "./dataset/Fruit/Banana/Banana_Iconic.jpg",
     "info_path": "dataset/Fruit/Banana/Banana_Information.txt",
     "nutrition_grade": "d",
-    "price": 3.68,
+    "price": 0.27,
     "calories": 72,
     "mass": "180g",
     "description": "An ecologically grown banana. Bananas are good as snacks. The banana is temperature sensitive, very sensitive to dehydration, ethylene and cold damage. Store in room temperature or cool, never in a refrigerator.",
-    "source": "https://www.hemkop.se/produkt/Banan-Eko-Klass-1-100235247_KG"
+    "source": "https://www.hemkop.se/produkt/Banan-Eko-Klass-1-100235247_KG",
+    "volume": ""
   },
   {
     "name": "Kiwi",
@@ -105,11 +112,12 @@
     "img_path": "./dataset/Fruit/Kiwi/Kiwi_Iconic.jpg",
     "info_path": "dataset/Fruit/Kiwi/Kiwi_Information.txt",
     "nutrition_grade": "a",
-    "price": 5.52,
+    "price": 1.37,
     "calories": 46,
     "mass": "100g",
     "description": "Kiwi, or Chinese currants, as it is also called, has a sweet taste with clear acidity. The fruit is rich in vitamin C.",
-    "source": "https://www.hemkop.se/produkt/Kiwi-Klass-1-100180723_ST"
+    "source": "https://www.hemkop.se/produkt/Kiwi-Klass-1-100180723_ST",
+    "volume": ""
   },
   {
     "name": "Lemon",
@@ -119,11 +127,12 @@
     "img_path": "./dataset/Fruit/Lemon/Lemon_Iconic.jpg",
     "info_path": "dataset/Fruit/Lemon/Lemon_Information.txt",
     "nutrition_grade": "b",
-    "price": 13.8,
+    "price": 0.69,
     "calories": 17,
     "mass": "160g",
     "description": "Lemon is used as a flavor in food and drinks and has a very tart and sour taste.",
-    "source": "https://www.hemkop.se/produkt/Citron-Klass-1-100255117_ST"
+    "source": "https://www.hemkop.se/produkt/Citron-Klass-1-100255117_ST",
+    "volume": ""
   },
   {
     "name": "Lime",
@@ -133,11 +142,12 @@
     "img_path": "./dataset/Fruit/Lime/Lime_Iconic.jpg",
     "info_path": "dataset/Fruit/Lime/Lime_Information.txt",
     "nutrition_grade": "b",
-    "price": 11.04,
+    "price": 0.45,
     "calories": 20,
     "mass": "75g",
     "description": "The lime fruit, like lemon, has sour taste, with the difference that the lime is more juicy and flavorsome than the lemon. It is mainly the juice you use but also the shell can be used.",
-    "source": "https://www.hemkop.se/produkt/Lime-Klass-1-101200430_ST"
+    "source": "https://www.hemkop.se/produkt/Lime-Klass-1-101200430_ST",
+    "volume": ""
   },
   {
     "name": "Mango",
@@ -147,11 +157,12 @@
     "img_path": "./dataset/Fruit/Mango/Mango_Iconic.jpg",
     "info_path": "dataset/Fruit/Mango/Mango_Information.txt",
     "nutrition_grade": "c",
-    "price": 4.6,
+    "price": 1.79,
     "calories": 202,
     "mass": "400g",
     "description": "Mango has a fresh, powerful and sweet taste with an exotic twist. It's best to cut it with the skin on, then divide by cutting along both sides of the core. Enjoy mango naturally or in desserts, entrees, and main courses.",
-    "source": "https://www.hemkop.se/produkt/Mango-Klass-1-101200548_ST"
+    "source": "https://www.hemkop.se/produkt/Mango-Klass-1-101200548_ST",
+    "volume": ""
   },
   {
     "name": "Cantaloupe",
@@ -161,11 +172,12 @@
     "img_path": "./dataset/Fruit/Melon/Cantaloupe/Cantaloupe_Iconic.jpg",
     "info_path": "dataset/Fruit/Melon/Cantaloupe/Cantaloupe_Information.txt",
     "nutrition_grade": "a",
-    "price": 3.68,
+    "price": 3.19,
     "calories": 277,
     "mass": "1.05kg",
     "description": "The cantaloupe melon is a rather small and all round sugar melon, with a greenish yellow mesh patterned shell. The pulp is orange colored with juicy and sweet taste.",
-    "source": "https://www.hemkop.se/produkt/Melon-Cantaloupe-Klass-1-100256107_KG"
+    "source": "https://www.hemkop.se/produkt/Melon-Cantaloupe-Klass-1-100256107_KG",
+    "volume": ""
   },
   {
     "name": "Galia-Melon",
@@ -175,11 +187,12 @@
     "img_path": "./dataset/Fruit/Melon/Galia-Melon/Galia-Melon_Iconic.jpg",
     "info_path": "dataset/Fruit/Melon/Galia-Melon/Galia-Melon_Information.txt",
     "nutrition_grade": "a",
-    "price": 18.4,
+    "price": 7.99,
     "calories": 183,
     "mass": "1.01kg",
     "description": "Galia melon is a small round sugar melon with a yellowish green, orange, or light brown mesh patterned shell. The pulp is firm and juicy, with a cream white to yellowish green color and a sweet, rich flavor.",
-    "source": "https://www.hemkop.se/produkt/Galiamelon-Klass-1-101242324_KG"
+    "source": "https://www.hemkop.se/produkt/Galiamelon-Klass-1-101242324_KG",
+    "volume": ""
   },
   {
     "name": "Honeydew-Melon",
@@ -189,11 +202,12 @@
     "img_path": "./dataset/Fruit/Melon/Honeydew-Melon/Honeydew-Melon_Iconic.jpg",
     "info_path": "dataset/Fruit/Melon/Honeydew-Melon/Honeydew-Melon_Information.txt",
     "nutrition_grade": "b",
-    "price": 16.56,
+    "price": 6.63,
     "calories": 360,
     "mass": "1.2kg",
     "description": "Honeydew melon is an oval shaped sugarmelon, with a yellow shell. The pulp is creamy light yellow with juicy, sweet and fresh taste, which is milder than other melons.",
-    "source": "https://www.hemkop.se/produkt/Honungsmelon-Klass-1-100256170_KG"
+    "source": "https://www.hemkop.se/produkt/Honungsmelon-Klass-1-100256170_KG",
+    "volume": ""
   },
   {
     "name": "Watermelon",
@@ -203,11 +217,12 @@
     "img_path": "./dataset/Fruit/Melon/Watermelon/Watermelon_Iconic.jpg",
     "info_path": "dataset/Fruit/Melon/Watermelon/Watermelon_Information.txt",
     "nutrition_grade": "d",
-    "price": 5.52,
+    "price": 8.99,
     "calories": 1355,
     "mass": "3kg",
     "description": "Water melon juicier than sugar melons, and has a round peel with light green base color, with long-tied dark green stripes. The pulp is very juicy, mild and sweet, and occurs with and without kernels.",
-    "source": "https://www.hemkop.se/produkt/Melon-Vatten-Klass-1-101273856_KG"
+    "source": "https://www.hemkop.se/produkt/Melon-Vatten-Klass-1-101273856_KG",
+    "volume": ""
   },
   {
     "name": "Nectarine",
@@ -217,11 +232,12 @@
     "img_path": "./dataset/Fruit/Nectarine/Nectarine_Iconic.jpg",
     "info_path": "dataset/Fruit/Nectarine/Nectarine_Information.txt",
     "nutrition_grade": "b",
-    "price": 10.12,
+    "price": 1.5,
     "calories": 60,
     "mass": "175g",
     "description": "The nectarine is a stone fruit with plain peel and yellow or orange pulp, which is somewhat firmer than the peach. Nectarine is suitable for eating naturally but can also be used for pastry, marmalade and jam.",
-    "source": "https://www.hemkop.se/produkt/Nektarin-Klass-1-101017668_KG"
+    "source": "https://www.hemkop.se/produkt/Nektarin-Klass-1-101017668_KG",
+    "volume": ""
   },
   {
     "name": "Orange",
@@ -231,11 +247,12 @@
     "img_path": "./dataset/Fruit/Orange/Orange_Iconic.jpg",
     "info_path": "dataset/Fruit/Orange/Orange_Information.txt",
     "nutrition_grade": "c",
-    "price": 14.72,
+    "price": 0.95,
     "calories": 73,
     "mass": "280g",
     "description": "There are many different types of oranges that ripen and is sold during different parts of the year. The orange is a very important vitamin C source and the vitamins are best kept if the fruit is eaten naturally.",
-    "source": "https://www.hemkop.se/produkt/Apelsin-Klass-1-101273786_KG"
+    "source": "https://www.hemkop.se/produkt/Apelsin-Klass-1-101273786_KG",
+    "volume": ""
   },
   {
     "name": "Papaya",
@@ -245,11 +262,12 @@
     "img_path": "./dataset/Fruit/Papaya/Papaya_Iconic.jpg",
     "info_path": "dataset/Fruit/Papaya/Papaya_Information.txt",
     "nutrition_grade": "d",
-    "price": 17.48,
+    "price": 5.73,
     "calories": 80,
     "mass": "500g",
     "description": "Papayan has a salmon-pink pulp that is buttery in the texture. The fruit is rich in vitamin A and C.",
-    "source": "https://www.hemkop.se/produkt/Papaya-Klass-1-100181072_ST"
+    "source": "https://www.hemkop.se/produkt/Papaya-Klass-1-100181072_ST",
+    "volume": ""
   },
   {
     "name": "Passion-Fruit",
@@ -259,11 +277,12 @@
     "img_path": "./dataset/Fruit/Passion-Fruit/Passion-Fruit_Iconic.jpg",
     "info_path": "dataset/Fruit/Passion-Fruit/Passion-Fruit_Information.txt",
     "nutrition_grade": "c",
-    "price": 14.72,
+    "price": 3.87,
     "calories": 229,
     "mass": "50g",
     "description": "Passion fruit is a small, round or oval fruit with yellow or dark brownish purple dented shell. Passion fruit's interior consists of many small edible kernels surrounded by succulent pulp. The taste is rich and fresh, and reminiscent of raspberries and orange.",
-    "source": "https://www.hemkop.se/produkt/Passionsfrukt-Klass-1-100257650_ST"
+    "source": "https://www.hemkop.se/produkt/Passionsfrukt-Klass-1-100257650_ST",
+    "volume": ""
   },
   {
     "name": "Peach",
@@ -273,11 +292,12 @@
     "img_path": "./dataset/Fruit/Peach/Peach_Iconic.jpg",
     "info_path": "dataset/Fruit/Peach/Peach_Information.txt",
     "nutrition_grade": "b",
-    "price": 18.4,
+    "price": 1.01,
     "calories": 51,
     "mass": "175g",
     "description": "Peach is a stone fruit with yellow or orange pulp and velvety shell. Suitable for eating naturally but can also be used for pastry, marmalade and jam.",
-    "source": "https://www.hemkop.se/produkt/Persika-Klass-1-100257703_KG"
+    "source": "https://www.hemkop.se/produkt/Persika-Klass-1-100257703_KG",
+    "volume": ""
   },
   {
     "name": "Anjou",
@@ -287,11 +307,12 @@
     "img_path": "./dataset/Fruit/Pear/Anjou/Anjou_Iconic.jpg",
     "info_path": "dataset/Fruit/Pear/Anjou/Anjou_Information.txt",
     "nutrition_grade": "a",
-    "price": 10.12,
+    "price": 1.09,
     "calories": 101,
     "mass": "170g",
     "description": "Anjou pear is a classic pear shaped with rounded stalk with a thin yellowish green shell. The pulp is juicy and has a sweet, nice taste. Anjou is an excellent table fruit that also fits in pastries, then rather unripe.",
-    "source": "https://www.hemkop.se/produkt/Paron-Anjou-100139253_KG"
+    "source": "https://www.hemkop.se/produkt/Paron-Anjou-100139253_KG",
+    "volume": ""
   },
   {
     "name": "Conference",
@@ -301,11 +322,12 @@
     "img_path": "./dataset/Fruit/Pear/Conference/Conference_Iconic.jpg",
     "info_path": "dataset/Fruit/Pear/Conference/Conference_Information.txt",
     "nutrition_grade": "a",
-    "price": 5.52,
+    "price": 1.11,
     "calories": 61,
     "mass": "200g",
     "description": "Conference is a medium sized pear with long-tapered bottle like shape and a rounded base. To the color, the Conference pear is light greenish yellow with gold brown spots. Pears taste the most when they are really ripe. Suitable for desserts, cheese tray or to eat as it is.",
-    "source": "https://www.hemkop.se/produkt/Paron-Conference-Klass-1-100139342_KG"
+    "source": "https://www.hemkop.se/produkt/Paron-Conference-Klass-1-100139342_KG",
+    "volume": ""
   },
   {
     "name": "Kaiser",
@@ -315,11 +337,12 @@
     "img_path": "./dataset/Fruit/Pear/Kaiser/Kaiser_Iconic.jpg",
     "info_path": "dataset/Fruit/Pear/Kaiser/Kaiser_Information.txt",
     "nutrition_grade": "a",
-    "price": 18.4,
+    "price": 2.49,
     "calories": 101,
     "mass": "150g",
     "description": "The Kaiser Pear is drip-shaped with matte, medium-thick, flaming yellow-brown or brownish shell. The yellowish white pulp is crispy, juicy and sweet, with some fresh acid. Kaiser pears match very well with dessert cheeses and wine, but it is also good to cook, as it retains its shape well.",
-    "source": "https://www.hemkop.se/produkt/Paron-Bosc-kaiser-Klass-1-100129754_KG"
+    "source": "https://www.hemkop.se/produkt/Paron-Bosc-kaiser-Klass-1-100129754_KG",
+    "volume": ""
   },
   {
     "name": "Pineapple",
@@ -329,11 +352,12 @@
     "img_path": "./dataset/Fruit/Pineapple/Pineapple_Iconic.jpg",
     "info_path": "dataset/Fruit/Pineapple/Pineapple_Information.txt",
     "nutrition_grade": "b",
-    "price": 6.44,
+    "price": 2.38,
     "calories": 227,
     "mass": "1kg",
     "description": "Pineapple fits well to be eaten naturally in for example desserts and fruit salad. Remember to remove the log in the middle.",
-    "source": "https://www.hemkop.se/produkt/Ananas-Klass-1-100145594_ST"
+    "source": "https://www.hemkop.se/produkt/Ananas-Klass-1-100145594_ST",
+    "volume": ""
   },
   {
     "name": "Plum",
@@ -343,11 +367,12 @@
     "img_path": "./dataset/Fruit/Plum/Plum_Iconic.jpg",
     "info_path": "dataset/Fruit/Plum/Plum_Information.txt",
     "nutrition_grade": "d",
-    "price": 11.96,
+    "price": 0.83,
     "calories": 30,
     "mass": "70g",
     "description": "Ripe plums have soft and juicy pulp with sweet taste. Suitable for being eaten naturally, but is also used for preserving and pastries.",
-    "source": "https://www.hemkop.se/produkt/Plommon-Rod-Klass-1-100258347_KG"
+    "source": "https://www.hemkop.se/produkt/Plommon-Rod-Klass-1-100258347_KG",
+    "volume": ""
   },
   {
     "name": "Pomegranate",
@@ -357,11 +382,12 @@
     "img_path": "./dataset/Fruit/Pomegranate/Pomegranate_Iconic.jpg",
     "info_path": "dataset/Fruit/Pomegranate/Pomegranate_Information.txt",
     "nutrition_grade": "c",
-    "price": 2.76,
+    "price": 4.49,
     "calories": 72,
     "mass": "440g",
     "description": "Pomegranate has a sweet, gentle taste, great for salads and desserts. You eat the kernels, removed by cutting around the apple without destroying the core. Turn both halves to loosen, then tap the shell over a bowl to release the kernels.",
-    "source": "https://www.hemkop.se/produkt/Granatapple-Klass-1-101203898_KG"
+    "source": "https://www.hemkop.se/produkt/Granatapple-Klass-1-101203898_KG",
+    "volume": ""
   },
   {
     "name": "Red-Grapefruit",
@@ -371,11 +397,12 @@
     "img_path": "./dataset/Fruit/Red-Grapefruit/Red-Grapefruit_Iconic.jpg",
     "info_path": "dataset/Fruit/Red-Grapefruit/Red-Grapefruit_Information.txt",
     "nutrition_grade": "b",
-    "price": 11.96,
+    "price": 3.79,
     "calories": 104,
     "mass": "375g",
     "description": "The red grapefruit has a red pulp and a slightly pink colored peel. The taste is characteristically bitter, but at the same time fresh and sour. The red grapefruit is sweeter than the blonde grapefruit.",
-    "source": "https://www.hemkop.se/produkt/Grape-Rod-Klass-1-101204878_ST"
+    "source": "https://www.hemkop.se/produkt/Grape-Rod-Klass-1-101204878_ST",
+    "volume": ""
   },
   {
     "name": "Satsumas",
@@ -385,11 +412,12 @@
     "img_path": "./dataset/Fruit/Satsumas/Satsumas_Iconic.jpg",
     "info_path": "dataset/Fruit/Satsumas/Satsumas_Information.txt",
     "nutrition_grade": "b",
-    "price": 2.76,
+    "price": 7.12,
     "calories": 52,
     "mass": "100g",
     "description": "Satsumas is a sweet and small type of citrus fruit. The fruit is popular as a snack.",
-    "source": "https://www.hemkop.se/produkt/Citrus-Sma-Klass-1-101273941_KG"
+    "source": "https://www.hemkop.se/produkt/Citrus-Sma-Klass-1-101273941_KG",
+    "volume": ""
   },
   {
     "name": "Bravo-Apple-Juice",
@@ -399,11 +427,12 @@
     "img_path": "./dataset/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Iconic.jpg",
     "info_path": "dataset/Packages/Juice/Bravo-Apple-Juice/Bravo-Apple-Juice_Information.txt",
     "nutrition_grade": "c",
-    "price": 16.56,
+    "price": 3.91,
     "calories": 33,
-    "volume": "2L",
+    "mass": "",
     "description": "Ready to drink apple juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink.",
-    "source": "https://www.hemkop.se/produkt/apple-Juice-100972967_ST"
+    "source": "https://www.hemkop.se/produkt/apple-Juice-100972967_ST",
+    "volume": "2L"
   },
   {
     "name": "Bravo-Orange-Juice",
@@ -413,11 +442,12 @@
     "img_path": "./dataset/Packages/Juice/Bravo-Orange-Juice/Bravo-Orange-Juice_Iconic.jpg",
     "info_path": "dataset/Packages/Juice/Bravo-Orange-Juice/Bravo-Orange-Juice_Information.txt",
     "nutrition_grade": "c",
-    "price": 16.56,
+    "price": 5.75,
     "calories": 110,
-    "volume": "2L",
+    "mass": "",
     "description": "Ready to drink orange juice from concentrate. Fresh and sour taste. Fits the breakfast table, as quencher and meal drink. Without pulp.",
-    "source": "https://www.hemkop.se/produkt/Apelsinjuice-Drickfardig-Juice-100972930_ST"
+    "source": "https://www.hemkop.se/produkt/Apelsinjuice-Drickfardig-Juice-100972930_ST",
+    "volume": "2L"
   },
   {
     "name": "God-Morgon-Apple-Juice",
@@ -427,11 +457,12 @@
     "img_path": "./dataset/Packages/Juice/God-Morgon-Apple-Juice/God-Morgon-Apple-Juice_Iconic.jpg",
     "info_path": "dataset/Packages/Juice/God-Morgon-Apple-Juice/God-Morgon-Apple-Juice_Information.txt",
     "nutrition_grade": "e",
-    "price": 3.68,
+    "price": 2.99,
     "calories": 40,
-    "volume": "1L",
+    "mass": "",
     "description": "God Morning Apple is unfiltered, which gives a richer, more delicious juice with real apple flavor.",
-    "source": "https://www.hemkop.se/produkt/apple-Juice-med-Fruktkott-Fran-Koncentrat-101146350_ST"
+    "source": "https://www.hemkop.se/produkt/apple-Juice-med-Fruktkott-Fran-Koncentrat-101146350_ST",
+    "volume": "1L"
   },
   {
     "name": "God-Morgon-Orange-Juice",
@@ -441,11 +472,12 @@
     "img_path": "./dataset/Packages/Juice/God-Morgon-Orange-Juice/God-Morgon-Orange-Juice_Iconic.jpg",
     "info_path": "dataset/Packages/Juice/God-Morgon-Orange-Juice/God-Morgon-Orange-Juice_Information.txt",
     "nutrition_grade": "e",
-    "price": 5.52,
+    "price": 7.59,
     "calories": 45,
-    "volume": "1L",
+    "mass": "",
     "description": "God Morgon Orange is pressed by sun-dried, hand-picked oranges. The package contains juice from 2 kilograms of oranges!",
-    "source": "https://www.hemkop.se/produkt/Apelsinjuice-100985864_ST"
+    "source": "https://www.hemkop.se/produkt/Apelsinjuice-100985864_ST",
+    "volume": "1L"
   },
   {
     "name": "God-Morgon-Orange-Red-Grapefruit-Juice",
@@ -455,11 +487,12 @@
     "img_path": "./dataset/Packages/Juice/God-Morgon-Orange-Red-Grapefruit-Juice/God-Morgon-Orange-Red-Grapefruit-Juice_Iconic.jpg",
     "info_path": "dataset/Packages/Juice/God-Morgon-Orange-Red-Grapefruit-Juice/God-Morgon-Orange-Red-Grapefruit-Juice_Information.txt",
     "nutrition_grade": "c",
-    "price": 14.72,
+    "price": 2.99,
     "calories": 35,
-    "volume": "1L",
+    "mass": "",
     "description": "God Morning Orange / Red Grapefruit is a fresh blend of sweet orange juice and tasty fresh red grapefruit.",
-    "source": "https://www.hemkop.se/produkt/Apelsin-Blodgrape-Juice-med-Fruktkott-100985828_ST"
+    "source": "https://www.hemkop.se/produkt/Apelsin-Blodgrape-Juice-med-Fruktkott-100985828_ST",
+    "volume": "1L"
   },
   {
     "name": "God-Morgon-Red-Grapefruit-Juice",
@@ -469,11 +502,12 @@
     "img_path": "./dataset/Packages/Juice/God-Morgon-Red-Grapefruit-Juice/God-Morgon-Red-Grapefruit-Juice_Iconic.jpg",
     "info_path": "dataset/Packages/Juice/God-Morgon-Red-Grapefruit-Juice/God-Morgon-Red-Grapefruit-Juice_Information.txt",
     "nutrition_grade": "c",
-    "price": 9.2,
+    "price": 3.91,
     "calories": 96,
-    "volume": "1L",
+    "mass": "",
     "description": "God Morning Red Grapefruit is a real vitamin kick - mellow, rich in taste and as refreshing as only red grapefruit can be.",
-    "source": "https://www.hemkop.se/produkt/Blodgrape-Juice-med-Fruktkott-100985640_ST"
+    "source": "https://www.hemkop.se/produkt/Blodgrape-Juice-med-Fruktkott-100985640_ST",
+    "volume": "1L"
   },
   {
     "name": "Tropicana-Apple-Juice",
@@ -483,11 +517,12 @@
     "img_path": "./dataset/Packages/Juice/Tropicana-Apple-Juice/Tropicana-Apple-Juice_Iconic.jpg",
     "info_path": "dataset/Packages/Juice/Tropicana-Apple-Juice/Tropicana-Apple-Juice_Information.txt",
     "nutrition_grade": "c",
-    "price": 6.44,
+    "price": 5.75,
     "calories": 140,
-    "volume": "1L",
+    "mass": "",
     "description": "Tropicana Apple is a ready to drink juice with pulp pressed on apples. Not from concentrate. Mildly pasteurized.",
-    "source": "https://www.hemkop.se/produkt/apple-Farskpressad-Juice-100985702_ST"
+    "source": "https://www.hemkop.se/produkt/apple-Farskpressad-Juice-100985702_ST",
+    "volume": "1L"
   },
   {
     "name": "Tropicana-Golden-Grapefruit",
@@ -497,11 +532,12 @@
     "img_path": "./dataset/Packages/Juice/Tropicana-Golden-Grapefruit/Tropicana-Golden-Grapefruit_Iconic.jpg",
     "info_path": "dataset/Packages/Juice/Tropicana-Golden-Grapefruit/Tropicana-Golden-Grapefruit_Information.txt",
     "nutrition_grade": "e",
-    "price": 7.36,
+    "price": 6.67,
     "calories": 170,
-    "volume": "1L",
+    "mass": "",
     "description": "Tropicana Golden Grape is a ready to drink juice with pulp pressed on grapefruit. Not from concentrate. Mildly pasteurized.",
-    "source": "https://www.hemkop.se/produkt/Golden-Grapefruit-Farskpressad-Juice-100985739_ST"
+    "source": "https://www.hemkop.se/produkt/Golden-Grapefruit-Farskpressad-Juice-100985739_ST",
+    "volume": "1L"
   },
   {
     "name": "Tropicana-Juice-Smooth",
@@ -511,11 +547,12 @@
     "img_path": "./dataset/Packages/Juice/Tropicana-Juice-Smooth/Tropicana-Juice-Smooth_Iconic.jpg",
     "info_path": "dataset/Packages/Juice/Tropicana-Juice-Smooth/Tropicana-Juice-Smooth_Information.txt",
     "nutrition_grade": "c",
-    "price": 15.64,
+    "price": 4.83,
     "calories": 72,
-    "volume": "1L",
+    "mass": "",
     "description": "Tropicana Smooth Style is a ready to drink juice without pulp pressed on sun-dried oranges. Not from concentrate. Mildly pasteurized.",
-    "source": "https://www.hemkop.se/produkt/Smooth-Style-Utan-Fruktkott-Farskpressad-Juice-100985668_ST"
+    "source": "https://www.hemkop.se/produkt/Smooth-Style-Utan-Fruktkott-Farskpressad-Juice-100985668_ST",
+    "volume": "1L"
   },
   {
     "name": "Tropicana-Mandarin-Morning",
@@ -525,11 +562,12 @@
     "img_path": "./dataset/Packages/Juice/Tropicana-Mandarin-Morning/Tropicana-Mandarin-Morning_Iconic.jpg",
     "info_path": "dataset/Packages/Juice/Tropicana-Mandarin-Morning/Tropicana-Mandarin-Morning_Information.txt",
     "nutrition_grade": "c",
-    "price": 8.28,
+    "price": 3.91,
     "calories": 49,
-    "volume": "1L",
+    "mass": "",
     "description": "Tropicana Mandarin Morning is a ready to drink juice without pulp pressed on orange, mandarin and grapes. Not from concentrate. Mildly pasteurized.",
-    "source": "https://www.hemkop.se/produkt/Mandarin-Grape-Orange-Farskpressad-Juice-100985935_ST"
+    "source": "https://www.hemkop.se/produkt/Mandarin-Grape-Orange-Farskpressad-Juice-100985935_ST",
+    "volume": "1L"
   },
   {
     "name": "Arla-Ecological-Medium-Fat-Milk",
@@ -539,11 +577,12 @@
     "img_path": "./dataset/Packages/Milk/Arla-Ecological-Medium-Fat-Milk/Arla-Ecological-Medium-Fat-Milk_Iconic.jpg",
     "info_path": "dataset/Packages/Milk/Arla-Ecological-Medium-Fat-Milk/Arla-Ecological-Medium-Fat-Milk_Information.txt",
     "nutrition_grade": "a",
-    "price": 17.48,
+    "price": 2.99,
     "calories": 41,
-    "volume": "1L",
-    "description": "Fresh skimmed Milk made from Swedish Milk from organic Arlag\u00e5rdar. A delicious choice for breakfast cereals, porridge, or a mealtime drink. Natural source of protein, calcium, and vitamin B12. Arla Ko guarantees 100% Swedish milk.",
-    "source": "https://www.hemkop.se/produkt/Mellanmjolk-Ekologisk-1-5procent-101123632_ST"
+    "mass": "",
+    "description": "Fresh skimmed Milk made from Swedish Milk from organic Arlag\\u00e5rdar. A delicious choice for breakfast cereals, porridge, or a mealtime drink. Natural source of protein, calcium, and vitamin B12. Arla Ko guarantees 100% Swedish milk.",
+    "source": "https://www.hemkop.se/produkt/Mellanmjolk-Ekologisk-1-5procent-101123632_ST",
+    "volume": "1L"
   },
   {
     "name": "Arla-Lactose-Medium-Fat-Milk",
@@ -553,11 +592,12 @@
     "img_path": "./dataset/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Iconic.jpg",
     "info_path": "dataset/Packages/Milk/Arla-Lactose-Medium-Fat-Milk/Arla-Lactose-Medium-Fat-Milk_Information.txt",
     "nutrition_grade": "a",
-    "price": 11.04,
+    "price": 7.59,
     "calories": 163,
-    "volume": "1L",
-    "description": "Lactose-free skimmed milk from Swedish milk at Arlag\u00e5rdar. Ideal for lactose-intolerant adults and kids. Delicious in cereals, porridge, or as a mealtime drink. Arla Ko guarantees 100% Swedish milk.",
-    "source": "https://www.hemkop.se/produkt/Mellanmjolk-Laktosfri-1-5procent-100906879_ST"
+    "mass": "",
+    "description": "Lactose-free skimmed milk from Swedish milk at Arlag\\u00e5rdar. Ideal for lactose-intolerant adults and kids. Delicious in cereals, porridge, or as a mealtime drink. Arla Ko guarantees 100% Swedish milk.",
+    "source": "https://www.hemkop.se/produkt/Mellanmjolk-Laktosfri-1-5procent-100906879_ST",
+    "volume": "1L"
   },
   {
     "name": "Arla-Medium-Fat-Milk",
@@ -567,11 +607,12 @@
     "img_path": "./dataset/Packages/Milk/Arla-Medium-Fat-Milk/Arla-Medium-Fat-Milk_Iconic.jpg",
     "info_path": "dataset/Packages/Milk/Arla-Medium-Fat-Milk/Arla-Medium-Fat-Milk_Information.txt",
     "nutrition_grade": "a",
-    "price": 8.28,
+    "price": 7.59,
     "calories": 122,
-    "volume": "1L",
-    "description": "Fresh skimmed milk from Swedish milk at Arlag\u00e5rdar. Delicious for breakfast cereals, porridge, or a mealtime drink. Natural source of protein, calcium, and vitamin B12. Arla Ko guarantees 100% Swedish milk.",
-    "source": "https://www.hemkop.se/produkt/Mellanmjolk-1-5procent-100183962_ST"
+    "mass": "",
+    "description": "Fresh skimmed milk from Swedish milk at Arlag\\u00e5rdar. Delicious for breakfast cereals, porridge, or a mealtime drink. Natural source of protein, calcium, and vitamin B12. Arla Ko guarantees 100% Swedish milk.",
+    "source": "https://www.hemkop.se/produkt/Mellanmjolk-1-5procent-100183962_ST",
+    "volume": "1L"
   },
   {
     "name": "Arla-Standard-Milk",
@@ -581,11 +622,12 @@
     "img_path": "./dataset/Packages/Milk/Arla-Standard-Milk/Arla-Standard-Milk_Iconic.jpg",
     "info_path": "dataset/Packages/Milk/Arla-Standard-Milk/Arla-Standard-Milk_Information.txt",
     "nutrition_grade": "a",
-    "price": 9.2,
+    "price": 4.83,
     "calories": 149,
-    "volume": "1L",
-    "description": "Fresh standard milk from Swedish milk at Arlag\u00e5rdar. Round, creamy flavor makes it great for coffee, tea, and chocolate. Also perfect for cooking, berries, and porridge. Natural source of protein, calcium, and vitamin B12. Arla Ko guarantees 100% Swedish milk.",
-    "source": "https://www.hemkop.se/produkt/Mjolk-3procent-100183944_ST"
+    "mass": "",
+    "description": "Fresh standard milk from Swedish milk at Arlag\\u00e5rdar. Round, creamy flavor makes it great for coffee, tea, and chocolate. Also perfect for cooking, berries, and porridge. Natural source of protein, calcium, and vitamin B12. Arla Ko guarantees 100% Swedish milk.",
+    "source": "https://www.hemkop.se/produkt/Mjolk-3procent-100183944_ST",
+    "volume": "1L"
   },
   {
     "name": "Garant-Ecological-Medium-Fat-Milk",
@@ -595,11 +637,12 @@
     "img_path": "./dataset/Packages/Milk/Garant-Ecological-Medium-Fat-Milk/Garant-Ecological-Medium-Fat-Milk_Iconic.jpg",
     "info_path": "dataset/Packages/Milk/Garant-Ecological-Medium-Fat-Milk/Garant-Ecological-Medium-Fat-Milk_Information.txt",
     "nutrition_grade": "b",
-    "price": 7.36,
+    "price": 2.99,
     "calories": 122,
-    "volume": "1L",
+    "mass": "",
     "description": "Organic skimmed milk from our Swedish KRAV farms. 1.5 percent fat. Garant's organic labeling tells us that a product is organic and sometimes even KRAV-labeled. Our assortment is constantly filled with more EKO products.",
-    "source": "https://www.hemkop.se/produkt/Mellanmjolk-Ekologisk-1-5procent-101187327_ST"
+    "source": "https://www.hemkop.se/produkt/Mellanmjolk-Ekologisk-1-5procent-101187327_ST",
+    "volume": "1L"
   },
   {
     "name": "Garant-Ecological-Standard-Milk",
@@ -609,11 +652,12 @@
     "img_path": "./dataset/Packages/Milk/Garant-Ecological-Standard-Milk/Garant-Ecological-Standard-Milk_Iconic.jpg",
     "info_path": "dataset/Packages/Milk/Garant-Ecological-Standard-Milk/Garant-Ecological-Standard-Milk_Information.txt",
     "nutrition_grade": "b",
-    "price": 4.6,
+    "price": 7.59,
     "calories": 130,
-    "volume": "1L",
+    "mass": "",
     "description": "Ecological milk from Swedish KRAV-labeled farms.",
-    "source": "https://www.hemkop.se/produkt/Standardmjolk-Ekologisk-3procent-101187312_ST"
+    "source": "https://www.hemkop.se/produkt/Standardmjolk-Ekologisk-3procent-101187312_ST",
+    "volume": "1L"
   },
   {
     "name": "Oatly-Natural-Oatghurt",
@@ -623,11 +667,12 @@
     "img_path": "./dataset/Packages/Oatghurt/Oatly-Natural-Oatghurt/Oatly-Natural-Oatghurt_Iconic.jpg",
     "info_path": "dataset/Packages/Oatghurt/Oatly-Natural-Oatghurt/Oatly-Natural-Oatghurt_Information.txt",
     "nutrition_grade": "b",
-    "price": 5.52,
+    "price": 6.67,
     "calories": 130,
     "mass": "1kg",
     "description": "Whole vegetable ghurt, used as yoghurt. Can also be used for cold sauces.",
-    "source": "https://www.hemkop.se/produkt/Havregurt-Naturell-101223139_ST"
+    "source": "https://www.hemkop.se/produkt/Havregurt-Naturell-101223139_ST",
+    "volume": ""
   },
   {
     "name": "Oatly-Oat-Milk",
@@ -637,11 +682,12 @@
     "img_path": "./dataset/Packages/Oat-Milk/Oatly-Oat-Milk/Oatly-Oat-Milk_Iconic.jpg",
     "info_path": "dataset/Packages/Oat-Milk/Oatly-Oat-Milk/Oatly-Oat-Milk_Information.txt",
     "nutrition_grade": "b",
-    "price": 15.64,
+    "price": 6.67,
     "calories": 120,
-    "volume": "1L",
+    "mass": "",
     "description": "A natural oat drink, enriched with calcium and vitamins. Has long shelf life and can be stored at room temperature.",
-    "source": "https://www.hemkop.se/produkt/Havredryck-Berikad-Farsk-101223155_ST"
+    "source": "https://www.hemkop.se/produkt/Havredryck-Berikad-Farsk-101223155_ST",
+    "volume": "1L"
   },
   {
     "name": "Arla-Ecological-Sour-Cream",
@@ -651,11 +697,12 @@
     "img_path": "./dataset/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Iconic.jpg",
     "info_path": "dataset/Packages/Sour-Cream/Arla-Ecological-Sour-Cream/Arla-Ecological-Sour-Cream_Information.txt",
     "nutrition_grade": "c",
-    "price": 12.88,
+    "price": 4.83,
     "calories": 49,
-    "volume": "3dL",
-    "description": "KRAV-labeled sour cream from fresh cream at Swedish organic Arlag\u00e5rdar. A classic for both everyday and weekend use. It has an acidic, creamy and fresh taste, great as an accessory or in sauces. Softens the heat of spicy dishes. Arla Ko guarantees 100% Swedish milk.",
-    "source": "https://www.hemkop.se/produkt/Graddfil-Eko-12procent-101196968_ST"
+    "mass": "",
+    "description": "KRAV-labeled sour cream from fresh cream at Swedish organic Arlag\\u00e5rdar. A classic for both everyday and weekend use. It has an acidic, creamy and fresh taste, great as an accessory or in sauces. Softens the heat of spicy dishes. Arla Ko guarantees 100% Swedish milk.",
+    "source": "https://www.hemkop.se/produkt/Graddfil-Eko-12procent-101196968_ST",
+    "volume": "3dL"
   },
   {
     "name": "Arla-Sour-Cream",
@@ -665,11 +712,12 @@
     "img_path": "./dataset/Packages/Sour-Cream/Arla-Sour-Cream/Arla-Sour-Cream_Iconic.jpg",
     "info_path": "dataset/Packages/Sour-Cream/Arla-Sour-Cream/Arla-Sour-Cream_Information.txt",
     "nutrition_grade": "d",
-    "price": 6.44,
+    "price": 2.99,
     "calories": 57,
-    "volume": "3dL",
-    "description": "Sour cream from fresh cream at Swedish Arlag\u00e5rdar. A classic for both weekday and weekend use. It has an acidic, creamy and fresh taste with a slightly creamy texture. Excellent as an accessory or in sauces. Softens the heat of spicy dishes. Arla Ko guarantees 100% Swedish milk.",
-    "source": "https://www.hemkop.se/produkt/Graddfil-12procent-100480800_ST"
+    "mass": "",
+    "description": "Sour cream from fresh cream at Swedish Arlag\\u00e5rdar. A classic for both weekday and weekend use. It has an acidic, creamy and fresh taste with a slightly creamy texture. Excellent as an accessory or in sauces. Softens the heat of spicy dishes. Arla Ko guarantees 100% Swedish milk.",
+    "source": "https://www.hemkop.se/produkt/Graddfil-12procent-100480800_ST",
+    "volume": "3dL"
   },
   {
     "name": "Arla-Sour-Milk",
@@ -679,11 +727,12 @@
     "img_path": "./dataset/Packages/Sour-Milk/Arla-Sour-Milk/Arla-Sour-Milk_Iconic.jpg",
     "info_path": "dataset/Packages/Sour-Milk/Arla-Sour-Milk/Arla-Sour-Milk_Information.txt",
     "nutrition_grade": "d",
-    "price": 12.88,
+    "price": 7.59,
     "calories": 83,
     "mass": "1kg",
-    "description": "Classic sour milk from Swedish milk at Arlag\u00e5rdar. Slightly acidic with a characteristic sour milk aroma and light creaminess. Enjoy with muesli, cereal, fruit, or berries. Sour milk has a long history in Sweden. Arla Ko guarantees 100% Swedish milk.",
-    "source": "https://www.hemkop.se/produkt/Filmjolk-3procent-101207046_ST"
+    "description": "Classic sour milk from Swedish milk at Arlag\\u00e5rdar. Slightly acidic with a characteristic sour milk aroma and light creaminess. Enjoy with muesli, cereal, fruit, or berries. Sour milk has a long history in Sweden. Arla Ko guarantees 100% Swedish milk.",
+    "source": "https://www.hemkop.se/produkt/Filmjolk-3procent-101207046_ST",
+    "volume": ""
   },
   {
     "name": "Alpro-Blueberry-Soyghurt",
@@ -693,11 +742,12 @@
     "img_path": "./dataset/Packages/Soyghurt/Alpro-Blueberry-Soyghurt/Alpro-Blueberry-Soyghurt_Iconic.jpg",
     "info_path": "dataset/Packages/Soyghurt/Alpro-Blueberry-Soyghurt/Alpro-Blueberry-Soyghurt_Information.txt",
     "nutrition_grade": "a",
-    "price": 18.4,
+    "price": 7.59,
     "calories": 70,
     "mass": "750g",
     "description": "Soy based ghurt, used as yoghurt, with mild blueberry taste and creamy texture.",
-    "source": "https://www.hemkop.se/produkt/Blabar-Yofu-Sojayoghurt-101189719_ST"
+    "source": "https://www.hemkop.se/produkt/Blabar-Yofu-Sojayoghurt-101189719_ST",
+    "volume": ""
   },
   {
     "name": "Alpro-Vanilla-Soyghurt",
@@ -707,11 +757,12 @@
     "img_path": "./dataset/Packages/Soyghurt/Alpro-Vanilla-Soyghurt/Alpro-Vanilla-Soyghurt_Iconic.jpg",
     "info_path": "dataset/Packages/Soyghurt/Alpro-Vanilla-Soyghurt/Alpro-Vanilla-Soyghurt_Information.txt",
     "nutrition_grade": "a",
-    "price": 15.64,
+    "price": 2.99,
     "calories": 66,
     "mass": "750g",
     "description": "Soy based ghurt, used as yoghurt, with mild vanilla taste and and creamy texture.",
-    "source": "https://www.hemkop.se/produkt/Mild-och-Creamy-Vanilj-Sojayoghurt-101189736_ST"
+    "source": "https://www.hemkop.se/produkt/Mild-och-Creamy-Vanilj-Sojayoghurt-101189736_ST",
+    "volume": ""
   },
   {
     "name": "Alpro-Fresh-Soy-Milk",
@@ -721,11 +772,12 @@
     "img_path": "./dataset/Packages/Soy-Milk/Alpro-Fresh-Soy-Milk/Alpro-Fresh-Soy-Milk_Iconic.jpg",
     "info_path": "dataset/Packages/Soy-Milk/Alpro-Fresh-Soy-Milk/Alpro-Fresh-Soy-Milk_Information.txt",
     "nutrition_grade": "a",
-    "price": 4.6,
+    "price": 4.83,
     "calories": 40,
-    "volume": "1L",
+    "mass": "",
     "description": "Fresh soy based drink, enriched with calcium and vitamins.",
-    "source": "https://www.hemkop.se/produkt/Sojadryck-Kalcium-Farsk-101026569_ST"
+    "source": "https://www.hemkop.se/produkt/Sojadryck-Kalcium-Farsk-101026569_ST",
+    "volume": "1L"
   },
   {
     "name": "Alpro-Shelf-Soy-Milk",
@@ -735,11 +787,12 @@
     "img_path": "./dataset/Packages/Soy-Milk/Alpro-Shelf-Soy-Milk/Alpro-Shelf-Soy-Milk_Iconic.jpg",
     "info_path": "dataset/Packages/Soy-Milk/Alpro-Shelf-Soy-Milk/Alpro-Shelf-Soy-Milk_Information.txt",
     "nutrition_grade": "a",
-    "price": 8.28,
+    "price": 2.99,
     "calories": 31,
-    "volume": "1L",
+    "mass": "",
     "description": "Soy based drink, enriched with calcium and vitamins. Can be stored in room temperature.",
-    "source": "https://www.hemkop.se/produkt/Sojadryck-Kalcium-101220250_ST"
+    "source": "https://www.hemkop.se/produkt/Sojadryck-Kalcium-101220250_ST",
+    "volume": "1L"
   },
   {
     "name": "Arla-Mild-Vanilla-Yoghurt",
@@ -749,11 +802,12 @@
     "img_path": "./dataset/Packages/Yoghurt/Arla-Mild-Vanilla-Yoghurt/Arla-Mild-Vanilla-Yoghurt_Iconic.jpg",
     "info_path": "dataset/Packages/Yoghurt/Arla-Mild-Vanilla-Yoghurt/Arla-Mild-Vanilla-Yoghurt_Information.txt",
     "nutrition_grade": "a",
-    "price": 5.52,
+    "price": 2.99,
     "calories": 70,
-    "volume": "1L",
-    "description": "Mild vanilla yogurt from Swedish milk at Arlag\u00e5rdar. Creamy, tender texture with a soft, round taste. Perfect for breakfast, snacks, or smoothies. Enjoy with muesli, flakes, fruit, or berries. Arla Ko guarantees 100% Swedish milk.",
-    "source": "https://www.hemkop.se/produkt/Mild-Yoghurt-Vanilj-100575995_ST"
+    "mass": "",
+    "description": "Mild vanilla yogurt from Swedish milk at Arlag\\u00e5rdar. Creamy, tender texture with a soft, round taste. Perfect for breakfast, snacks, or smoothies. Enjoy with muesli, flakes, fruit, or berries. Arla Ko guarantees 100% Swedish milk.",
+    "source": "https://www.hemkop.se/produkt/Mild-Yoghurt-Vanilj-100575995_ST",
+    "volume": "1L"
   },
   {
     "name": "Arla-Natural-Mild-Low-Fat-Yoghurt",
@@ -763,11 +817,12 @@
     "img_path": "./dataset/Packages/Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt_Iconic.jpg",
     "info_path": "dataset/Packages/Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt/Arla-Natural-Mild-Low-Fat-Yoghurt_Information.txt",
     "nutrition_grade": "a",
-    "price": 4.6,
+    "price": 2.99,
     "calories": 78,
-    "volume": "1L",
+    "mass": "",
     "description": "Keyhole-labeled light yogurt with creamy texture and natural taste. An excellent choice for a healthy yet tasty option. Perfect for breakfast and snacks, with muesli, flakes, fruit, or berries. Arla Ko guarantees 100% Swedish milk.",
-    "source": "https://www.hemkop.se/produkt/Mild-Lattyoghurt-Naturell-0-5procent-100232240_ST"
+    "source": "https://www.hemkop.se/produkt/Mild-Lattyoghurt-Naturell-0-5procent-100232240_ST",
+    "volume": "1L"
   },
   {
     "name": "Arla-Natural-Yoghurt",
@@ -777,11 +832,12 @@
     "img_path": "./dataset/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Iconic.jpg",
     "info_path": "dataset/Packages/Yoghurt/Arla-Natural-Yoghurt/Arla-Natural-Yoghurt_Information.txt",
     "nutrition_grade": "a",
-    "price": 7.36,
+    "price": 5.75,
     "calories": 218,
-    "volume": "1L",
+    "mass": "",
     "description": "Creamy, slightly more acidic yogurt with a clear character. Tastes great for breakfast or as a snack, and pairs well with nuts, honey, and fresh berries. Ideal for kebab sauce, baking bread, and yogurt drinks. Arla Ko guarantees 100% Swedish milk.",
-    "source": "https://www.hemkop.se/produkt/Yoghurt-Naturell-101257113_ST"
+    "source": "https://www.hemkop.se/produkt/Yoghurt-Naturell-101257113_ST",
+    "volume": "1L"
   },
   {
     "name": "Valio-Vanilla-Yoghurt",
@@ -791,11 +847,12 @@
     "img_path": "./dataset/Packages/Yoghurt/Valio-Vanilla-Yoghurt/Valio-Vanilla-Yoghurt_Iconic.jpg",
     "info_path": "dataset/Packages/Yoghurt/Valio-Vanilla-Yoghurt/Valio-Vanilla-Yoghurt_Information.txt",
     "nutrition_grade": "b",
-    "price": 11.04,
+    "price": 4.83,
     "calories": 232,
     "mass": "1kg",
     "description": "The original! Valio's creamy vanilla yoghurt original. The yogurt is carefully sugared with 30 percent less added sugar than regular flavored yogurt. Great for both breakfast and snacks.",
-    "source": "https://www.hemkop.se/produkt/Vaniljyoghurt-Original-2procent-100300906_ST"
+    "source": "https://www.hemkop.se/produkt/Vaniljyoghurt-Original-2procent-100300906_ST",
+    "volume": ""
   },
   {
     "name": "Yoggi-Strawberry-Yoghurt",
@@ -805,11 +862,12 @@
     "img_path": "./dataset/Packages/Yoghurt/Yoggi-Strawberry-Yoghurt/Yoggi-Strawberry-Yoghurt_Iconic.jpg",
     "info_path": "dataset/Packages/Yoghurt/Yoggi-Strawberry-Yoghurt/Yoggi-Strawberry-Yoghurt_Information.txt",
     "nutrition_grade": "b",
-    "price": 14.72,
+    "price": 4.83,
     "calories": 343,
     "mass": "1kg",
     "description": "Creamy yogurt rich in natural ingredients with a mild, round taste of strawberries and vanilla. Yoggi original is a satisfying and energizing delight for the whole family. Enjoy it at breakfast, as a quick snack, or a simple dessert. The blueish yellow milk can symbol guarantees 100% Swedish milk.",
-    "source": "https://www.hemkop.se/produkt/Vaniljyoghurt-Jordgubb-2procent-100049877_ST"
+    "source": "https://www.hemkop.se/produkt/Vaniljyoghurt-Jordgubb-2procent-100049877_ST",
+    "volume": ""
   },
   {
     "name": "Yoggi-Vanilla-Yoghurt",
@@ -819,11 +877,12 @@
     "img_path": "./dataset/Packages/Yoghurt/Yoggi-Vanilla-Yoghurt/Yoggi-Vanilla-Yoghurt_Iconic.jpg",
     "info_path": "dataset/Packages/Yoghurt/Yoggi-Vanilla-Yoghurt/Yoggi-Vanilla-Yoghurt_Information.txt",
     "nutrition_grade": "b",
-    "price": 11.96,
+    "price": 7.59,
     "calories": 145,
-    "volume": "1L",
+    "mass": "",
     "description": "Creamy yogurt with a mild, tender taste of real vanilla from Madagascar. Belongs to the popular Yoggi original family, perfect for breakfast, a quick snack, or dessert. The blueish yellow milk can symbol guarantees 100% Swedish milk.",
-    "source": "https://www.hemkop.se/produkt/Madagaskar-Vanilj-Yoghurt-2procent-101024268_ST"
+    "source": "https://www.hemkop.se/produkt/Madagaskar-Vanilj-Yoghurt-2procent-101024268_ST",
+    "volume": "1L"
   },
   {
     "name": "Asparagus",
@@ -833,11 +892,12 @@
     "img_path": "./dataset/Vegetables/Asparagus/Asparagus_Iconic.jpg",
     "info_path": "dataset/Vegetables/Asparagus/Asparagus_Information.txt",
     "nutrition_grade": "a",
-    "price": 4.6,
+    "price": 6.67,
     "calories": 50,
     "mass": "250g",
     "description": "Asparagus has a mild taste, ideal as an accessory or in vegetable dishes. Enjoy it boiled or grilled. Fresh asparagus is known for its stiff stalk and should be stored in the refrigerator. Shelf life is up to one week in the fridge or a few days at room temperature.",
-    "source": "https://www.hemkop.se/produkt/Sparris-Gron-Klass-1-100771309_ST"
+    "source": "https://www.hemkop.se/produkt/Sparris-Gron-Klass-1-100771309_ST",
+    "volume": ""
   },
   {
     "name": "Eggplant",
@@ -847,11 +907,12 @@
     "img_path": "./dataset/Vegetables/Aubergine/Aubergine_Iconic.jpg",
     "info_path": "dataset/Vegetables/Aubergine/Aubergine_Information.txt",
     "nutrition_grade": "b",
-    "price": 4.6,
+    "price": 7.59,
     "calories": 198,
     "mass": "300g",
     "description": "Aubergine, or eggplant as it is also called, is usually dark violet. It has a shiny peel and is 15-20 cm long. The pulp is white. Aubergine is always eaten cooked. In addition to Moussaka, Aubergine fits well in pots and gratins.",
-    "source": "https://www.hemkop.se/produkt/Aubergine-Klass-1-100773272_ST"
+    "source": "https://www.hemkop.se/produkt/Aubergine-Klass-1-100773272_ST",
+    "volume": ""
   },
   {
     "name": "Cabbage",
@@ -861,11 +922,12 @@
     "img_path": "./dataset/Vegetables/Cabbage/Cabbage_Iconic.jpg",
     "info_path": "dataset/Vegetables/Cabbage/Cabbage_Information.txt",
     "nutrition_grade": "b",
-    "price": 9.2,
+    "price": 3.91,
     "calories": 21,
     "mass": "2.8kg",
     "description": "White cabbage can be used as a raw food, but it also fits well in for example cabbage rolls, cabbage pudding, cabbage soup, etc.",
-    "source": "https://www.hemkop.se/produkt/Vitkal-Import-Klass-1-100152905_KG"
+    "source": "https://www.hemkop.se/produkt/Vitkal-Import-Klass-1-100152905_KG",
+    "volume": ""
   },
   {
     "name": "Carrots",
@@ -875,11 +937,12 @@
     "img_path": "./dataset/Vegetables/Carrots/Carrots_Iconic.jpg",
     "info_path": "dataset/Vegetables/Carrots/Carrots_Information.txt",
     "nutrition_grade": "a",
-    "price": 5.52,
+    "price": 2.99,
     "calories": 25,
     "mass": "170g",
     "description": "The orange red color of the carrot comes from the high content of beta carotene, which in the body is converted into vitamin A. Tastefully, carrot is sweet, with a crunchy texture. Carrots can be eaten raw, and are also used in pots, gratins, soups and wok.",
-    "source": "https://www.hemkop.se/produkt/Morot-Klass-1-100148868_KG"
+    "source": "https://www.hemkop.se/produkt/Morot-Klass-1-100148868_KG",
+    "volume": ""
   },
   {
     "name": "Cucumber",
@@ -889,11 +952,12 @@
     "img_path": "./dataset/Vegetables/Cucumber/Cucumber_Iconic.jpg",
     "info_path": "dataset/Vegetables/Cucumber/Cucumber_Information.txt",
     "nutrition_grade": "c",
-    "price": 4.6,
+    "price": 3.91,
     "calories": 16,
     "mass": "300g",
     "description": "Fresh cucumber. Fits well in the salad or on the sandwich.",
-    "source": "https://www.hemkop.se/produkt/Gurka-Sverige-Klass-1-100594965_ST"
+    "source": "https://www.hemkop.se/produkt/Gurka-Sverige-Klass-1-100594965_ST",
+    "volume": ""
   },
   {
     "name": "Garlic",
@@ -903,11 +967,12 @@
     "img_path": "./dataset/Vegetables/Garlic/Garlic_Iconic.jpg",
     "info_path": "dataset/Vegetables/Garlic/Garlic_Information.txt",
     "nutrition_grade": "b",
-    "price": 17.48,
+    "price": 5.75,
     "calories": 74,
     "mass": "50g",
     "description": "Garlic has unique flavor and smell, and is a good flavoring in pasta dishes, pots, mixes, etc.",
-    "source": "https://www.hemkop.se/produkt/Vitlok-Klass-1-100148225_KG"
+    "source": "https://www.hemkop.se/produkt/Vitlok-Klass-1-100148225_KG",
+    "volume": ""
   },
   {
     "name": "Ginger",
@@ -917,11 +982,12 @@
     "img_path": "./dataset/Vegetables/Ginger/Ginger_Iconic.jpg",
     "info_path": "dataset/Vegetables/Ginger/Ginger_Information.txt",
     "nutrition_grade": "e",
-    "price": 16.56,
+    "price": 2.99,
     "calories": 2,
     "mass": "150g",
     "description": "Ginger is a herb with a characteristically sharp taste. It is used for flavoring and accessories, especially in Asian cuisine. Vegetables and curries, rice, pickles, meat and fish are good for flavoring with ginger. The rich aroma also fits well with cookies, biscuits, marmalades and sweet desserts.",
-    "source": "https://www.hemkop.se/produkt/Ingefara-Klass-1-100147388_KG"
+    "source": "https://www.hemkop.se/produkt/Ingefara-Klass-1-100147388_KG",
+    "volume": ""
   },
   {
     "name": "Leek",
@@ -931,11 +997,12 @@
     "img_path": "./dataset/Vegetables/Leek/Leek_Iconic.jpg",
     "info_path": "dataset/Vegetables/Leek/Leek_Information.txt",
     "nutrition_grade": "b",
-    "price": 13.8,
+    "price": 7.59,
     "calories": 38,
     "mass": "300g",
     "description": "Leek has a slightly milder onion flavor and is preferably used for soups and pots, but can also be finely shredded into a salad. It is mainly the white part that is used, although it is fine to eat the green leaves.",
-    "source": "https://www.hemkop.se/produkt/Purjolok-Klass-1-101249333_KG"
+    "source": "https://www.hemkop.se/produkt/Purjolok-Klass-1-101249333_KG",
+    "volume": ""
   },
   {
     "name": "Brown-Cap-Mushroom",
@@ -945,10 +1012,12 @@
     "img_path": "./dataset/Vegetables/Mushroom/Brown-Cap-Mushroom/Brown-Cap-Mushroom_Iconic.jpg",
     "info_path": "dataset/Vegetables/Mushroom/Brown-Cap-Mushroom/Brown-Cap-Mushroom_Information.txt",
     "nutrition_grade": "a",
-    "price": 18.4,
+    "price": 2.99,
     "calories": 15,
+    "mass": "",
     "description": "The forest mushroom is also called chestnut mushroom, and is a brown mushroom with a fuller flavor than the white mushrooms. It can be eaten raw in for example salads, but are also good to boil, pan-fry or fry.",
-    "source": "https://www.hemkop.se/produkt/Skogschampinjo-Klass-1-100152166_KG"
+    "source": "https://www.hemkop.se/produkt/Skogschampinjo-Klass-1-100152166_KG",
+    "volume": ""
   },
   {
     "name": "Yellow-Onion",
@@ -958,11 +1027,12 @@
     "img_path": "./dataset/Vegetables/Onion/Yellow-Onion/Yellow-Onion_Iconic.jpg",
     "info_path": "dataset/Vegetables/Onion/Yellow-Onion/Yellow-Onion_Information.txt",
     "nutrition_grade": "a",
-    "price": 5.52,
+    "price": 6.67,
     "calories": 67,
     "mass": "150g",
     "description": "Yellow onion is a good flavoring. Fits well both cold and hot in cooking.",
-    "source": "https://www.hemkop.se/produkt/Lok-Gul-Klass-1-100269139_KG"
+    "source": "https://www.hemkop.se/produkt/Lok-Gul-Klass-1-100269139_KG",
+    "volume": ""
   },
   {
     "name": "Green-Bell-Pepper",
@@ -972,11 +1042,12 @@
     "img_path": "./dataset/Vegetables/Pepper/Green-Bell-Pepper/Green-Bell-Pepper_Iconic.jpg",
     "info_path": "dataset/Vegetables/Pepper/Green-Bell-Pepper/Green-Bell-Pepper_Information.txt",
     "nutrition_grade": "a",
-    "price": 5.52,
+    "price": 5.75,
     "calories": 34,
     "mass": "210g",
     "description": "Peppers come in various colors, including green, yellow, orange, red, and white. Green peppers are unripe and slightly firmer, ideal for warm dishes like chili con carne, pies, gratin, and stews. Peppers change color as they ripen.",
-    "source": "https://www.hemkop.se/produkt/Paprika-Gron-Gron-Klass-1-100149224_KG"
+    "source": "https://www.hemkop.se/produkt/Paprika-Gron-Gron-Klass-1-100149224_KG",
+    "volume": ""
   },
   {
     "name": "Orange-Bell-Pepper",
@@ -986,11 +1057,12 @@
     "img_path": "./dataset/Vegetables/Pepper/Orange-Bell-Pepper/Orange-Bell-Pepper_Iconic.jpg",
     "info_path": "dataset/Vegetables/Pepper/Orange-Bell-Pepper/Orange-Bell-Pepper_Information.txt",
     "nutrition_grade": "a",
-    "price": 8.28,
+    "price": 2.99,
     "calories": 32,
     "mass": "210g",
     "description": "The orange pepper is sweeter than the green. It also contains more vitamins and antioxidants than the green. Peppers are good to eat raw in salads and as garnish, but are also good to fry, stew or gratinate, for example with filling. Paprika also fits well in pots, gratins and pies.",
-    "source": "https://www.hemkop.se/produkt/Paprika-Orange-Klass-1-100149288_KG"
+    "source": "https://www.hemkop.se/produkt/Paprika-Orange-Klass-1-100149288_KG",
+    "volume": ""
   },
   {
     "name": "Red-Bell-Pepper",
@@ -1000,11 +1072,12 @@
     "img_path": "./dataset/Vegetables/Pepper/Red-Bell-Pepper/Red-Bell-Pepper_Iconic.jpg",
     "info_path": "dataset/Vegetables/Pepper/Red-Bell-Pepper/Red-Bell-Pepper_Information.txt",
     "nutrition_grade": "b",
-    "price": 11.04,
+    "price": 5.75,
     "calories": 32,
     "mass": "210g",
     "description": "The red peppers are much sweeter than the green ones. It also contains more vitamins and antioxidants than the green. Peppers are good to eat raw in salads and as garnish, but are also good to fry, stew or gratinate, for example. with filling. Paprika also fits well in pots, gratins and pies.",
-    "source": "https://www.hemkop.se/produkt/Paprika-Rod-Rod-Klass-1-100149359_KG"
+    "source": "https://www.hemkop.se/produkt/Paprika-Rod-Rod-Klass-1-100149359_KG",
+    "volume": ""
   },
   {
     "name": "Yellow-Bell-Pepper",
@@ -1014,11 +1087,12 @@
     "img_path": "./dataset/Vegetables/Pepper/Yellow-Bell-Pepper/Yellow-Bell-Pepper_Iconic.jpg",
     "info_path": "dataset/Vegetables/Pepper/Yellow-Bell-Pepper/Yellow-Bell-Pepper_Information.txt",
     "nutrition_grade": "b",
-    "price": 12.88,
+    "price": 3.91,
     "calories": 50,
     "mass": "210g",
     "description": "The yellow pepper is much sweeter than the green. It also contains more vitamins and antioxidants than the green. Peppers are good to eat raw in salads and as garnish, but are also good to fry, stew or gratinate, for example with filling. Paprika also fits well in pots, gratins and pies.",
-    "source": "https://www.hemkop.se/produkt/Paprika-Gul-Gul-Klass-1-100149251_KG"
+    "source": "https://www.hemkop.se/produkt/Paprika-Gul-Gul-Klass-1-100149251_KG",
+    "volume": ""
   },
   {
     "name": "Floury-Potato",
@@ -1028,10 +1102,12 @@
     "img_path": "./dataset/Vegetables/Potato/Floury-Potato/Floury-Potato_Iconic.jpg",
     "info_path": "dataset/Vegetables/Potato/Floury-Potato/Floury-Potato_Information.txt",
     "nutrition_grade": "a",
-    "price": 11.04,
+    "price": 4.83,
     "calories": 57,
+    "mass": "",
     "description": "Floury potatoes. Extra good for mashed potatoes and to press.",
-    "source": "https://www.hemkop.se/produkt/Potatis-Mjolig-Klass-1-100150541_KG"
+    "source": "https://www.hemkop.se/produkt/Potatis-Mjolig-Klass-1-100150541_KG",
+    "volume": ""
   },
   {
     "name": "Solid-Potato",
@@ -1041,10 +1117,12 @@
     "img_path": "./dataset/Vegetables/Potato/Solid-Potato/Solid-Potato_Iconic.jpg",
     "info_path": "dataset/Vegetables/Potato/Solid-Potato/Solid-Potato_Information.txt",
     "nutrition_grade": "a",
-    "price": 9.2,
+    "price": 5.75,
     "calories": 150,
+    "mass": "",
     "description": "Solid potatoes. A good allround potato that fits well most of the time.",
-    "source": "https://www.hemkop.se/produkt/Potatis-Fast-Klass-1-100150587_KG"
+    "source": "https://www.hemkop.se/produkt/Potatis-Fast-Klass-1-100150587_KG",
+    "volume": ""
   },
   {
     "name": "Sweet-Potato",
@@ -1054,11 +1132,12 @@
     "img_path": "./dataset/Vegetables/Potato/Sweet-Potato/Sweet-Potato_Iconic.jpg",
     "info_path": "dataset/Vegetables/Potato/Sweet-Potato/Sweet-Potato_Information.txt",
     "nutrition_grade": "a",
-    "price": 18.4,
+    "price": 5.75,
     "calories": 112,
     "mass": "360g",
     "description": "Sweet potatoes are oblong tubers, larger than regular potatoes. They have light brown or red peel and come in two varieties, with light or yellow-orange pulp. Sweet potatoes are sweet and slightly softer than regular potatoes. They can be used in various dishes, including desserts, pies, and cakes.",
-    "source": "https://www.hemkop.se/produkt/Sotpotatis-Klass-1-100150827_KG"
+    "source": "https://www.hemkop.se/produkt/Sotpotatis-Klass-1-100150827_KG",
+    "volume": ""
   },
   {
     "name": "Red-Beet",
@@ -1068,11 +1147,12 @@
     "img_path": "./dataset/Vegetables/Red-Beet/Red-Beet_Iconic.jpg",
     "info_path": "dataset/Vegetables/Red-Beet/Red-Beet_Information.txt",
     "nutrition_grade": "b",
-    "price": 12.88,
+    "price": 7.59,
     "calories": 58,
     "mass": "100g",
-    "description": "Red beets have an earthy, sweet taste. They're often served cooked or preserved in dishes like p\u00f6lsa, pyttipanna, or steak Lindstr\u00f6m. They can also be used in Borstj (red beet soup) or as raw food. Red beets are sensitive to heat, frost, and dehydration and should be stored cool.",
-    "source": "https://www.hemkop.se/produkt/Rodbeta-Klass-1-100151210_KG"
+    "description": "Red beets have an earthy, sweet taste. They're often served cooked or preserved in dishes like p\\u00f6lsa, pyttipanna, or steak Lindstr\\u00f6m. They can also be used in Borstj (red beet soup) or as raw food. Red beets are sensitive to heat, frost, and dehydration and should be stored cool.",
+    "source": "https://www.hemkop.se/produkt/Rodbeta-Klass-1-100151210_KG",
+    "volume": ""
   },
   {
     "name": "Beef-Tomato",
@@ -1082,11 +1162,12 @@
     "img_path": "./dataset/Vegetables/Tomato/Beef-Tomato/Beef-Tomato_Iconic.jpg",
     "info_path": "dataset/Vegetables/Tomato/Beef-Tomato/Beef-Tomato_Information.txt",
     "nutrition_grade": "b",
-    "price": 11.04,
+    "price": 6.67,
     "calories": 33,
     "mass": "200g",
     "description": "An extra large tomato suitable for well for hamburgers and on the grill or in the oven.",
-    "source": "https://www.hemkop.se/produkt/Bifftomat-Klass-1-100152488_KG"
+    "source": "https://www.hemkop.se/produkt/Bifftomat-Klass-1-100152488_KG",
+    "volume": ""
   },
   {
     "name": "Regular-Tomato",
@@ -1096,11 +1177,12 @@
     "img_path": "./dataset/Vegetables/Tomato/Regular-Tomato/Regular-Tomato_Iconic.jpg",
     "info_path": "dataset/Vegetables/Tomato/Regular-Tomato/Regular-Tomato_Information.txt",
     "nutrition_grade": "a",
-    "price": 12.88,
+    "price": 4.83,
     "calories": 22,
     "mass": "80g",
     "description": "Round and fine tomatoes from Sweden. Rinse and have in the salad or on the sandwich.",
-    "source": "https://www.hemkop.se/produkt/Tomat-Sverige-Klass-1-100521259_KG"
+    "source": "https://www.hemkop.se/produkt/Tomat-Sverige-Klass-1-100521259_KG",
+    "volume": ""
   },
   {
     "name": "Vine-Tomato",
@@ -1110,11 +1192,12 @@
     "img_path": "./dataset/Vegetables/Tomato/Vine-Tomato/Vine-Tomato_Iconic.jpg",
     "info_path": "dataset/Vegetables/Tomato/Vine-Tomato/Vine-Tomato_Information.txt",
     "nutrition_grade": "a",
-    "price": 15.64,
+    "price": 2.99,
     "calories": 22,
     "mass": "140g",
     "description": "Round tomatoes with vines in the package. Rinse and have in the salad or on the sandwich.",
-    "source": "https://www.hemkop.se/produkt/Kvisttomat-Klass-1-100152282_KG"
+    "source": "https://www.hemkop.se/produkt/Kvisttomat-Klass-1-100152282_KG",
+    "volume": ""
   },
   {
     "name": "Zucchini",
@@ -1124,10 +1207,11 @@
     "img_path": "./dataset/Vegetables/Zucchini/Zucchini_Iconic.jpg",
     "info_path": "dataset/Vegetables/Zucchini/Zucchini_Information.txt",
     "nutrition_grade": "a",
-    "price": 9.2,
+    "price": 2.99,
     "calories": 20,
     "mass": "360g",
     "description": "Zucchini can be eaten raw, but is usually used in soups, pots, stews, etc.",
-    "source": "https://www.hemkop.se/produkt/Zucchini-Klass-1-100268130_ST"
+    "source": "https://www.hemkop.se/produkt/Zucchini-Klass-1-100268130_ST",
+    "volume": ""
   }
 ]

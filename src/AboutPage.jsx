@@ -1,11 +1,30 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+
+import products from "./assets/products.json";
+
 import { Header, Footer } from "./Layout";
 
 
-export default function AboutPage() {
+export default function AboutPage(states) {
+  const {
+    cart, addToCart, removeFromCart,
+    popupText, setPopupText,
+    user, setUser
+  } = states;
+  const { productID } = useParams();
+  const product = products.find((product) => product.id == productID);
+  
   return (
     <>
-      <Header />
+      <Header
+        cart={cart}
+        addToCart={addToCart}
+        removeFromCart={removeFromCart}
+        popupText={popupText}
+        user={user}
+        setUser={setUser}
+      />
 
       <main id="about-page-main">
         <div id="about-page-text">

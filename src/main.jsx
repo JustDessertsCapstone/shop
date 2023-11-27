@@ -49,7 +49,17 @@ function App() {
                 setUser={setUser}
               />}
             />
-            <Route path="/shop/about/" element={<AboutPage />} />
+            <Route path="/shop/about/" element={
+              <AboutPage 
+                cart={cart}
+                addToCart={addToCart}
+                removeFromCart={removeFromCart}
+                popupText={popupText}
+                setPopupText={setPopupText}
+                user={user}
+                setUser={setUser}
+              />}
+            />
             <Route path="/shop/cart/" element={
               <ShoppingCartPage
                 cart={cart}
