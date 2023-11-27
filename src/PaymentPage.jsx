@@ -67,7 +67,7 @@ export default function PaymentPage(states) {
               <h1>Thank you for your purchase!</h1>
               <h2>Your order will be shipped soon.</h2>
               <p>Your new balance is ${user.balance.toFixed(2)}.</p>
-              <p>Your new point total is {user.points}.</p>
+              <p>Your new point total is {user.points.toFixed(0)}.</p>
               <p>Thank you for shopping with us!</p>
 
               <Link className="link" to="/shop/">
