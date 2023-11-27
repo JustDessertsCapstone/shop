@@ -31,7 +31,7 @@ export default function ProductPage(states) {
           <h2>Product: {product.name}</h2>
           <img
             className="product-img"
-            src={"../" + product.img_path}
+            src={product.img_path}
             alt={
               product.name.replaceAll("-", " ") +
               // Adds class name only if it is not included in the product name
