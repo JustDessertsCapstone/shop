@@ -50,14 +50,7 @@ function App() {
                 setUser={setUser}
               />}
             />
-            <Route path="/shop/about/" element={
-              <AboutPage 
-                cart={cart}
-                addToCart={addToCart}
-                removeFromCart={removeFromCart}
-                user={user}
-                setUser={setUser}
-              />}
+            <Route path="/shop/about/" element={<AboutPage />}
             />
             <Route path="/shop/cart/" element={
               <ShoppingCartPage
@@ -79,8 +72,7 @@ function App() {
                 setPopupText={setPopupText}
               />}
             />
-            <Route path="/shop/leaderboard" element={
-              <Leaderboard />}
+            <Route path="/shop/leaderboard/" element={<Leaderboard />}
             />
           </Routes>
         </BrowserRouter>
