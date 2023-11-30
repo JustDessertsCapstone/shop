@@ -17,6 +17,7 @@ export default function PaymentPage(states) {
   const updateUser = async (moneySpent, pointsToAdd) => {
     const newBal = user.balance - moneySpent;
     const newPoints = user.points + pointsToAdd;
+    const newLifetimePoints = user.lifetimePoints + pointsToAdd;
   
     setUser({ ...user, balance: newBal, points: newPoints});
     
@@ -24,7 +25,7 @@ export default function PaymentPage(states) {
       const userDoc = await getDoc(user.ref);
   
       if (userDoc.exists()) {
-        await updateDoc(user.ref, { balance: newBal, points: newPoints });
+        await updateDoc(user.ref, { balance: newBal, points: newPoints, lifetimePoints: newLifetimePoints });
       }
     } catch (error) {
       console.error("Error fetching or updating cart:", error);
@@ -95,6 +96,7 @@ export default function PaymentPage(states) {
               }
 
               <h2>Your Order</h2>
+              <p>Lifetime Points: {user.lifetimePoints.toFixed(0)}</p>
               { cart.length === 0 ?
                 <>
                   <p>Your shopping cart is empty.</p>

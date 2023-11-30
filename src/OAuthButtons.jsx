@@ -16,7 +16,8 @@ function LoginButton({ user, setUser }) {
         await setDoc(userRef, {
           cart: [],
           balance: 100.00,
-          points: 0
+          points: 0,
+          lifetimePoints: 0
         });
       } else {
         console.log("User already in DB.");
@@ -25,6 +26,7 @@ function LoginButton({ user, setUser }) {
         
         user.balance = userData.balance;
         user.points = userData.points;
+        user.lifetimePoints = userData.lifetimePoints || 0;
       }
     } catch (error) {
       console.error('Error checking user existence:', error);

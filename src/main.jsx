@@ -14,6 +14,7 @@ import ProductPage from "./ProductPage";
 import AboutPage from "./AboutPage";
 import ShoppingCartPage from "./ShoppingCartPage";
 import PaymentPage from "./PaymentPage";
+import Leaderboard from './Leaderboard';
 
 import db from "./firebase"
 
@@ -76,6 +77,11 @@ function App() {
                 setUser={setUser}
                 popupText={popupText}
                 setPopupText={setPopupText}
+              />}
+            />
+            <Route path="/shop/leaderboard" element={
+              <Leaderboard
+                user={user}
               />}
             />
           </Routes>
