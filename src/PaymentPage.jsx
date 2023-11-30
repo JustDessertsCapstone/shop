@@ -14,12 +14,12 @@ export default function PaymentPage(states) {
   } = states;
   const [ purchaseMade, setPurchaseMade ] = useState(false);
 
-  const updateUser = async (moneySpent, pointsToAdd) => {
+  const updateUser = async (moneySpent, pointsToAdd, updatedLifetimePoints) => {
     const newBal = user.balance - moneySpent;
     const newPoints = user.points + pointsToAdd;
     const newLifetimePoints = user.lifetimePoints + pointsToAdd;
   
-    setUser({ ...user, balance: newBal, points: newPoints});
+    setUser({ ...user, balance: newBal, points: newPoints, lifetimePoints: updatedLifetimePoints});
     
     try {
       const userDoc = await getDoc(user.ref);
@@ -33,8 +33,9 @@ export default function PaymentPage(states) {
   }
 
   const handlePurchase = (usingBal) => {
-    let money = usingBal ? parseFloat(getTotalCost(cart)) : 0;
-    let points = usingBal ? parseFloat(calculatePointTotal(cart)) : parseFloat(getTotalCost(cart)) * -100;
+    const money = usingBal ? +getTotalCost(cart) : 0;
+    const points = usingBal ? +calculatePointTotal(cart) : +getTotalCost(cart) * -100;
+    const lifetimePoints = user.lifetimePoints + +calculatePointTotal(cart);
     
     if (
       (usingBal  && user.balance < money) ||
@@ -47,7 +48,7 @@ export default function PaymentPage(states) {
     }
 
     console.log("Purchase Successful!");
-    updateUser(money, points);
+    updateUser(money, points, lifetimePoints);
     clearCart();
     setPurchaseMade(true);
   }
@@ -60,28 +61,32 @@ export default function PaymentPage(states) {
         setUser={setUser}
         popupText={popupText}
         popupTextGood={false}
+        showLeaderBoard={purchaseMade}
       />
 
       <main id="payment-page-main">
         <div className="payment-page-item-list">
-          {purchaseMade ? 
-            <>
-              <h1>Thank you for your purchase!</h1>
-              <h2>Your order will be shipped soon.</h2>
-              <p>Your new balance is ${user.balance.toFixed(2)}.</p>
-              <p>Your new point total is {user.points.toFixed(0)}.</p>
-              <p>Thank you for shopping with us!</p>
-
-              <Link className="link" to="/shop/">
-                <p>Continue Shopping</p>
-              </Link>
-            </> :
-          !user ?
+          {!user ?
             <>
               <h1>Please log in to place an order.</h1>
 
               <Link className="link" to="/shop/">
                 <p>Go to Shop Page</p>
+              </Link>
+            </> :
+          purchaseMade ? 
+            <>
+              <h1>Thank you for your purchase!</h1>
+              <h2>Your order will be shipped soon.</h2>
+              <p>Your new balance is ${user.balance.toFixed(2)}.</p>
+              <p>Your new point total is {user.points.toFixed(0)}.</p>
+              {user.lifetimePoints && user.lifetimePoints != user.points &&
+                <p>Your Lifetime Points Earned is {user.lifetimePoints.toFixed(0)}.</p>
+              }
+              <p>Thank you for shopping with us!</p>
+
+              <Link className="link" to="/shop/">
+                <p>Continue Shopping</p>
               </Link>
             </> :
             <>
@@ -94,9 +99,11 @@ export default function PaymentPage(states) {
                   <small>$1 = 100 points</small>
                 </>
               }
+              {user.lifetimePoints !== 0 && user.lifetimePoints != user.points &&
+                <p>Lifetime Points: {user.lifetimePoints.toFixed(0)}</p>
+              }
 
               <h2>Your Order</h2>
-              <p>Lifetime Points: {user.lifetimePoints.toFixed(0)}</p>
               { cart.length === 0 ?
                 <>
                   <p>Your shopping cart is empty.</p>

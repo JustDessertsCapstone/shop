@@ -27,12 +27,13 @@ function LoginButton({ user, setUser }) {
 
         if (!userData.lifetimePoints)
           await updateDoc(user.ref, { lifetimePoints: userData.points });
-        console.log(userData)
+        
         if (!userData.name)
           await updateDoc(user.ref, { name: name });
         
         user.balance = userData.balance;
         user.points = userData.points;
+        user.lifetimePoints = userData.lifetimePoints;
       }
     } catch (error) {
       console.error('Error checking user existence:', error);

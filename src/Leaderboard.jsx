@@ -2,7 +2,10 @@ import { useState, useEffect } from 'react';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import db from './firebase';
 
-const Leaderboard = () => {
+import { Header, Footer } from "./Layout"
+
+
+export default function LeaderBoard() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -24,31 +27,42 @@ const Leaderboard = () => {
     };
 
     fetchUsers();
-  }, []);
+  }, [db]);
+
+  const getLeaderBoardRows = () => {
+    const filteredUsers = users.filter((user) => user.lifetimePoints);
+    const mappedUsers = filteredUsers.map((user, index) => (
+      <tr key={user.id}>
+        <td>{index + 1}</td>
+        <td>{user.name ? user.name : "Unknown"}</td>
+        <td>{user.lifetimePoints}</td>
+      </tr>
+    ));
+
+    return mappedUsers.slice(0, 10);;
+  }
 
   return (
-    <div className="leaderboard-container">
-      <h1>Leaderboard</h1>
-      <table className="leaderboard-table">
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Username</th>
-            <th>Lifetime Points</th>
-          </tr>
-        </thead>
-        <tbody>
-          {users.map((user, index) => (
-            <tr key={user.id}>
-              <td>{index + 1}</td>
-              <td>{user.name ? user.name : "Unknown"}</td>
-              <td>{user.lifetimePoints}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-};
+    <>
+      <Header />
 
-export default Leaderboard;
+      <div className="leaderboard-main">
+        <h1>Leaderboard</h1>
+        <table className="leaderboard-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Username</th>
+              <th>Lifetime Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            { getLeaderBoardRows() }
+          </tbody>
+        </table>
+      </div>
+
+      <Footer />
+    </>
+  );
+}

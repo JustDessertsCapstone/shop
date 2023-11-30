@@ -14,7 +14,7 @@ import ProductPage from "./ProductPage";
 import AboutPage from "./AboutPage";
 import ShoppingCartPage from "./ShoppingCartPage";
 import PaymentPage from "./PaymentPage";
-import Leaderboard from './Leaderboard';
+import LeaderBoard from './Leaderboard';
 
 import db from "./firebase"
 
@@ -73,9 +73,7 @@ function App() {
               />}
             />
             <Route path="/shop/leaderboard/" element={
-            <Leaderboard 
-              
-            />}
+            <LeaderBoard />}
             />
           </Routes>
         </BrowserRouter>
