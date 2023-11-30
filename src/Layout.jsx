@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import cartIcon from "./assets/google_shopping.svg";
 import userIcon from "./assets/user-profile-icon.svg";
+import leaderboardIcon from "./assets/podium.svg";
 
 import { ShoppingCartContainer } from "./ShoppingCart";
 import { OAuthButtons } from "./OAuthButtons";
@@ -41,6 +42,10 @@ export function Header(states) {
           />
         </>
       }
+
+      <Link to="/shop/leaderboard" className="leaderboard-link">
+        <img src={leaderboardIcon} alt="Leaderboard Icon" className="leaderboard-icon" />
+      </Link>
 
       { setUser &&
         <>

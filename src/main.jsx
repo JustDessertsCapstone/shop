@@ -72,7 +72,10 @@ function App() {
                 setPopupText={setPopupText}
               />}
             />
-            <Route path="/shop/leaderboard/" element={<Leaderboard />}
+            <Route path="/shop/leaderboard/" element={
+            <Leaderboard 
+              
+            />}
             />
           </Routes>
         </BrowserRouter>
