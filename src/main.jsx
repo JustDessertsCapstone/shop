@@ -80,9 +80,7 @@ function App() {
               />}
             />
             <Route path="/shop/leaderboard" element={
-              <Leaderboard
-                user={user}
-              />}
+              <Leaderboard />}
             />
           </Routes>
         </BrowserRouter>

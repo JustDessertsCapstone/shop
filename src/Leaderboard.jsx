@@ -39,11 +39,11 @@ const Leaderboard = (user) => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user1, index) => (
-            <tr key={user1.id}>
+          {users.map((user, index) => (
+            <tr key={user.id}>
               <td>{index + 1}</td>
-              <td>{user.name}</td>
-              <td>{user1.lifetimePoints}</td>
+              <td>{user.name ? user.name : "Unknown"}</td>
+              <td>{user.lifetimePoints}</td>
             </tr>
           ))}
         </tbody>
