@@ -28,6 +28,10 @@ Please note that this project is a demo for a school assignment and is non-comme
   - Codebase written in **React**
   - Build tool: **Vite**
 
+- **APIs:**
+  - Login Verification: **Google OAuth**
+  - Database: **Google Firebase**
+
 ---
 
 ## Team Roles
@@ -68,6 +72,7 @@ We would like to credit the following sources for their contributions:
 - Banner image by [StockSnap](https://stocksnap.io/photo/food-fruits-AWJD4WV6W1)
 - Shopping cart icon from [Font Awesome](https://fontawesome.com)
 - Profile icon from [Very Icon](https://www.veryicon.com/icons/avatar/user-2/user-line-1.html)
+- Leader board icon from [SVG Repo](https://www.svgrepo.com/svg/220690/podium)
 - Nutrition grade evaluations from [Open Food Facts](https://world.openfoodfacts.org)
 
 ---

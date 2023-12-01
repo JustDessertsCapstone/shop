@@ -64,6 +64,15 @@ export default function AboutPage(states) {
                   Build tool: <strong>Vite</strong>
                 </li>
               </ul>
+              <strong>APIs:</strong>
+              <ul>
+                <li>
+                  Login Verification: <strong>Google OAuth</strong>
+                </li>
+                <li>
+                  Database: <strong>Google Firebase</strong>
+                </li>
+              </ul>
             </li>
           </ul>
           <hr />
@@ -163,6 +172,12 @@ export default function AboutPage(states) {
               Profile icon from&nbsp;
               <a href="https://www.veryicon.com/icons/avatar/user-2/user-line-1.html">
                 Very Icon
+              </a>
+            </li>
+            <li>
+              Leader board icon from&nbsp;
+              <a href="https://www.svgrepo.com/svg/220690/podium">
+                SVG Repo
               </a>
             </li>
             <li>
