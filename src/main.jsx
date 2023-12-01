@@ -14,6 +14,7 @@ import ProductPage from "./ProductPage";
 import AboutPage from "./AboutPage";
 import ShoppingCartPage from "./ShoppingCartPage";
 import PaymentPage from "./PaymentPage";
+import LeaderBoard from './Leaderboard';
 
 import db from "./firebase"
 
@@ -49,14 +50,7 @@ function App() {
                 setUser={setUser}
               />}
             />
-            <Route path="/shop/about/" element={
-              <AboutPage 
-                cart={cart}
-                addToCart={addToCart}
-                removeFromCart={removeFromCart}
-                user={user}
-                setUser={setUser}
-              />}
+            <Route path="/shop/about/" element={<AboutPage />}
             />
             <Route path="/shop/cart/" element={
               <ShoppingCartPage
@@ -77,6 +71,9 @@ function App() {
                 popupText={popupText}
                 setPopupText={setPopupText}
               />}
+            />
+            <Route path="/shop/leaderboard/" element={
+            <LeaderBoard />}
             />
           </Routes>
         </BrowserRouter>

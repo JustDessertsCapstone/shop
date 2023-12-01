@@ -28,6 +28,7 @@ export default function ShopPage(states) {
         popupText={popupText}
         user={user}
         setUser={setUser}
+        showLeaderBoard = {true}
       />
 
       <main id="shop-main">

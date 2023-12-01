@@ -2,11 +2,11 @@ import { useState } from "react";
 import { GoogleLogin, googleLogout } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
 import db from "./firebase";
-import { collection, getDoc, doc, setDoc } from "firebase/firestore"; 
+import { collection, getDoc, doc, setDoc, updateDoc } from "firebase/firestore"; 
 import { auth } from "./firebase";
 
 function LoginButton({ user, setUser }) {
-  const addUserToBD = async (userRef) => {
+  const addUserToBD = async (userRef, name) => {
     try {
       const docSnapshot = await getDoc(userRef);
       
@@ -14,17 +14,26 @@ function LoginButton({ user, setUser }) {
         console.log("User not in DB. Adding user.");
         
         await setDoc(userRef, {
+          name: name,
           cart: [],
           balance: 100.00,
-          points: 0
+          points: 0,
+          lifetimePoints: 0
         });
       } else {
         console.log("User already in DB.");
-
+        
         const userData = docSnapshot.data();
+
+        if (!userData.lifetimePoints)
+          await updateDoc(user.ref, { lifetimePoints: userData.points });
+        
+        if (!userData.name)
+          await updateDoc(user.ref, { name: name });
         
         user.balance = userData.balance;
         user.points = userData.points;
+        user.lifetimePoints = userData.lifetimePoints;
       }
     } catch (error) {
       console.error('Error checking user existence:', error);
@@ -39,7 +48,7 @@ function LoginButton({ user, setUser }) {
     decodedCredentials.ref = userRef;
     user = decodedCredentials;
     
-    await addUserToBD(userRef);
+    await addUserToBD(userRef, decodedCredentials.name);
 
     setUser(user);
   };
